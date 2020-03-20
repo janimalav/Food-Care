@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="150dp"
+    android:layout_height="255dp"
+    android:layout_margin="5dp"
+    cardview:cardCornerRadius="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:onClick="openDetails"
+        android:id="@+id/item"
+        >
+
+        <ImageView
+            android:id="@+id/VegetableThumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="#2d2d2d"
+            android:scaleType="centerCrop"
+            cardview:layout_constraintStart_toStartOf="parent"
+            cardview:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/vegetableTitle"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:layout_marginLeft="2dp"
+            android:text="Lobster Cooked in store"
+            android:textColor="#2d2d2d"
+            android:textSize="16sp"
+            android:textAlignment="textStart"
+            cardview:layout_constraintTop_toBottomOf="@id/VegetableThumbnail"
+            cardview:layout_constraintStart_toStartOf="parent"
+            tools:ignore="RtlCompat">
+
+        </TextView>
+        <TextView
+            android:id="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:gravity="center"
+            android:text="$15.83"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="textStart"
+            cardview:layout_constraintStart_toStartOf="parent"
+            cardview:layout_constraintTop_toBottomOf="@id/vegetableTitle"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="500g"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintHorizontal_bias="0.905"
+            cardview:layout_constraintStart_toEndOf="@id/rate"
+            cardview:layout_constraintTop_toBottomOf="@id/vegetableTitle"
+            tools:ignore="RtlCompat" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="59dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="8dp"
+            android:text="Add"
+            android:textSize="13sp"
+            android:textColor="@color/colorPrimary"
+            cardview:layout_constraintStart_toStartOf="parent"
+            cardview:layout_constraintTop_toBottomOf="@id/rate" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
