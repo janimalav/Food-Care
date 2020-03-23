@@ -37,7 +37,7 @@
         android:text="Because we don’t have enough to waste"
         android:padding="5dp"
         android:layout_marginHorizontal="5dp"
-        android:layout_marginBottom="70dp"
+        android:layout_marginBottom="40dp"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
