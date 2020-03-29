@@ -6,6 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".profile_page">
 
+
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_name"
         android:layout_width="409dp"
@@ -20,8 +21,8 @@
             android:layout_height="match_parent"
             android:id="@+id/cl_edit_profile">
 
-            <TextView
-                android:id="@+id/tv_name"
+            <EditText
+                android:id="@+id/et_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
@@ -33,7 +34,7 @@
                 app:layout_constraintStart_toEndOf="@+id/iv_name"
                 app:layout_constraintTop_toTopOf="parent">
 
-            </TextView>
+            </EditText>
 
             <ImageView
                 android:id="@+id/iv_name"
@@ -53,9 +54,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="24dp"
                 android:background="#26b11d"
-                app:layout_constraintBottom_toBottomOf="@+id/tv_name"
+                app:layout_constraintBottom_toBottomOf="@+id/et_name"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/tv_name"
+                app:layout_constraintTop_toTopOf="@+id/et_name"
                 app:srcCompat="@drawable/edit" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -81,9 +82,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="24dp"
                 android:background="#26b11d"
-                app:layout_constraintBottom_toBottomOf="@+id/tv_email"
+                app:layout_constraintBottom_toBottomOf="@+id/et_email"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/tv_email"
+                app:layout_constraintTop_toTopOf="@+id/et_email"
                 app:srcCompat="@drawable/edit" />
 
             <ImageView
@@ -98,13 +99,14 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/email" />
 
-            <TextView
-                android:id="@+id/tv_email"
+            <EditText
+                android:id="@+id/et_email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
                 android:layout_marginLeft="40dp"
                 android:text="Email"
+                android:inputType="textEmailAddress"
                 android:textColor="@android:color/black"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="@+id/iv_email"
@@ -112,7 +114,7 @@
                 app:layout_constraintTop_toTopOf="@+id/iv_email"
                 app:layout_constraintVertical_bias="0.627">
 
-            </TextView>
+            </EditText>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
@@ -138,9 +140,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="24dp"
                 android:background="#26b11d"
-                app:layout_constraintBottom_toBottomOf="@+id/tv_password"
+                app:layout_constraintBottom_toBottomOf="@+id/et_password"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/tv_password"
+                app:layout_constraintTop_toTopOf="@+id/et_password"
                 app:srcCompat="@drawable/edit" />
 
             <ImageView
@@ -155,13 +157,14 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/password" />
 
-            <TextView
-                android:id="@+id/tv_password"
+            <EditText
+                android:id="@+id/et_password"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
                 android:layout_marginLeft="40dp"
                 android:text="password"
+                android:inputType="textPassword"
                 android:textColor="@android:color/black"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -190,9 +193,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="24dp"
                 android:background="#26b11d"
-                app:layout_constraintBottom_toBottomOf="@+id/tv_address"
+                app:layout_constraintBottom_toBottomOf="@+id/et_address"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/tv_address"
+                app:layout_constraintTop_toTopOf="@+id/et_address"
                 app:srcCompat="@drawable/edit" />
 
             <ImageView
@@ -207,13 +210,14 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/address" />
 
-            <TextView
-                android:id="@+id/tv_address"
+            <EditText
+                android:id="@+id/et_address"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
                 android:layout_marginLeft="40dp"
                 android:text="Address"
+                android:inputType="textMultiLine"
                 android:textColor="@android:color/black"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
