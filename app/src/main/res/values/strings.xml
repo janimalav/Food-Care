@@ -14,4 +14,7 @@
     <string name="error_field_required">This is required field</string>
     <string name="added">item added successfully</string>
     <string name="errormsg">Error</string>
+    <string name="sell_form_title">Enter Product Details</string>
+    <string name="sell_btn_text">Sell</string>
+    <string name="item_img">Item Image</string>
 </resources>
