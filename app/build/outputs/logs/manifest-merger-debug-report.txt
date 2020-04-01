@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml:2:1-25:12
+ADDED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:2:1-25:12
 MERGED from [androidx.databinding:databinding-adapters:3.5.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/fe58d87a8b19b8812635b179f2e7f0d2/databinding-adapters-3.5.3/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:databinding-runtime:3.5.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/549c9c617b0dded8ccd25338c7272a25/databinding-runtime-3.5.3/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.1.0-alpha10] /home/arjun/.gradle/caches/transforms-2/files-2.1/5835c5d8117d1574323c90252c6aa619/material-1.1.0-alpha10/AndroidManifest.xml:17:1-24:12
@@ -35,25 +35,25 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] /home/arjun/.gradle/cache
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/09e0734645fd0f7289fcd4a5b87c7ba7/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/e4a3d379d1bcbe285b89607fcaeb9e70/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/87ae084eb3df2dbaca54f0e05c8f6900/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:2:1-25:12
 	package
-		ADDED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml:3:5-37
-		INJECTED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml
-		INJECTED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml
+		ADDED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:3:5-37
+		INJECTED from /home/arjun/android_git/app/src/main/AndroidManifest.xml
+		INJECTED from /home/arjun/android_git/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml
-		ADDED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml:2:1-25:12
-		INJECTED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml
+		INJECTED from /home/arjun/android_git/app/src/main/AndroidManifest.xml
+		ADDED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:2:1-25:12
+		INJECTED from /home/arjun/android_git/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml
-		ADDED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml:2:1-25:12
-		INJECTED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml
+		INJECTED from /home/arjun/android_git/app/src/main/AndroidManifest.xml
+		ADDED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:2:1-25:12
+		INJECTED from /home/arjun/android_git/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml:5:5-23:19
+ADDED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:5:5-23:19
 MERGED from [com.google.android.material:material:1.1.0-alpha10] /home/arjun/.gradle/caches/transforms-2/files-2.1/5835c5d8117d1574323c90252c6aa619/material-1.1.0-alpha10/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0-alpha10] /home/arjun/.gradle/caches/transforms-2/files-2.1/5835c5d8117d1574323c90252c6aa619/material-1.1.0-alpha10/AndroidManifest.xml:22:5-20
 MERGED from [com.cepheuen.elegant-number-button:lib:1.0.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/864a98419a9342de20e96826eb050d0f/lib-1.0.3/AndroidManifest.xml:11:5-17:19
@@ -67,43 +67,43 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/arjun
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0-rc03] /home/arjun/.gradle/caches/transforms-2/files-2.1/9a1b943a949c06a0c1efceee7c058dc0/core-1.1.0-rc03/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml:10:9-35
+		ADDED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:10:9-35
 	android:label
-		ADDED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml:8:9-41
+		ADDED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:8:9-41
 	android:roundIcon
-		ADDED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml:9:9-54
+		ADDED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:9:9-54
 	android:icon
-		ADDED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml:7:9-43
+		ADDED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:7:9-43
 	android:allowBackup
-		ADDED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml:6:9-35
+		ADDED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml:11:9-40
+		ADDED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:11:9-40
 activity#com.example.phase1proj.views.ItemActivity
-ADDED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml:12:9-65
+ADDED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:12:9-65
 	android:name
-		ADDED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml:12:19-53
+		ADDED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:12:19-53
 activity#com.example.phase1proj.views.CategoryListActivity
-ADDED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml:14:9-64
+ADDED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:14:9-64
 	android:name
-		ADDED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml:14:19-61
+		ADDED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:14:19-61
 activity#com.example.phase1proj.layout
-ADDED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml:16:9-22:20
+ADDED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:16:9-22:20
 	android:name
-		ADDED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml:16:19-41
+		ADDED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:16:19-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml:17:13-21:29
+ADDED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:17:13-21:29
 action#android.intent.action.MAIN
-ADDED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml:18:17-69
+ADDED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml:18:25-66
+		ADDED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml:20:17-77
+ADDED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml:20:27-74
+		ADDED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:20:27-74
 uses-sdk
-INJECTED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml
-INJECTED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml
+INJECTED from /home/arjun/android_git/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/arjun/android_git/app/src/main/AndroidManifest.xml
+INJECTED from /home/arjun/android_git/app/src/main/AndroidManifest.xml
 MERGED from [androidx.databinding:databinding-adapters:3.5.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/fe58d87a8b19b8812635b179f2e7f0d2/databinding-adapters-3.5.3/AndroidManifest.xml:22:5-44
 MERGED from [androidx.databinding:databinding-adapters:3.5.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/fe58d87a8b19b8812635b179f2e7f0d2/databinding-adapters-3.5.3/AndroidManifest.xml:22:5-44
 MERGED from [androidx.databinding:databinding-runtime:3.5.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/549c9c617b0dded8ccd25338c7272a25/databinding-runtime-3.5.3/AndroidManifest.xml:22:5-44
@@ -166,13 +166,13 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/arjun/.grad
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/e4a3d379d1bcbe285b89607fcaeb9e70/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/87ae084eb3df2dbaca54f0e05c8f6900/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/87ae084eb3df2dbaca54f0e05c8f6900/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
-INJECTED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml
-INJECTED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml
+INJECTED from /home/arjun/android_git/app/src/main/AndroidManifest.xml
+INJECTED from /home/arjun/android_git/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml
-		ADDED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml
-		INJECTED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml
+		INJECTED from /home/arjun/android_git/app/src/main/AndroidManifest.xml
+		ADDED from /home/arjun/android_git/app/src/main/AndroidManifest.xml
+		INJECTED from /home/arjun/android_git/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml
-		ADDED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml
-		INJECTED from /home/arjun/Project_android/Phase1Proj/app/src/main/AndroidManifest.xml
+		INJECTED from /home/arjun/android_git/app/src/main/AndroidManifest.xml
+		ADDED from /home/arjun/android_git/app/src/main/AndroidManifest.xml
+		INJECTED from /home/arjun/android_git/app/src/main/AndroidManifest.xml

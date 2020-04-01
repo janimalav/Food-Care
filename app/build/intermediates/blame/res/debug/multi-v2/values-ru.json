@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ru/values-ru.xml",
+            "outputFile": "/home/arjun/android_git/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ru/values-ru.xml",
             "map": [
                 {
                     "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/9a1b943a949c06a0c1efceee7c058dc0/core-1.1.0-rc03/res/values-ru/values-ru.xml",

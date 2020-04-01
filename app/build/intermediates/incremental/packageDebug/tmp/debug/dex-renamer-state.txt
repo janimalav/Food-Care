@@ -1,7 +1,7 @@
-#Wed Apr 01 14:13:34 ADT 2020
-base.0=/home/arjun/Project_android/Phase1Proj/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
+#Wed Apr 01 19:21:58 ADT 2020
+base.0=/home/arjun/android_git/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=/home/arjun/Project_android/Phase1Proj/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex
+base.1=/home/arjun/android_git/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex
