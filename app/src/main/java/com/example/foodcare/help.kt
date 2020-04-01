@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
 import androidx.fragment.app.DialogFragment
 
 
@@ -22,6 +23,10 @@ class help : DialogFragment() {
         savedInstanceState: Bundle?
     ): View? {
         var v = inflater.inflate(R.layout.help_fragment, container, false)
+
+        var closeButton = v.findViewById<ImageButton>(R.id.help_closebutton)
+
+        closeButton.setOnClickListener { v -> dismiss() }
         return v
     }
 

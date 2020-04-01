@@ -23,10 +23,9 @@
 
             <EditText
                 android:id="@+id/et_name"
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
-                android:layout_marginLeft="40dp"
                 android:text="Name"
                 android:textColor="@android:color/black"
                 android:textSize="20sp"
@@ -48,16 +47,16 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/edit_profile" />
 
-            <ImageView
-                android:id="@+id/iv_edit_profile_back"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="24dp"
-                android:background="#26b11d"
-                app:layout_constraintBottom_toBottomOf="@+id/et_name"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/et_name"
-                app:srcCompat="@drawable/edit" />
+            <!-- <ImageView
+                 android:id="@+id/iv_edit_profile_back"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginEnd="24dp"
+                 android:background="#26b11d"
+                 app:layout_constraintBottom_toBottomOf="@+id/et_name"
+                 app:layout_constraintEnd_toEndOf="parent"
+                 app:layout_constraintTop_toTopOf="@+id/et_name"
+                 app:srcCompat="@drawable/edit" />-->
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
@@ -76,7 +75,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <ImageView
+            <!--<ImageView
                 android:id="@+id/iv_email_edit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -85,7 +84,7 @@
                 app:layout_constraintBottom_toBottomOf="@+id/et_email"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/et_email"
-                app:srcCompat="@drawable/edit" />
+                app:srcCompat="@drawable/edit" />-->
 
             <ImageView
                 android:id="@+id/iv_email"
@@ -101,12 +100,11 @@
 
             <EditText
                 android:id="@+id/et_email"
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
-                android:layout_marginLeft="40dp"
-                android:text="Email"
                 android:inputType="textEmailAddress"
+                android:text="Email"
                 android:textColor="@android:color/black"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="@+id/iv_email"
@@ -134,16 +132,16 @@
             android:layout_height="match_parent">
 
 
-            <ImageView
-                android:id="@+id/iv_password_edit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="24dp"
-                android:background="#26b11d"
-                app:layout_constraintBottom_toBottomOf="@+id/et_password"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/et_password"
-                app:srcCompat="@drawable/edit" />
+            <!-- <ImageView
+                 android:id="@+id/iv_password_edit"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginEnd="24dp"
+                 android:background="#26b11d"
+                 app:layout_constraintBottom_toBottomOf="@+id/et_password"
+                 app:layout_constraintEnd_toEndOf="parent"
+                 app:layout_constraintTop_toTopOf="@+id/et_password"
+                 app:srcCompat="@drawable/edit" />-->
 
             <ImageView
                 android:id="@+id/iv_password"
@@ -159,12 +157,11 @@
 
             <EditText
                 android:id="@+id/et_password"
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
-                android:layout_marginLeft="40dp"
-                android:text="password"
                 android:inputType="textPassword"
+                android:text="password"
                 android:textColor="@android:color/black"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -187,7 +184,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <ImageView
+            <!--<ImageView
                 android:id="@+id/iv_address_edit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -197,7 +194,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/et_address"
                 app:srcCompat="@drawable/edit" />
-
+-->
             <ImageView
                 android:id="@+id/iv_address"
                 android:layout_width="wrap_content"
@@ -212,12 +209,11 @@
 
             <EditText
                 android:id="@+id/et_address"
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
-                android:layout_marginLeft="40dp"
-                android:text="Address"
                 android:inputType="textMultiLine"
+                android:text="Address"
                 android:textColor="@android:color/black"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -228,7 +224,30 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relative_layout">
+
+
+        </RelativeLayout>
+
     </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="150dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/appColor"
+        android:text="RESET"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv_signout" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

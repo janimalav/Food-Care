@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        iv_edit_profile_back.setOnClickListener{
+        cl_edit_profile.setOnClickListener {
             var intent = Intent(this, profile_page::class.java)
             startActivity(intent)
         }
@@ -44,6 +44,10 @@ class MainActivity : AppCompatActivity() {
 
         cl_contact_us.setOnClickListener {
             contact_us().show(supportFragmentManager, "Contact Us")
+        }
+
+        cl_signout.setOnClickListener {
+            System.exit(0)
         }
 
     }
