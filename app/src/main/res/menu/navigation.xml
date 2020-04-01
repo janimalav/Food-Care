@@ -7,19 +7,19 @@
         android:icon="@drawable/home"
         android:title="Home"/>
 
-    <item
-        android:id="@+id/navigation_albums"
-        android:icon="@drawable/ic_cart"
+<!--    <item-->
+<!--        android:id="@+id/navigation_cart"-->
+<!--        android:icon="@drawable/ic_cart"-->
 
-        android:title="Cart"/>
+<!--        android:title="Cart"/>-->
 
     <item
-        android:id="@+id/navigation_artists"
+        android:id="@+id/navigation_stores"
         android:icon="@drawable/ic_store_black_24dp"
 
         android:title="Stores"/>
     <item
-        android:id="@+id/navigation_artists1"
+        android:id="@+id/navigation_account"
         android:icon="@drawable/ic_account_circle_black_24dp"
 
         android:title="Account"/>

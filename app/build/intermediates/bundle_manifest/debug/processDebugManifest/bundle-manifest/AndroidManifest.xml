@@ -18,11 +18,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.phase1proj.ItemActivity" />
-        <activity android:name="com.example.phase1proj.SpecificItemActivity" />
-        <activity android:name="com.example.phase1proj.CategoryListActivity" />
-        <activity android:name="com.example.phase1proj.category_list" />
-        <activity android:name="com.example.phase1proj.CategoryList" />
+        <activity android:name="com.example.phase1proj.views.ItemActivity" />
+        <activity android:name="com.example.phase1proj.views.CategoryListActivity" />
         <activity android:name="com.example.phase1proj.layout" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

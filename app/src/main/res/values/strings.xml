@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Phase1Proj</string>
+    <string name="_8_32"> <strike>$8.32</strike></string>
+    <string name="itemdetails">This product was frozen prior to its best before date.\nProduct good for consumption for at least 90 days if kept frozen </string>
 </resources>

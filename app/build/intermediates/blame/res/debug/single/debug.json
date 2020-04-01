@@ -4,12 +4,12 @@
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/d09e9dba25c33becf3450cb4a324c0f2/appcompat-1.1.0-rc01/res/drawable-hdpi-v4/abc_text_select_handle_left_mtrl_light.png"
     },
     {
-        "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
-        "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/d09e9dba25c33becf3450cb4a324c0f2/appcompat-1.1.0-rc01/res/drawable-xhdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png"
-    },
-    {
         "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/d09e9dba25c33becf3450cb4a324c0f2/appcompat-1.1.0-rc01/res/drawable-xxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
+        "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/d09e9dba25c33becf3450cb4a324c0f2/appcompat-1.1.0-rc01/res/drawable-xhdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
         "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -20,12 +20,16 @@
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/d09e9dba25c33becf3450cb4a324c0f2/appcompat-1.1.0-rc01/res/drawable-xxxhdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
     },
     {
-        "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable_abc_cab_background_internal_bg.xml.flat",
-        "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/d09e9dba25c33becf3450cb4a324c0f2/appcompat-1.1.0-rc01/res/drawable/abc_cab_background_internal_bg.xml"
+        "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable_backbuuton.xml.flat",
+        "source": "/home/arjun/Project_android/Phase1Proj/app/src/main/res/drawable/backbuuton.xml"
     },
     {
         "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_design_ic_visibility_off.png.flat",
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/5835c5d8117d1574323c90252c6aa619/material-1.1.0-alpha10/res/drawable-xxhdpi-v4/design_ic_visibility_off.png"
+    },
+    {
+        "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable_abc_cab_background_internal_bg.xml.flat",
+        "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/d09e9dba25c33becf3450cb4a324c0f2/appcompat-1.1.0-rc01/res/drawable/abc_cab_background_internal_bg.xml"
     },
     {
         "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
@@ -40,20 +44,20 @@
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/d09e9dba25c33becf3450cb4a324c0f2/appcompat-1.1.0-rc01/res/drawable/btn_checkbox_unchecked_to_checked_mtrl_animation.xml"
     },
     {
-        "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/color_mtrl_calendar_item_stroke_color.xml.flat",
-        "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/5835c5d8117d1574323c90252c6aa619/material-1.1.0-alpha10/res/color/mtrl_calendar_item_stroke_color.xml"
-    },
-    {
         "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/d09e9dba25c33becf3450cb4a324c0f2/appcompat-1.1.0-rc01/res/drawable-xhdpi-v4/abc_ic_star_half_black_36dp.png"
     },
     {
-        "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
-        "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/d09e9dba25c33becf3450cb4a324c0f2/appcompat-1.1.0-rc01/res/drawable-xxxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
+        "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/color_mtrl_calendar_item_stroke_color.xml.flat",
+        "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/5835c5d8117d1574323c90252c6aa619/material-1.1.0-alpha10/res/color/mtrl_calendar_item_stroke_color.xml"
     },
     {
         "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/d09e9dba25c33becf3450cb4a324c0f2/appcompat-1.1.0-rc01/res/drawable-mdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
+        "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/d09e9dba25c33becf3450cb4a324c0f2/appcompat-1.1.0-rc01/res/drawable-xxxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
         "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/layout_mtrl_calendar_month.xml.flat",
@@ -68,12 +72,12 @@
         "source": "/home/arjun/Project_android/Phase1Proj/app/src/main/res/layout/categorylist.xml"
     },
     {
-        "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/layout_abc_action_menu_item_layout.xml.flat",
-        "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/d09e9dba25c33becf3450cb4a324c0f2/appcompat-1.1.0-rc01/res/layout/abc_action_menu_item_layout.xml"
-    },
-    {
         "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/layout_changeablecard.xml.flat",
         "source": "/home/arjun/Project_android/Phase1Proj/app/src/main/res/layout/changeablecard.xml"
+    },
+    {
+        "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/layout_abc_action_menu_item_layout.xml.flat",
+        "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/d09e9dba25c33becf3450cb4a324c0f2/appcompat-1.1.0-rc01/res/layout/abc_action_menu_item_layout.xml"
     },
     {
         "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
@@ -94,6 +98,10 @@
     {
         "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_focused_holo.9.png.flat",
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/d09e9dba25c33becf3450cb4a324c0f2/appcompat-1.1.0-rc01/res/drawable-xhdpi-v4/abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable_empty_result.png.flat",
+        "source": "/home/arjun/Project_android/Phase1Proj/app/src/main/res/drawable/empty_result.png"
     },
     {
         "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_black_48dp.png.flat",
@@ -132,12 +140,12 @@
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/d09e9dba25c33becf3450cb4a324c0f2/appcompat-1.1.0-rc01/res/drawable-xhdpi-v4/abc_text_select_handle_middle_mtrl_dark.png"
     },
     {
-        "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/color_abc_tint_edittext.xml.flat",
-        "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/d09e9dba25c33becf3450cb4a324c0f2/appcompat-1.1.0-rc01/res/color/abc_tint_edittext.xml"
-    },
-    {
         "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/d09e9dba25c33becf3450cb4a324c0f2/appcompat-1.1.0-rc01/res/drawable-hdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/color_abc_tint_edittext.xml.flat",
+        "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/d09e9dba25c33becf3450cb4a324c0f2/appcompat-1.1.0-rc01/res/color/abc_tint_edittext.xml"
     },
     {
         "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -284,12 +292,12 @@
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/d09e9dba25c33becf3450cb4a324c0f2/appcompat-1.1.0-rc01/res/layout/select_dialog_singlechoice_material.xml"
     },
     {
-        "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
-        "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/9a1b943a949c06a0c1efceee7c058dc0/core-1.1.0-rc03/res/drawable-mdpi-v4/notification_bg_low_normal.9.png"
-    },
-    {
         "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/layout_abc_action_mode_bar.xml.flat",
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/d09e9dba25c33becf3450cb4a324c0f2/appcompat-1.1.0-rc01/res/layout/abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/9a1b943a949c06a0c1efceee7c058dc0/core-1.1.0-rc03/res/drawable-mdpi-v4/notification_bg_low_normal.9.png"
     },
     {
         "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
@@ -332,6 +340,10 @@
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/5835c5d8117d1574323c90252c6aa619/material-1.1.0-alpha10/res/animator/mtrl_btn_state_list_anim.xml"
     },
     {
+        "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/layout_layout_cart_item.xml.flat",
+        "source": "/home/arjun/Project_android/Phase1Proj/app/src/main/res/layout/layout_cart_item.xml"
+    },
+    {
         "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/d09e9dba25c33becf3450cb4a324c0f2/appcompat-1.1.0-rc01/res/drawable-xxhdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
     },
@@ -350,6 +362,10 @@
     {
         "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_black_48dp.png.flat",
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/d09e9dba25c33becf3450cb4a324c0f2/appcompat-1.1.0-rc01/res/drawable-hdpi-v4/abc_ic_star_black_48dp.png"
+    },
+    {
+        "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable_frozen.png.flat",
+        "source": "/home/arjun/Project_android/Phase1Proj/app/src/main/res/drawable/frozen.png"
     },
     {
         "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/color_abc_tint_default.xml.flat",
@@ -532,6 +548,10 @@
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/5835c5d8117d1574323c90252c6aa619/material-1.1.0-alpha10/res/layout/mtrl_picker_actions.xml"
     },
     {
+        "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable_add_button_corners.xml.flat",
+        "source": "/home/arjun/Project_android/Phase1Proj/app/src/main/res/drawable/add_button_corners.xml"
+    },
+    {
         "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
         "source": "/home/arjun/Project_android/Phase1Proj/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
@@ -684,6 +704,10 @@
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/d09e9dba25c33becf3450cb4a324c0f2/appcompat-1.1.0-rc01/res/drawable-mdpi-v4/abc_list_focused_holo.9.png"
     },
     {
+        "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/layout_fragment_store.xml.flat",
+        "source": "/home/arjun/Project_android/Phase1Proj/app/src/main/res/layout/fragment_store.xml"
+    },
+    {
         "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/d09e9dba25c33becf3450cb4a324c0f2/appcompat-1.1.0-rc01/res/drawable-hdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
     },
@@ -748,12 +772,12 @@
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/5835c5d8117d1574323c90252c6aa619/material-1.1.0-alpha10/res/drawable/ic_clear_black_24dp.xml"
     },
     {
-        "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/layout_mtrl_calendar_month_navigation.xml.flat",
-        "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/5835c5d8117d1574323c90252c6aa619/material-1.1.0-alpha10/res/layout/mtrl_calendar_month_navigation.xml"
-    },
-    {
         "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/layout_changeablecard_reverse.xml.flat",
         "source": "/home/arjun/Project_android/Phase1Proj/app/src/main/res/layout/changeablecard_reverse.xml"
+    },
+    {
+        "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/layout_mtrl_calendar_month_navigation.xml.flat",
+        "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/5835c5d8117d1574323c90252c6aa619/material-1.1.0-alpha10/res/layout/mtrl_calendar_month_navigation.xml"
     },
     {
         "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable_abc_ic_ab_back_material.xml.flat",
@@ -930,6 +954,10 @@
     {
         "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/d09e9dba25c33becf3450cb4a324c0f2/appcompat-1.1.0-rc01/res/drawable-xhdpi-v4/abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable_ic_cart.xml.flat",
+        "source": "/home/arjun/Project_android/Phase1Proj/app/src/main/res/drawable/ic_cart.xml"
     },
     {
         "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable-v21_abc_action_bar_item_background_material.xml.flat",
@@ -1116,6 +1144,10 @@
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/d09e9dba25c33becf3450cb4a324c0f2/appcompat-1.1.0-rc01/res/anim/abc_slide_in_bottom.xml"
     },
     {
+        "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable_button_corners.xml.flat",
+        "source": "/home/arjun/Project_android/Phase1Proj/app/src/main/res/drawable/button_corners.xml"
+    },
+    {
         "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/d09e9dba25c33becf3450cb4a324c0f2/appcompat-1.1.0-rc01/res/drawable-xxhdpi-v4/abc_text_select_handle_right_mtrl_light.png"
     },
@@ -1230,10 +1262,6 @@
     {
         "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/layout_test_design_checkbox.xml.flat",
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/5835c5d8117d1574323c90252c6aa619/material-1.1.0-alpha10/res/layout/test_design_checkbox.xml"
-    },
-    {
-        "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable-anydpi-v24_ic_cart.xml.flat",
-        "source": "/home/arjun/Project_android/Phase1Proj/app/src/main/res/drawable-anydpi-v24/ic_cart.xml"
     },
     {
         "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
@@ -1664,6 +1692,10 @@
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/5835c5d8117d1574323c90252c6aa619/material-1.1.0-alpha10/res/animator/mtrl_fab_transformation_sheet_expand_spec.xml"
     },
     {
+        "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable_background.xml.flat",
+        "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/864a98419a9342de20e96826eb050d0f/lib-1.0.3/res/drawable/background.xml"
+    },
+    {
         "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/anim_abc_popup_enter.xml.flat",
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/d09e9dba25c33becf3450cb4a324c0f2/appcompat-1.1.0-rc01/res/anim/abc_popup_enter.xml"
     },
@@ -1868,6 +1900,10 @@
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/5835c5d8117d1574323c90252c6aa619/material-1.1.0-alpha10/res/animator/mtrl_extended_fab_state_list_animator.xml"
     },
     {
+        "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/layout_fragment_cart.xml.flat",
+        "source": "/home/arjun/Project_android/Phase1Proj/app/src/main/res/layout/fragment_cart.xml"
+    },
+    {
         "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable_btn_checkbox_checked_to_unchecked_mtrl_animation.xml.flat",
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/d09e9dba25c33becf3450cb4a324c0f2/appcompat-1.1.0-rc01/res/drawable/btn_checkbox_checked_to_unchecked_mtrl_animation.xml"
     },
@@ -1954,6 +1990,10 @@
     {
         "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/color_checkbox_themeable_attribute_color.xml.flat",
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/5835c5d8117d1574323c90252c6aa619/material-1.1.0-alpha10/res/color/checkbox_themeable_attribute_color.xml"
+    },
+    {
+        "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/layout_addedtocart.xml.flat",
+        "source": "/home/arjun/Project_android/Phase1Proj/app/src/main/res/layout/addedtocart.xml"
     },
     {
         "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
@@ -2076,6 +2116,10 @@
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/d09e9dba25c33becf3450cb4a324c0f2/appcompat-1.1.0-rc01/res/layout/abc_list_menu_item_checkbox.xml"
     },
     {
+        "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/layout_fragment_account.xml.flat",
+        "source": "/home/arjun/Project_android/Phase1Proj/app/src/main/res/layout/fragment_account.xml"
+    },
+    {
         "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_black_16dp.png.flat",
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/d09e9dba25c33becf3450cb4a324c0f2/appcompat-1.1.0-rc01/res/drawable-xxxhdpi-v4/abc_ic_star_black_16dp.png"
     },
@@ -2106,6 +2150,10 @@
     {
         "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/d09e9dba25c33becf3450cb4a324c0f2/appcompat-1.1.0-rc01/res/drawable-xhdpi-v4/abc_text_select_handle_middle_mtrl_light.png"
+    },
+    {
+        "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/layout_fragment_home.xml.flat",
+        "source": "/home/arjun/Project_android/Phase1Proj/app/src/main/res/layout/fragment_home.xml"
     },
     {
         "merged": "/home/arjun/Project_android/Phase1Proj/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",

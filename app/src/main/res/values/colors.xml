@@ -4,4 +4,7 @@
     <color name="colorPrimaryDark">#186F12</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="orange">#ffa500</color>
+    <dimen name="marginStart">10dp</dimen>
 </resources>
