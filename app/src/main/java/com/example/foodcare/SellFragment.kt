@@ -11,10 +11,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
-import android.widget.AutoCompleteTextView
-import android.widget.ImageView
-import android.widget.Toast
+import android.widget.*
 import androidx.core.view.drawToBitmap
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
@@ -49,16 +46,22 @@ class SellFragment : Fragment() {
         viewmModel = ViewModelProvider1(this).get(FoodItemViewModel::class.java)
         val view: View = inflater.inflate(R.layout.fragment_sell, container, false)
 
-        val btn = view.findViewById<FloatingActionButton>(R.id.btn_capture)
+        //val btn = view.findViewById<FloatingActionButton>(R.id.btn_capture)
         imgview = view.findViewById(R.id.item_img)
         mStorageRef = FirebaseStorage.getInstance().getReference()
 
-        btn.setOnClickListener {
+        imgview.setOnClickListener{
             val intent: Intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
             startActivityForResult(intent, CAMERA_REQUEST)
-
         }
-        var COUNTRIES = arrayOf("Meat & Poultry", "Fish & Seafood", "Dairy & Cheese", "Fruits & Veggies","Bakery","Grocery","Frozen","Drinks","Organic","Other")
+
+//        btn.setOnClickListener {
+//            val intent: Intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+//            startActivityForResult(intent, CAMERA_REQUEST)
+//
+//        }
+
+        var CATEGORIES = arrayOf("Meat & Poultry", "Fish & Seafood", "Dairy & Cheese", "Fruits & Veggies","Bakery","Grocery","Frozen","Drinks","Organic","Other")
         //val adapter = ArrayAdapter(requireContext(),R.layout.dropdown_item,COUNTRIES)
         //val adapter = ArrayAdapter
         var drop_item = view.findViewById<AutoCompleteTextView>(R.id.filled_exposed_dropdown)
@@ -66,68 +69,72 @@ class SellFragment : Fragment() {
             ArrayAdapter(
                 requireContext(),
                 R.layout.dropdown_item,
-                COUNTRIES
+                CATEGORIES
             )
         )
 
+        val post = view.findViewById<Button>(R.id.post)
+
+        post.setOnClickListener {
+            Log.d("Sell Pressed","Button pressed")
+            Toast.makeText(requireContext(), "Button pressed", Toast.LENGTH_SHORT).show()
+            val name = item_name.text.toString().trim()
+            if (name.isEmpty()) {
+                item_name.error = getString(R.string.error_field_required)
+                return@setOnClickListener
+            }
+
+            val desc = item_desc.text.toString().trim()
+            if (desc.isEmpty()) {
+                item_desc.error = getString(R.string.error_field_required)
+                return@setOnClickListener
+            }
+
+            val price = item_price.text.toString().trim()
+            if (desc.isEmpty()) {
+                item_price.error = getString(R.string.error_field_required)
+                return@setOnClickListener
+            }
+
+            val address = item_address.text.toString().trim()
+            if (desc.isEmpty()) {
+                item_address.error = getString(R.string.error_field_required)
+                return@setOnClickListener
+            }
+
+            val category= filled_exposed_dropdown.text.toString().trim()
+            Toast.makeText(requireContext(),category,Toast.LENGTH_LONG).show()
+            Log.d("Sell",category)
+            val fooditem = FoodItem()
+            fooditem.name = name
+            fooditem.description = desc
+            fooditem.price = price
+            fooditem.address = address
+            fooditem.category=category
+            fooditem.imgurl = uploadImageToFirebaseStorage()
+            viewmModel.addFoodItem(fooditem)
+        }
+
         return view
     }
+
     var itemImgUri: Uri? = null
     var photo: Bitmap? = null
+
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if (resultCode == Activity.RESULT_OK) {
-            if (requestCode == CAMERA_REQUEST && data != null) {
-                photo = data.extras?.get("data") as Bitmap
-                imgview.setImageBitmap(photo)
+        if (resultCode == Activity.RESULT_OK) if (requestCode == CAMERA_REQUEST && data != null) {
+            photo = data.extras?.get("data") as Bitmap
+            imgview.setImageBitmap(photo)
+
 //                var img1= MediaStore.Images.Media.insertImage(context?.contentResolver,photo,"Image",null)
 //                itemImgUri = Uri.parse(img1)
 //                Log.d("Fragment",Uri.parse(img1).toString())
 //                //Toast.makeText(requireContext(),data.getStringExtra("data").toString(),Toast.LENGTH_SHORT).show()
-
-                post.setOnClickListener {
-                    Toast.makeText(requireContext(), "Button pressed", Toast.LENGTH_SHORT).show()
-                    val name = item_name.text.toString().trim()
-                    if (name.isEmpty()) {
-                        item_name.error = getString(R.string.error_field_required)
-                        return@setOnClickListener
-                    }
-
-                    val desc = item_desc.text.toString().trim()
-                    if (desc.isEmpty()) {
-                        item_desc.error = getString(R.string.error_field_required)
-                        return@setOnClickListener
-                    }
-
-                    val price = item_price.text.toString().trim()
-                    if (desc.isEmpty()) {
-                        item_price.error = getString(R.string.error_field_required)
-                        return@setOnClickListener
-                    }
-
-                    val address = item_address.text.toString().trim()
-                    if (desc.isEmpty()) {
-                        item_address.error = getString(R.string.error_field_required)
-                        return@setOnClickListener
-                    }
-
-                    val category= filled_exposed_dropdown.text.toString().trim()
-                    Toast.makeText(requireContext(),category,Toast.LENGTH_LONG).show()
-                    Log.d("Sell",category)
-                    val fooditem = FoodItem()
-                    fooditem.name = name
-                    fooditem.description = desc
-                    fooditem.price = price
-                    fooditem.address = address
-                    fooditem.category=category
-                    viewmModel.addFoodItem(fooditem)
-
-                    uploadImageToFirebaseStorage()
-                }
-
-            }
         }
     }
+
+    @SuppressLint("StringFormatInvalid")
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewmModel.result.observe(viewLifecycleOwner, Observer {
@@ -140,10 +147,10 @@ class SellFragment : Fragment() {
         })
     }
 
-    private fun uploadImageToFirebaseStorage() {
+    private fun uploadImageToFirebaseStorage(): String {
 //        //Log.d("Upload Image","Function Start")
 //        // Toast.makeText(requireContext(),itemImgUri.toString(),Toast.LENGTH_SHORT).show()
-        if (photo == null) return
+        if (photo == null) return ""
 //
         var bytes: ByteArrayOutputStream = ByteArrayOutputStream()
         photo!!.compress(Bitmap.CompressFormat.JPEG, 100, bytes)
@@ -161,6 +168,8 @@ class SellFragment : Fragment() {
                 Toast.makeText(requireContext(), Uri.parse(path).toString(), Toast.LENGTH_SHORT)
                     .show()
             }
+
+        return filename
     }
 }
 
