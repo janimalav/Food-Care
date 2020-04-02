@@ -1,8 +1,8 @@
 package com.example.phase1proj.models
 
-import com.example.phase1proj.models.Vegetable
+import java.io.Serializable
 
-class Category (
-    val name: String,
-    var children: List<Vegetable>
-    )
+class Category(
+        val name: String,
+        var children: List<Vegetable>
+) : Serializable

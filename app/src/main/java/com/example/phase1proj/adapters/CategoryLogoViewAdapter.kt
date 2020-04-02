@@ -27,6 +27,7 @@ class CategoryLogoViewAdapter(private val logoList: List<CategoryLogo>, private 
     private lateinit var parents: List<Category>
     private lateinit var globalparents: List<Category>
     private lateinit var selectCategories: List<String>
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyLogoViewHolder {
         val view: View
         val layoutInflater = LayoutInflater.from(parent.context)

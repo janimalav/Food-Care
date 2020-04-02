@@ -13,6 +13,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.phase1proj.R
 import com.example.phase1proj.models.Vegetable
+import com.squareup.picasso.Picasso
 
 class ItemActivity : AppCompatActivity() {
 
@@ -92,27 +93,27 @@ class ItemActivity : AppCompatActivity() {
                 if (getQuantity() > 0) {
                     val billdialog = AlertDialog.Builder(this@ItemActivity)
                     billdialog.setMessage("Are you sure to buy " + getQuantity().toString() + "item")
-                        .setCancelable(false).setNegativeButton(
+                            .setCancelable(false).setNegativeButton(
 //                        On click of cancel button the values cannot be clear
-                            "Cancel",
-                            { dialog, id -> dialog.cancel() }
-                        ).setPositiveButton("OK") { dialogInterface: DialogInterface, i: Int ->
-                            val billdialog = AlertDialog.Builder(this@ItemActivity)
-                            billdialog.setMessage("Order Place Successfully")
-                                .setCancelable(false).setNegativeButton(
+                                    "Cancel",
+                                    { dialog, id -> dialog.cancel() }
+                            ).setPositiveButton("OK") { dialogInterface: DialogInterface, i: Int ->
+                                val billdialog = AlertDialog.Builder(this@ItemActivity)
+                                billdialog.setMessage("Order Place Successfully")
+                                        .setCancelable(false).setNegativeButton(
 //                        On click of cancel button the values cannot be clear
-                                    "Ok"
-                                ) { dialog, id ->
-                                    hurry_value -= getQuantity()
-                                    dialog.cancel()
-                                    this@ItemActivity.finish()
-                                }
-                            val alert = billdialog.create()
-                            alert.setTitle("Notice")
-                            alert.show()
-                            //                  On click of OK  the values of all the text and edit views will be cleared
+                                                "Ok"
+                                        ) { dialog, id ->
+                                            hurry_value -= getQuantity()
+                                            dialog.cancel()
+                                            this@ItemActivity.finish()
+                                        }
+                                val alert = billdialog.create()
+                                alert.setTitle("Notice")
+                                alert.show()
+                                //                  On click of OK  the values of all the text and edit views will be cleared
 
-                        }
+                            }
                     val alert = billdialog.create()
                     alert.setTitle("Buy")
                     alert.show()
@@ -127,14 +128,15 @@ class ItemActivity : AppCompatActivity() {
     @SuppressLint("SetTextI18n")
     private fun setValues(itemDetails: Vegetable?) {
 
+
         if (itemDetails != null) {
-            itemDetails.thumbnail?.let {
-                image.setImageResource(it)
-                imageTitle.text = itemDetails.name
-                rate.text = "$" + itemDetails.price.toString()
-                hurry.text = "Hurry! " + itemDetails.stock.toString() + " item left"
-                weight.text = itemDetails.weight.toString()
-            }
+            Picasso.get().load(itemDetails.url).into(image)
+
+            imageTitle.text = itemDetails.name
+            rate.text = "$" + itemDetails.price.toString()
+            hurry.text = "Hurry! " + itemDetails.stock.toString() + " item left"
+            weight.text = itemDetails.weight.toString()
+
 
         }
 
@@ -143,9 +145,9 @@ class ItemActivity : AppCompatActivity() {
     private fun showDialog(message: String, setTitle: String = "Notice") {
         val billdialog = AlertDialog.Builder(this)
         billdialog.setMessage(message)
-            .setCancelable(false).setPositiveButton(
-                "Ok",
-                { dialog, id -> dialog.cancel() })
+                .setCancelable(false).setPositiveButton(
+                        "Ok",
+                        { dialog, id -> dialog.cancel() })
         // create bill dialog and show
         val alert = billdialog.create()
         alert.setTitle(setTitle)

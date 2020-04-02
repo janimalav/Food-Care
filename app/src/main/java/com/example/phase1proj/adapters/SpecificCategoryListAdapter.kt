@@ -13,6 +13,7 @@ import com.example.phase1proj.views.ItemActivity
 import com.example.phase1proj.R
 import com.example.phase1proj.R.layout.child_card_view_list
 import com.example.phase1proj.models.Vegetable
+import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.child_card_view_list.view.*
 
 class SpecificCategoryListAdapter(
@@ -29,19 +30,20 @@ class SpecificCategoryListAdapter(
 
     override fun onBindViewHolder(holder: MyViewHolder1, position: Int) {
         holder.vegetableTitle.text = vegetableList[position].name
-        holder.vegetableThumbnail.setImageResource(vegetableList[position].thumbnail!!)
+        Picasso.get().load(vegetableList[position].url).into(holder.vegetableThumbnail)
+//        holder.vegetableThumbnail.setImageResource(vegetableList[position].thumbnail!!)
         holder.rateVegetable.text = "$ " + vegetableList[position].price.toString()
         holder.weightVegetable.text = vegetableList[position].weight
 
         holder.cardLayout.setOnClickListener {
-            openActivity(holder, vegetableList[position].name)
+            openActivity(holder, vegetableList[position])
         }
     }
 
-    private fun openActivity(holder: MyViewHolder1, Name: String?) {
+    private fun openActivity(holder: MyViewHolder1, item: Vegetable) {
 
         val intent = Intent(holder.cardLayout.context, ItemActivity::class.java)
-        intent.putExtra("itemName", Name)
+        intent.putExtra("ItemDetails", item)
         ContextCompat.startActivity(holder.cardLayout.context, intent, null)
 
     }

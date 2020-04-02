@@ -31,12 +31,15 @@ class home : Fragment() {
     private lateinit var linearLayout: LinearLayout
     private lateinit var searchview: SearchView
     private val dbitems = FirebaseDatabase.getInstance().getReference("fooditems")
+    private var usermap: HashMap<String, MutableList<Vegetable>> = hashMapOf()
+    private var wholeusermap: HashMap<String, MutableList<Vegetable>> = hashMapOf()
 
     private lateinit var vegetables_3: List<Vegetable>
 
 
     lateinit var toolbar: ActionBar
-    private lateinit var parents: List<Category>
+    private var parents: List<Category> = listOf()
+    private var wholeparents: List<Category> = listOf()
     private var count: Int = 4
 
 
@@ -45,14 +48,13 @@ class home : Fragment() {
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
+
         var view = inflater.inflate(R.layout.fragment_home, container, false)
         vegetables_3 = mutableListOf()
-        fetchVegetbles(dbitems)
+        fetchVegetbles(dbitems) 
+        wholeFetchVegetbles(dbitems)
 
-
-
-
-
+        //
         logorecycler = view.findViewById(R.id.recyclerCategory)
 
         logorecycler.apply {
@@ -67,21 +69,21 @@ class home : Fragment() {
         }
 
         recyclerView = view.findViewById(R.id.recyclerParent)
-        recyclerView.apply {
-            layoutManager = LinearLayoutManager(
-                    context,
-                    RecyclerView.VERTICAL,
-                    false
-            )
-
-            adapter = ParentRecyclerViewAdapter(
-                    getParents(count)
-            )
-
-
-//            layoutParams= ConstraintLayout.LayoutParams(ConstraintLayout.LayoutParams.MATCH_PARENT,40)
-
-        }
+//        recyclerView.apply {
+//            layoutManager = LinearLayoutManager(
+//                    context,
+//                    RecyclerView.VERTICAL,
+//                    false
+//            )
+//
+//            adapter = ParentRecyclerViewAdapter(
+//                    getParents(count)
+//            )
+//
+//
+////            layoutParams= ConstraintLayout.LayoutParams(ConstraintLayout.LayoutParams.MATCH_PARENT,40)
+//
+//        }
         searchview = view.findViewById(R.id.searchText) as SearchView
 
 
@@ -93,7 +95,8 @@ class home : Fragment() {
                 Toast.makeText(context, "Looking for $query", Toast.LENGTH_LONG).show()
 
                 searchview.clearFocus()
-                var categories = getParents(4, query)
+//                var categories = getParents(4, query)
+                var categories = SearchItems(query,parents.toMutableList())
                 if (categories.isNotEmpty()) {
                     recyclerView.apply {
                         layoutManager = LinearLayoutManager(
@@ -135,6 +138,7 @@ class home : Fragment() {
 
             override fun onQueryTextChange(newText: String?): Boolean {
                 if (newText.equals("")) {
+
                     searchview.clearFocus()
                     recyclerView.apply {
                         layoutManager = LinearLayoutManager(
@@ -144,7 +148,7 @@ class home : Fragment() {
                         )
                         adapter =
                                 ParentRecyclerViewAdapter(
-                                        getParents(4, newText)
+                                        SearchItems(newText,parents = parents.toMutableList())
                                 )
                         invalidate()
                         recyclerView.visibility = View.VISIBLE
@@ -170,7 +174,16 @@ class home : Fragment() {
 
     private fun getLogos(count: Int): List<CategoryLogo> {
         val categories = mutableListOf<CategoryLogo>()
-        repeat(count / 2) {
+        var category_name = listOf("Meat & Poultry", "Fish & Seafood", "Dairy & Cheese", "Fruits & Veggies", "Bakery", "Grocery", "Frozen", "Drinks", "Organic", "Other")
+        for (name in category_name) {
+            val logo = CategoryLogo(
+                    name,
+                    R.drawable.veggie1,
+                    ""
+            )
+            categories.add(logo)
+        }
+        /*repeat(count / 2) {
             val logo = CategoryLogo(
                     "Raw",
                     R.drawable.veggie1,
@@ -185,51 +198,39 @@ class home : Fragment() {
                     ""
             )
             categories.add(logo)
-        }
+        }*/
         return categories
     }
 
 
-    private fun getParents(count: Int, searchText: String? = ""): List<Category> {
-        var parents = mutableListOf<Category>()
-        repeat(count / 2) {
-            val parent = Category(
-                    "Veggies",
-                    getChildren(20)
-            )
-            parents.add(parent)
-        }
-        repeat(count / 2) {
-            val parent =
-                    Category("Arjun", getChildren(20))
-            parents.add(parent)
-        }
-
-        parents.add(Category("Database", vegetables_3))
-        parents = SearchItems(searchText, parents)
-        this.parents = parents
-        return parents
-    }
+//    private fun getParents(count: Int, searchText: String? = ""): List<Category> {
+//        var parents = mutableListOf<Category>()
+//        repeat(count / 2) {
+//            val parent = Category(
+//                    "Veggies",
+//                    getChildren(20)
+//            )
+//            parents.add(parent)
+//        }
+//        repeat(count / 2) {
+//            val parent =
+//                    Category("Arjun", getChildren(20))
+//            parents.add(parent)
+//        }
+//
+//        parents.add(Category("Database", vegetables_3))
+//        parents = SearchItems(searchText, parents)
+//        this.parents = parents
+//        return parents
+//    }
 
     fun getParentsItems(): List<Category> {
         return this.parents
     }
 
     fun wholeParentItems(): List<Category> {
-        var parents_whole = mutableListOf<Category>()
-        repeat(count / 2) {
-            val child_whole = Category(
-                    "Veggies",
-                    getChildren(20)
-            )
-            parents_whole.add(child_whole)
-        }
-        repeat(count / 2) {
-            val child_whole =
-                    Category("Arjun", getChildren(20))
-            parents_whole.add(child_whole)
-        }
-        return parents_whole
+
+        return this.parents
     }
 
 
@@ -285,31 +286,31 @@ class home : Fragment() {
     }
 
 
-    private fun getChildren(count: Int): List<Vegetable> {
-        val children = mutableListOf<Vegetable>()
-        repeat(count / 2) {
-            children.add(
-                    Vegetable(
-                            "Lobster Cooked in store",
-                            "Meat",
-                            R.drawable.veggie1,
-                            "New Veggie", 20, 45.20, "300g"
-                    )
-            )
-        }
-        repeat(count / 2) {
-            children.add(
-                    Vegetable(
-                            "Seasoned pork rack ribs end",
-                            "Raw",
-                            R.drawable.veggie2,
-                            "New Veggie", 10, 21.20, "400g"
-                    )
-            )
-        }
-
-        return children
-    }
+//    private fun getChildren(count: Int): List<Vegetable> {
+//        val children = mutableListOf<Vegetable>()
+//        repeat(count / 2) {
+//            children.add(
+//                    Vegetable(
+//                            "Lobster Cooked in store",
+//                            "Meat",
+//                            R.drawable.veggie1,
+//                            "New Veggie", 20, 45.20, "300g"
+//                    )
+//            )
+//        }
+//        repeat(count / 2) {
+//            children.add(
+//                    Vegetable(
+//                            "Seasoned pork rack ribs end",
+//                            "Raw",
+//                            R.drawable.veggie2,
+//                            "New Veggie", 10, 21.20, "400g"
+//                    )
+//            )
+//        }
+//
+//        return children
+//    }
 
     fun List<Category>.copy(): List<Category> {
         val arr = mutableListOf<Category>()
@@ -320,23 +321,40 @@ class home : Fragment() {
     }
 
     fun fetchVegetbles(dbitems: DatabaseReference) {
-        dbitems.addListenerForSingleValueEvent(object : ValueEventListener {
+        usermap= hashMapOf()
+        dbitems.addValueEventListener(object : ValueEventListener {
             override fun onCancelled(error: DatabaseError) {}
 
             override fun onDataChange(snapshot: DataSnapshot) {
                 if (snapshot.exists()) {
                     val vegetables_1 = mutableListOf<Vegetable>()
-                    val paa = mutableListOf<Category>()
+                    val data_parents = mutableListOf<Category>()
                     for (authorSnapshot in snapshot.children) {
 
                         val author = authorSnapshot.getValue(FoodItem::class.java)
                         if (author != null) {
-                            vegetables_1.add(Vegetable(name = author.name!!, category = author.category!!, thumbnail = 999, description = author.description, stock = 10, price = author.price?.toDouble(), weight = "229g", url = author.imgurl))
+                            if (author.userName.isNullOrEmpty()) {
+                                author.userName = "other"
+                            }
+                            if (usermap[author.userName!!] == null) {
+
+                                var new_vegetable = mutableListOf<Vegetable>(Vegetable(name = author.name!!, category = author.category!!, thumbnail = 999, description = author.description,stock =  author.units?.toInt(), price = author.price?.toDouble(), weight = "229g", url = author.imgurl))
+                                usermap.put(author.userName!!, new_vegetable)
+                            } else {
+                                var old_vegetable: MutableList<Vegetable> = usermap.getValue(author.userName!!)
+                                old_vegetable.add((Vegetable(name = author.name!!, category = author.category!!, thumbnail = 999, description = author.description,stock =  author.units?.toInt(), price = author.price?.toDouble(), weight = "229g", url = author.imgurl)))
+                            }
+//                            vegetables_1.add(Vegetable(name = author.name!!, category = author.category!!, thumbnail = 999, description = author.description, stock = 10, price = author.price?.toDouble(), weight = "229g", url = author.imgurl))
                         }
-                        println(author)
+
+
 //                        author?.let { vegetables_1.add(it) }
                     }
-                    paa.add(Category("ihbwc", vegetables_1))
+                    for ((key, value) in usermap) {
+                        data_parents.add(Category(key, value.toList()))
+                    }
+                    parents = data_parents
+
                     recyclerView.apply {
                         layoutManager = LinearLayoutManager(
                                 context,
@@ -345,18 +363,76 @@ class home : Fragment() {
                         )
 
                         adapter = ParentRecyclerViewAdapter(
-                                paa
+                                data_parents
                         )
 
 
 //            layoutParams= ConstraintLayout.LayoutParams(ConstraintLayout.LayoutParams.MATCH_PARENT,40)
 
                     }
-                    vegetables_3 = vegetables_1
+
 
                 }
             }
         })
+
+    }
+    fun wholeFetchVegetbles(dbitems: DatabaseReference) {
+        wholeusermap= hashMapOf()
+        dbitems.addValueEventListener(object : ValueEventListener {
+            override fun onCancelled(error: DatabaseError) {}
+
+            override fun onDataChange(snapshot: DataSnapshot) {
+                if (snapshot.exists()) {
+                    val vegetables_1 = mutableListOf<Vegetable>()
+                    val data_parents = mutableListOf<Category>()
+                    for (authorSnapshot in snapshot.children) {
+
+                        val author = authorSnapshot.getValue(FoodItem::class.java)
+                        if (author != null) {
+                            if (author.userName.isNullOrEmpty()) {
+                                author.userName = "other"
+                            }
+                            if (wholeusermap[author.userName!!] == null) {
+
+                                var new_vegetable = mutableListOf<Vegetable>(Vegetable(name = author.name!!, category = author.category!!, thumbnail = 999, description = author.description, stock = author.units?.toInt(), price = author.price?.toDouble(), weight = "229g", url = author.imgurl))
+                                wholeusermap.put(author.userName!!, new_vegetable)
+                            } else {
+                                var old_vegetable: MutableList<Vegetable> = usermap.getValue(author.userName!!)
+                                old_vegetable.add((Vegetable(name = author.name!!, category = author.category!!, thumbnail = 999, description = author.description, stock = author.units?.toInt(), price = author.price?.toDouble(), weight = "229g", url = author.imgurl)))
+                            }
+//                            vegetables_1.add(Vegetable(name = author.name!!, category = author.category!!, thumbnail = 999, description = author.description, stock = 10, price = author.price?.toDouble(), weight = "229g", url = author.imgurl))
+                        }
+
+
+//                        author?.let { vegetables_1.add(it) }
+                    }
+                    for ((key, value) in wholeusermap) {
+                        data_parents.add(Category(key, value.toList()))
+                    }
+                    wholeparents = data_parents
+
+                    recyclerView.apply {
+                        layoutManager = LinearLayoutManager(
+                                context,
+                                RecyclerView.VERTICAL,
+                                false
+                        )
+
+                        adapter = ParentRecyclerViewAdapter(
+                                data_parents
+                        )
+
+
+//            layoutParams= ConstraintLayout.LayoutParams(ConstraintLayout.LayoutParams.MATCH_PARENT,40)
+
+                    }
+
+
+                }
+            }
+        })
+
     }
 
 

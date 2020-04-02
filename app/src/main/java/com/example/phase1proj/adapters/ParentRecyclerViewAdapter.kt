@@ -4,20 +4,21 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.*
+import android.widget.TextView
+import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.phase1proj.views.CategoryListActivity
 import com.example.phase1proj.R
 import com.example.phase1proj.models.Category
+import com.example.phase1proj.views.CategoryListActivity
 import kotlinx.android.synthetic.main.parent_view_list.view.*
 
 class ParentRecyclerViewAdapter(
-    private val parentList: List<Category>
+        private val parentList: List<Category>
 ) :
-    RecyclerView.Adapter<ParentRecyclerViewAdapter.ViewHolder>() {
+        RecyclerView.Adapter<ParentRecyclerViewAdapter.ViewHolder>() {
 
     private val viewPool = RecyclerView.RecycledViewPool()
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -32,30 +33,32 @@ class ParentRecyclerViewAdapter(
         val parent = parentList[position]
 
         holder.textLayout.setOnClickListener {
-            openActivity(holder)
+            openActivity(holder, parent)
             Toast.makeText(holder.textLayout.context, holder.textView.text, Toast.LENGTH_LONG)
-            .show() }
+                    .show()
+        }
         holder.textView.setOnClickListener {
-            openActivity(holder)
+            openActivity(holder, parent)
             Toast.makeText(holder.textView.context, holder.textView.text, Toast.LENGTH_LONG)
-            .show() }
+                    .show()
+        }
         holder.textView.text = parentList[position].name
 
         holder.recyclerView.apply {
-            layoutManager = GridLayoutManager(holder.recyclerView.context,1,GridLayoutManager.HORIZONTAL,false)
+            layoutManager = GridLayoutManager(holder.recyclerView.context, 1, GridLayoutManager.HORIZONTAL, false)
             adapter =
-                ChildRecyclerViewAdapter(parent.children)
+                    ChildRecyclerViewAdapter(parent.children)
 
             //recycledViewPool=viewPool
         }
     }
 
-    private fun openActivity(holder: ViewHolder) {
+    private fun openActivity(holder: ViewHolder, children: Category) {
 
-        val intent = Intent(holder.textView.context,
-            CategoryListActivity::class.java)
-        intent.putExtra("categoryName",holder.textView.text)
-        startActivity(holder.textView.context,intent,null)
+        val intent = Intent(holder.textLayout.context, CategoryListActivity::class.java)
+//        intent.putExtra("categoryName",holder.textView.text)
+        intent.putExtra("vegetableList", children)
+        startActivity(holder.textLayout.context, intent, null)
 
     }
 
@@ -65,12 +68,14 @@ class ParentRecyclerViewAdapter(
     }
 
 
-   inner class ViewHolder(itemsView: View) : RecyclerView.ViewHolder(itemsView) {
-        var recyclerView:RecyclerView = itemsView.recyclerChild
+    inner class ViewHolder(itemsView: View) : RecyclerView.ViewHolder(itemsView) {
+        var recyclerView: RecyclerView = itemsView.recyclerChild
         var textView: TextView = itemsView.textView
-        var textLayout:ConstraintLayout =itemsView.textLayout
+        var textLayout: ConstraintLayout = itemsView.textLayout
 
 
     }
 
 }
+
+

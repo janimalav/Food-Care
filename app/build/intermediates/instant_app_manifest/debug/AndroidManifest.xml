@@ -56,6 +56,10 @@
         </service>
 
         <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.example.phase1proj.com.squareup.picasso"
+            android:exported="false" />
+        <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
             android:authorities="com.example.phase1proj.firebaseinitprovider"
             android:exported="false"

@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.phase1proj.R
 import com.example.phase1proj.adapters.SpecificCategoryListAdapter
+import com.example.phase1proj.models.Category
 import com.example.phase1proj.models.Vegetable
 import kotlinx.android.synthetic.main.categorylist.*
 
@@ -28,8 +29,11 @@ class CategoryListActivity : AppCompatActivity() {
             }
 
         })
-        val categoryName = intent.getStringExtra("categoryName")
-        headTitile.text = categoryName
+        var itemDetails = intent.getSerializableExtra("vegetableList") as? Category
+//        val categoryName = intent.getStringExtra("categoryName")
+        if (itemDetails != null) {
+            headTitile.text = itemDetails.name
+        }
         recyclerView = categoryListRecycler
         recyclerView.apply {
             layoutManager = GridLayoutManager(
@@ -38,10 +42,12 @@ class CategoryListActivity : AppCompatActivity() {
                     GridLayoutManager.VERTICAL,
                     false
             )
-            adapter =
-                    SpecificCategoryListAdapter(
-                            getCategoryList(categoryName, 40)
-                    )
+            if (itemDetails != null) {
+                adapter =
+                        SpecificCategoryListAdapter(
+                                itemDetails.children
+                        )
+            }
         }
     }
 
