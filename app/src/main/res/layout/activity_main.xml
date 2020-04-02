@@ -16,7 +16,11 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationBar"
         android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="This is main activity" />
         android:layout_gravity="bottom"
         android:background="@android:color/white"
         app:itemIconTint="@color/bottomnav"
