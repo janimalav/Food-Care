@@ -5,7 +5,7 @@ import java.io.Serializable
 class Vegetable : Serializable {
     var name: String = ""
         private set
-    var category: String= ""
+    var category: String = ""
         private set
     var thumbnail: Int? = null
         private set
@@ -17,15 +17,17 @@ class Vegetable : Serializable {
         private set
     var weight: String? = null
         private set
+    var url: String? = null
+        private set
 
     constructor()
     constructor(
-        name: String,
-        category: String,
-        thumbnail: Int?,
-        description: String?,
-        stock: Int?,
-        price: Double?, weight: String?
+            name: String,
+            category: String,
+            thumbnail: Int?,
+            description: String?,
+            stock: Int?,
+            price: Double?, weight: String?, url: String? = ""
     ) {
         this.name = name
         this.category = category
@@ -34,6 +36,7 @@ class Vegetable : Serializable {
         this.stock = stock
         this.price = price
         this.weight = weight
+        this.url = url
     }
 
 }

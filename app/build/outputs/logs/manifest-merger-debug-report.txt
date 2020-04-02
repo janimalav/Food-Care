@@ -4,37 +4,49 @@ ADDED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:2:1-25:12
 INJECTED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:2:1-25:12
 INJECTED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:2:1-25:12
 INJECTED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:2:1-25:12
-MERGED from [androidx.databinding:databinding-adapters:3.5.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/fe58d87a8b19b8812635b179f2e7f0d2/databinding-adapters-3.5.3/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.databinding:databinding-runtime:3.5.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/549c9c617b0dded8ccd25338c7272a25/databinding-runtime-3.5.3/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.material:material:1.1.0-alpha10] /home/arjun/.gradle/caches/transforms-2/files-2.1/5835c5d8117d1574323c90252c6aa619/material-1.1.0-alpha10/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.cardview:cardview:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/dfb1f22e942c156be6987681931b441d/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.cepheuen.elegant-number-button:lib:1.0.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/864a98419a9342de20e96826eb050d0f/lib-1.0.3/AndroidManifest.xml:2:1-19:12
-MERGED from [androidx.appcompat:appcompat:1.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/d09e9dba25c33becf3450cb4a324c0f2/appcompat-1.1.0-rc01/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.viewpager2:viewpager2:1.0.0-beta03] /home/arjun/.gradle/caches/transforms-2/files-2.1/87a701f6b5f2cefc0a23b00328c48a06/viewpager2-1.0.0-beta03/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0-beta01] /home/arjun/.gradle/caches/transforms-2/files-2.1/f2acdbc09fe8ae8c611beae305798ef8/recyclerview-1.1.0-beta01/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.core:core-ktx:1.0.2] /home/arjun/.gradle/caches/transforms-2/files-2.1/66e2865556a6c9354acff342343505fa/core-ktx-1.0.2/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/140e197d83343f156dc84b9dfd575292/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0-beta01] /home/arjun/.gradle/caches/transforms-2/files-2.1/7cb02f6b1913d64c4857e3acecdc0d31/coordinatorlayout-1.1.0-beta01/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.transition:transition:1.0.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/de34260a4a02265cf87822c3c6dce9f5/transition-1.0.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/d4ee78c80a7f2cc0a3744150ec6870ef/appcompat-resources-1.1.0-rc01/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/e00df62a7ca7e89895bc14adf07095e3/vectordrawable-animated-1.1.0-rc01/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/20cb74e6edc0568e878a4c78f155ad71/vectordrawable-1.1.0-rc01/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/4681ba69b992d1066d0f86ff962fa316/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.fragment:fragment:1.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/82739f91dd265197fc2dabaa95d8ad03/fragment-1.1.0-rc01/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/29a6593c42d1f7975c962d8d95b5ed40/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/e7c663d08d0478d87f07969d53991dd8/customview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/9d820099421ea00e96b2625ea6c19c4c/loader-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.0.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/15d18ce6a6bc53b3c389158f8b52ea98/activity-1.0.0-rc01/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.core:core:1.1.0-rc03] /home/arjun/.gradle/caches/transforms-2/files-2.1/9a1b943a949c06a0c1efceee7c058dc0/core-1.1.0-rc03/AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/9673a7818419bc84e813939080341e4b/lifecycle-runtime-2.1.0-rc01/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/2958bfeff871706e37e023803895bb19/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/12e3091321384669e8f586318ef1d685/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/80dd32953110883137ec75a8abc98f6f/lifecycle-viewmodel-2.1.0-rc01/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.savedstate:savedstate:1.0.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/1ac05e737742c3e90adab3db94661068/savedstate-1.0.0-rc01/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/225c82d8c731985fb415caed199cb7eb/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/09e0734645fd0f7289fcd4a5b87c7ba7/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/e4a3d379d1bcbe285b89607fcaeb9e70/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/87ae084eb3df2dbaca54f0e05c8f6900/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.databinding:databinding-adapters:3.5.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/55c50ead36df9d691bd2bf1287b76c0c/databinding-adapters-3.5.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.databinding:databinding-runtime:3.5.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/d808052268ec5685efb26f17efffab85/databinding-runtime-3.5.3/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.material:material:1.1.0-alpha10] /home/arjun/.gradle/caches/transforms-2/files-2.1/41d79cdf363b9a204eee37926bd85aba/material-1.1.0-alpha10/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/f809fd1225ba81016f01f0b8fea394e2/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-database-ktx:19.2.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/e7682c24a0cfa29882861ba34748a7ec/firebase-database-ktx-19.2.1/AndroidManifest.xml:2:1-21:12
+MERGED from [com.google.firebase:firebase-storage-ktx:19.1.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/5bc13125a3aa1aa1caf6e966aeb70b90/firebase-storage-ktx-19.1.1/AndroidManifest.xml:2:1-21:12
+MERGED from [com.google.firebase:firebase-common-ktx:19.3.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/30adef54c1e292c1ca75877ac279b97c/firebase-common-ktx-19.3.0/AndroidManifest.xml:2:1-21:12
+MERGED from [com.cepheuen.elegant-number-button:lib:1.0.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/d7a7133eef8fe91580a7d2b3317c270e/lib-1.0.3/AndroidManifest.xml:2:1-19:12
+MERGED from [androidx.appcompat:appcompat:1.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/f000dbc13dae948c70750715323d16f3/appcompat-1.1.0-rc01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0-beta03] /home/arjun/.gradle/caches/transforms-2/files-2.1/29e4493a58b7c27c7403b26f43a1bc6a/viewpager2-1.0.0-beta03/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0-beta01] /home/arjun/.gradle/caches/transforms-2/files-2.1/f6849d1fe2f76b04010c7b0edc5d39eb/recyclerview-1.1.0-beta01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.0.2] /home/arjun/.gradle/caches/transforms-2/files-2.1/c76db0716098f48aa0dd1f9f9e0c6d6d/core-ktx-1.0.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/22841afeb2e705d1b47efed98178f869/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0-beta01] /home/arjun/.gradle/caches/transforms-2/files-2.1/9ec81b6943e4f4ea515869ce901251df/coordinatorlayout-1.1.0-beta01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.0.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/d4b569b92adfa2ca60bd527932267fa4/transition-1.0.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/a307d458c44bdfde6cb378beb56dc879/appcompat-resources-1.1.0-rc01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/52d5071dbded666a311e550690eb588a/vectordrawable-animated-1.1.0-rc01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/c064d3e4b6b4281337fd7831f2930988/vectordrawable-1.1.0-rc01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/99a06d3865843052fa328cbf9909470f/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-database:19.2.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/b9b733469253c7267e84e4b763bf58a3/firebase-database-19.2.1/AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.firebase:firebase-storage:19.1.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/217b649ea2702e6b446e0698ee4645df/firebase-storage-19.1.1/AndroidManifest.xml:15:1-39:12
+MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/22e26deb32ecb62713669e6ea7d7fe09/firebase-auth-interop-18.0.0/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-common:19.3.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/2bb5466289453c567251b3132b4ba1e4/jetified-firebase-common-19.3.0/AndroidManifest.xml:15:1-39:12
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/f74c49aa4adde6729b5af83287061190/play-services-base-17.0.0/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/e51ebfd944a3889dbba56386aa920a4e/play-services-tasks-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/e80f8761bdb72298658f2999178e3c58/jetified-play-services-basement-17.0.0/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/f11f5a5c2ef1af1da54017a825bb2e20/fragment-1.1.0-rc01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/96b1abdf3edec09514ab482d220e68f2/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/bb59b0d043c5ad990cb100b6e4a1991a/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/935bec7582cf8e3c31757c1063c37b7a/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/eb0085499fc5c7fa51f595d81ffdd143/activity-1.0.0-rc01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.1.0-rc03] /home/arjun/.gradle/caches/transforms-2/files-2.1/21f1096c407400fe05ee60731aa7a29a/core-1.1.0-rc03/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/6fcb4146b0485bde922c31fca7a1b399/lifecycle-runtime-2.1.0-rc01/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/6ca62f24ed8751e13c1082f4aa37ed5c/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.firebase:firebase-components:16.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/1883c3e1ce707b1fd250db498564d4b9/jetified-firebase-components-16.0.0/AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/8a4dd93bde8b2b3046201356c924ed68/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/cf5facff89cf112f015ff6ae9d3fe2a4/lifecycle-viewmodel-2.1.0-rc01/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/ab8002f783ae748b3c114eab646047f6/savedstate-1.0.0-rc01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/b093a1596784e92824634831b57b5c0b/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/06bde8e1d844024c567dd7c2dd3d2922/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/38cd74dfc5924451db0b6de2def32b5c/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/433a818557ed1c5d95c05a61edaeddb5/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-database-collection:17.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/a75e15ad0f47d453a4367c4cfd1fae66/firebase-database-collection-17.0.0/AndroidManifest.xml:2:1-7:12
 INJECTED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:2:1-25:12
 INJECTED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:2:1-25:12
 INJECTED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:2:1-25:12
@@ -54,18 +66,38 @@ INJECTED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:2:1-25:12
 		ADDED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:2:11-69
 application
 ADDED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:5:5-23:19
-MERGED from [com.google.android.material:material:1.1.0-alpha10] /home/arjun/.gradle/caches/transforms-2/files-2.1/5835c5d8117d1574323c90252c6aa619/material-1.1.0-alpha10/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.1.0-alpha10] /home/arjun/.gradle/caches/transforms-2/files-2.1/5835c5d8117d1574323c90252c6aa619/material-1.1.0-alpha10/AndroidManifest.xml:22:5-20
-MERGED from [com.cepheuen.elegant-number-button:lib:1.0.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/864a98419a9342de20e96826eb050d0f/lib-1.0.3/AndroidManifest.xml:11:5-17:19
-MERGED from [com.cepheuen.elegant-number-button:lib:1.0.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/864a98419a9342de20e96826eb050d0f/lib-1.0.3/AndroidManifest.xml:11:5-17:19
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/140e197d83343f156dc84b9dfd575292/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/140e197d83343f156dc84b9dfd575292/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
-MERGED from [androidx.core:core:1.1.0-rc03] /home/arjun/.gradle/caches/transforms-2/files-2.1/9a1b943a949c06a0c1efceee7c058dc0/core-1.1.0-rc03/AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.1.0-rc03] /home/arjun/.gradle/caches/transforms-2/files-2.1/9a1b943a949c06a0c1efceee7c058dc0/core-1.1.0-rc03/AndroidManifest.xml:24:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/2958bfeff871706e37e023803895bb19/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/2958bfeff871706e37e023803895bb19/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [com.google.android.material:material:1.1.0-alpha10] /home/arjun/.gradle/caches/transforms-2/files-2.1/41d79cdf363b9a204eee37926bd85aba/material-1.1.0-alpha10/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.1.0-alpha10] /home/arjun/.gradle/caches/transforms-2/files-2.1/41d79cdf363b9a204eee37926bd85aba/material-1.1.0-alpha10/AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-database-ktx:19.2.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/e7682c24a0cfa29882861ba34748a7ec/firebase-database-ktx-19.2.1/AndroidManifest.xml:11:5-19:19
+MERGED from [com.google.firebase:firebase-database-ktx:19.2.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/e7682c24a0cfa29882861ba34748a7ec/firebase-database-ktx-19.2.1/AndroidManifest.xml:11:5-19:19
+MERGED from [com.google.firebase:firebase-storage-ktx:19.1.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/5bc13125a3aa1aa1caf6e966aeb70b90/firebase-storage-ktx-19.1.1/AndroidManifest.xml:11:5-19:19
+MERGED from [com.google.firebase:firebase-storage-ktx:19.1.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/5bc13125a3aa1aa1caf6e966aeb70b90/firebase-storage-ktx-19.1.1/AndroidManifest.xml:11:5-19:19
+MERGED from [com.google.firebase:firebase-common-ktx:19.3.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/30adef54c1e292c1ca75877ac279b97c/firebase-common-ktx-19.3.0/AndroidManifest.xml:11:5-19:19
+MERGED from [com.google.firebase:firebase-common-ktx:19.3.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/30adef54c1e292c1ca75877ac279b97c/firebase-common-ktx-19.3.0/AndroidManifest.xml:11:5-19:19
+MERGED from [com.cepheuen.elegant-number-button:lib:1.0.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/d7a7133eef8fe91580a7d2b3317c270e/lib-1.0.3/AndroidManifest.xml:11:5-17:19
+MERGED from [com.cepheuen.elegant-number-button:lib:1.0.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/d7a7133eef8fe91580a7d2b3317c270e/lib-1.0.3/AndroidManifest.xml:11:5-17:19
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/22841afeb2e705d1b47efed98178f869/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/22841afeb2e705d1b47efed98178f869/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [com.google.firebase:firebase-database:19.2.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/b9b733469253c7267e84e4b763bf58a3/firebase-database-19.2.1/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-database:19.2.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/b9b733469253c7267e84e4b763bf58a3/firebase-database-19.2.1/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-storage:19.1.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/217b649ea2702e6b446e0698ee4645df/firebase-storage-19.1.1/AndroidManifest.xml:29:5-37:19
+MERGED from [com.google.firebase:firebase-storage:19.1.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/217b649ea2702e6b446e0698ee4645df/firebase-storage-19.1.1/AndroidManifest.xml:29:5-37:19
+MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/22e26deb32ecb62713669e6ea7d7fe09/firebase-auth-interop-18.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/22e26deb32ecb62713669e6ea7d7fe09/firebase-auth-interop-18.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-common:19.3.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/2bb5466289453c567251b3132b4ba1e4/jetified-firebase-common-19.3.0/AndroidManifest.xml:25:5-37:19
+MERGED from [com.google.firebase:firebase-common:19.3.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/2bb5466289453c567251b3132b4ba1e4/jetified-firebase-common-19.3.0/AndroidManifest.xml:25:5-37:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/f74c49aa4adde6729b5af83287061190/play-services-base-17.0.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/f74c49aa4adde6729b5af83287061190/play-services-base-17.0.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/e51ebfd944a3889dbba56386aa920a4e/play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/e51ebfd944a3889dbba56386aa920a4e/play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/e80f8761bdb72298658f2999178e3c58/jetified-play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/e80f8761bdb72298658f2999178e3c58/jetified-play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.1.0-rc03] /home/arjun/.gradle/caches/transforms-2/files-2.1/21f1096c407400fe05ee60731aa7a29a/core-1.1.0-rc03/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0-rc03] /home/arjun/.gradle/caches/transforms-2/files-2.1/21f1096c407400fe05ee60731aa7a29a/core-1.1.0-rc03/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/6ca62f24ed8751e13c1082f4aa37ed5c/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/6ca62f24ed8751e13c1082f4aa37ed5c/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.1.0-rc03] /home/arjun/.gradle/caches/transforms-2/files-2.1/9a1b943a949c06a0c1efceee7c058dc0/core-1.1.0-rc03/AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.1.0-rc03] /home/arjun/.gradle/caches/transforms-2/files-2.1/21f1096c407400fe05ee60731aa7a29a/core-1.1.0-rc03/AndroidManifest.xml:24:18-86
 	android:supportsRtl
 		ADDED from /home/arjun/android_git/app/src/main/AndroidManifest.xml:10:9-35
 	android:label
@@ -104,68 +136,92 @@ uses-sdk
 INJECTED from /home/arjun/android_git/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/arjun/android_git/app/src/main/AndroidManifest.xml
 INJECTED from /home/arjun/android_git/app/src/main/AndroidManifest.xml
-MERGED from [androidx.databinding:databinding-adapters:3.5.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/fe58d87a8b19b8812635b179f2e7f0d2/databinding-adapters-3.5.3/AndroidManifest.xml:22:5-44
-MERGED from [androidx.databinding:databinding-adapters:3.5.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/fe58d87a8b19b8812635b179f2e7f0d2/databinding-adapters-3.5.3/AndroidManifest.xml:22:5-44
-MERGED from [androidx.databinding:databinding-runtime:3.5.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/549c9c617b0dded8ccd25338c7272a25/databinding-runtime-3.5.3/AndroidManifest.xml:22:5-44
-MERGED from [androidx.databinding:databinding-runtime:3.5.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/549c9c617b0dded8ccd25338c7272a25/databinding-runtime-3.5.3/AndroidManifest.xml:22:5-44
-MERGED from [com.google.android.material:material:1.1.0-alpha10] /home/arjun/.gradle/caches/transforms-2/files-2.1/5835c5d8117d1574323c90252c6aa619/material-1.1.0-alpha10/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.1.0-alpha10] /home/arjun/.gradle/caches/transforms-2/files-2.1/5835c5d8117d1574323c90252c6aa619/material-1.1.0-alpha10/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/dfb1f22e942c156be6987681931b441d/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/dfb1f22e942c156be6987681931b441d/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.cepheuen.elegant-number-button:lib:1.0.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/864a98419a9342de20e96826eb050d0f/lib-1.0.3/AndroidManifest.xml:7:5-9:41
-MERGED from [com.cepheuen.elegant-number-button:lib:1.0.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/864a98419a9342de20e96826eb050d0f/lib-1.0.3/AndroidManifest.xml:7:5-9:41
-MERGED from [androidx.appcompat:appcompat:1.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/d09e9dba25c33becf3450cb4a324c0f2/appcompat-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat:1.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/d09e9dba25c33becf3450cb4a324c0f2/appcompat-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0-beta03] /home/arjun/.gradle/caches/transforms-2/files-2.1/87a701f6b5f2cefc0a23b00328c48a06/viewpager2-1.0.0-beta03/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0-beta03] /home/arjun/.gradle/caches/transforms-2/files-2.1/87a701f6b5f2cefc0a23b00328c48a06/viewpager2-1.0.0-beta03/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0-beta01] /home/arjun/.gradle/caches/transforms-2/files-2.1/f2acdbc09fe8ae8c611beae305798ef8/recyclerview-1.1.0-beta01/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0-beta01] /home/arjun/.gradle/caches/transforms-2/files-2.1/f2acdbc09fe8ae8c611beae305798ef8/recyclerview-1.1.0-beta01/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core-ktx:1.0.2] /home/arjun/.gradle/caches/transforms-2/files-2.1/66e2865556a6c9354acff342343505fa/core-ktx-1.0.2/AndroidManifest.xml:5:5-44
-MERGED from [androidx.core:core-ktx:1.0.2] /home/arjun/.gradle/caches/transforms-2/files-2.1/66e2865556a6c9354acff342343505fa/core-ktx-1.0.2/AndroidManifest.xml:5:5-44
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/140e197d83343f156dc84b9dfd575292/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/140e197d83343f156dc84b9dfd575292/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0-beta01] /home/arjun/.gradle/caches/transforms-2/files-2.1/7cb02f6b1913d64c4857e3acecdc0d31/coordinatorlayout-1.1.0-beta01/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0-beta01] /home/arjun/.gradle/caches/transforms-2/files-2.1/7cb02f6b1913d64c4857e3acecdc0d31/coordinatorlayout-1.1.0-beta01/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.0.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/de34260a4a02265cf87822c3c6dce9f5/transition-1.0.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.transition:transition:1.0.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/de34260a4a02265cf87822c3c6dce9f5/transition-1.0.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/d4ee78c80a7f2cc0a3744150ec6870ef/appcompat-resources-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/d4ee78c80a7f2cc0a3744150ec6870ef/appcompat-resources-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/e00df62a7ca7e89895bc14adf07095e3/vectordrawable-animated-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/e00df62a7ca7e89895bc14adf07095e3/vectordrawable-animated-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/20cb74e6edc0568e878a4c78f155ad71/vectordrawable-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/20cb74e6edc0568e878a4c78f155ad71/vectordrawable-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/4681ba69b992d1066d0f86ff962fa316/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/4681ba69b992d1066d0f86ff962fa316/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/82739f91dd265197fc2dabaa95d8ad03/fragment-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/82739f91dd265197fc2dabaa95d8ad03/fragment-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/29a6593c42d1f7975c962d8d95b5ed40/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/29a6593c42d1f7975c962d8d95b5ed40/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/e7c663d08d0478d87f07969d53991dd8/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/e7c663d08d0478d87f07969d53991dd8/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/9d820099421ea00e96b2625ea6c19c4c/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/9d820099421ea00e96b2625ea6c19c4c/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.0.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/15d18ce6a6bc53b3c389158f8b52ea98/activity-1.0.0-rc01/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.0.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/15d18ce6a6bc53b3c389158f8b52ea98/activity-1.0.0-rc01/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.1.0-rc03] /home/arjun/.gradle/caches/transforms-2/files-2.1/9a1b943a949c06a0c1efceee7c058dc0/core-1.1.0-rc03/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.1.0-rc03] /home/arjun/.gradle/caches/transforms-2/files-2.1/9a1b943a949c06a0c1efceee7c058dc0/core-1.1.0-rc03/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/9673a7818419bc84e813939080341e4b/lifecycle-runtime-2.1.0-rc01/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/9673a7818419bc84e813939080341e4b/lifecycle-runtime-2.1.0-rc01/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/2958bfeff871706e37e023803895bb19/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/2958bfeff871706e37e023803895bb19/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/12e3091321384669e8f586318ef1d685/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/12e3091321384669e8f586318ef1d685/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/80dd32953110883137ec75a8abc98f6f/lifecycle-viewmodel-2.1.0-rc01/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/80dd32953110883137ec75a8abc98f6f/lifecycle-viewmodel-2.1.0-rc01/AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.0.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/1ac05e737742c3e90adab3db94661068/savedstate-1.0.0-rc01/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/1ac05e737742c3e90adab3db94661068/savedstate-1.0.0-rc01/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/225c82d8c731985fb415caed199cb7eb/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/225c82d8c731985fb415caed199cb7eb/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/09e0734645fd0f7289fcd4a5b87c7ba7/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/09e0734645fd0f7289fcd4a5b87c7ba7/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/e4a3d379d1bcbe285b89607fcaeb9e70/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/e4a3d379d1bcbe285b89607fcaeb9e70/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/87ae084eb3df2dbaca54f0e05c8f6900/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/87ae084eb3df2dbaca54f0e05c8f6900/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:databinding-adapters:3.5.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/55c50ead36df9d691bd2bf1287b76c0c/databinding-adapters-3.5.3/AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-adapters:3.5.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/55c50ead36df9d691bd2bf1287b76c0c/databinding-adapters-3.5.3/AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-runtime:3.5.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/d808052268ec5685efb26f17efffab85/databinding-runtime-3.5.3/AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-runtime:3.5.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/d808052268ec5685efb26f17efffab85/databinding-runtime-3.5.3/AndroidManifest.xml:22:5-44
+MERGED from [com.google.android.material:material:1.1.0-alpha10] /home/arjun/.gradle/caches/transforms-2/files-2.1/41d79cdf363b9a204eee37926bd85aba/material-1.1.0-alpha10/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0-alpha10] /home/arjun/.gradle/caches/transforms-2/files-2.1/41d79cdf363b9a204eee37926bd85aba/material-1.1.0-alpha10/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/f809fd1225ba81016f01f0b8fea394e2/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/f809fd1225ba81016f01f0b8fea394e2/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-database-ktx:19.2.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/e7682c24a0cfa29882861ba34748a7ec/firebase-database-ktx-19.2.1/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-database-ktx:19.2.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/e7682c24a0cfa29882861ba34748a7ec/firebase-database-ktx-19.2.1/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-storage-ktx:19.1.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/5bc13125a3aa1aa1caf6e966aeb70b90/firebase-storage-ktx-19.1.1/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-storage-ktx:19.1.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/5bc13125a3aa1aa1caf6e966aeb70b90/firebase-storage-ktx-19.1.1/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common-ktx:19.3.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/30adef54c1e292c1ca75877ac279b97c/firebase-common-ktx-19.3.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common-ktx:19.3.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/30adef54c1e292c1ca75877ac279b97c/firebase-common-ktx-19.3.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.cepheuen.elegant-number-button:lib:1.0.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/d7a7133eef8fe91580a7d2b3317c270e/lib-1.0.3/AndroidManifest.xml:7:5-9:41
+MERGED from [com.cepheuen.elegant-number-button:lib:1.0.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/d7a7133eef8fe91580a7d2b3317c270e/lib-1.0.3/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.appcompat:appcompat:1.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/f000dbc13dae948c70750715323d16f3/appcompat-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/f000dbc13dae948c70750715323d16f3/appcompat-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0-beta03] /home/arjun/.gradle/caches/transforms-2/files-2.1/29e4493a58b7c27c7403b26f43a1bc6a/viewpager2-1.0.0-beta03/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0-beta03] /home/arjun/.gradle/caches/transforms-2/files-2.1/29e4493a58b7c27c7403b26f43a1bc6a/viewpager2-1.0.0-beta03/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0-beta01] /home/arjun/.gradle/caches/transforms-2/files-2.1/f6849d1fe2f76b04010c7b0edc5d39eb/recyclerview-1.1.0-beta01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0-beta01] /home/arjun/.gradle/caches/transforms-2/files-2.1/f6849d1fe2f76b04010c7b0edc5d39eb/recyclerview-1.1.0-beta01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.0.2] /home/arjun/.gradle/caches/transforms-2/files-2.1/c76db0716098f48aa0dd1f9f9e0c6d6d/core-ktx-1.0.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.0.2] /home/arjun/.gradle/caches/transforms-2/files-2.1/c76db0716098f48aa0dd1f9f9e0c6d6d/core-ktx-1.0.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/22841afeb2e705d1b47efed98178f869/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/arjun/.gradle/caches/transforms-2/files-2.1/22841afeb2e705d1b47efed98178f869/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0-beta01] /home/arjun/.gradle/caches/transforms-2/files-2.1/9ec81b6943e4f4ea515869ce901251df/coordinatorlayout-1.1.0-beta01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0-beta01] /home/arjun/.gradle/caches/transforms-2/files-2.1/9ec81b6943e4f4ea515869ce901251df/coordinatorlayout-1.1.0-beta01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.0.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/d4b569b92adfa2ca60bd527932267fa4/transition-1.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/d4b569b92adfa2ca60bd527932267fa4/transition-1.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/a307d458c44bdfde6cb378beb56dc879/appcompat-resources-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/a307d458c44bdfde6cb378beb56dc879/appcompat-resources-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/52d5071dbded666a311e550690eb588a/vectordrawable-animated-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/52d5071dbded666a311e550690eb588a/vectordrawable-animated-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/c064d3e4b6b4281337fd7831f2930988/vectordrawable-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/c064d3e4b6b4281337fd7831f2930988/vectordrawable-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/99a06d3865843052fa328cbf9909470f/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/99a06d3865843052fa328cbf9909470f/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-database:19.2.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/b9b733469253c7267e84e4b763bf58a3/firebase-database-19.2.1/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-database:19.2.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/b9b733469253c7267e84e4b763bf58a3/firebase-database-19.2.1/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-storage:19.1.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/217b649ea2702e6b446e0698ee4645df/firebase-storage-19.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-storage:19.1.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/217b649ea2702e6b446e0698ee4645df/firebase-storage-19.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/22e26deb32ecb62713669e6ea7d7fe09/firebase-auth-interop-18.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/22e26deb32ecb62713669e6ea7d7fe09/firebase-auth-interop-18.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common:19.3.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/2bb5466289453c567251b3132b4ba1e4/jetified-firebase-common-19.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-common:19.3.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/2bb5466289453c567251b3132b4ba1e4/jetified-firebase-common-19.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/f74c49aa4adde6729b5af83287061190/play-services-base-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/f74c49aa4adde6729b5af83287061190/play-services-base-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/e51ebfd944a3889dbba56386aa920a4e/play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/e51ebfd944a3889dbba56386aa920a4e/play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/e80f8761bdb72298658f2999178e3c58/jetified-play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/e80f8761bdb72298658f2999178e3c58/jetified-play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/f11f5a5c2ef1af1da54017a825bb2e20/fragment-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/f11f5a5c2ef1af1da54017a825bb2e20/fragment-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/96b1abdf3edec09514ab482d220e68f2/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/96b1abdf3edec09514ab482d220e68f2/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/bb59b0d043c5ad990cb100b6e4a1991a/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/bb59b0d043c5ad990cb100b6e4a1991a/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/935bec7582cf8e3c31757c1063c37b7a/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/935bec7582cf8e3c31757c1063c37b7a/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/eb0085499fc5c7fa51f595d81ffdd143/activity-1.0.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/eb0085499fc5c7fa51f595d81ffdd143/activity-1.0.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0-rc03] /home/arjun/.gradle/caches/transforms-2/files-2.1/21f1096c407400fe05ee60731aa7a29a/core-1.1.0-rc03/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0-rc03] /home/arjun/.gradle/caches/transforms-2/files-2.1/21f1096c407400fe05ee60731aa7a29a/core-1.1.0-rc03/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/6fcb4146b0485bde922c31fca7a1b399/lifecycle-runtime-2.1.0-rc01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/6fcb4146b0485bde922c31fca7a1b399/lifecycle-runtime-2.1.0-rc01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/6ca62f24ed8751e13c1082f4aa37ed5c/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/6ca62f24ed8751e13c1082f4aa37ed5c/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-components:16.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/1883c3e1ce707b1fd250db498564d4b9/jetified-firebase-components-16.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:16.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/1883c3e1ce707b1fd250db498564d4b9/jetified-firebase-components-16.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/8a4dd93bde8b2b3046201356c924ed68/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/8a4dd93bde8b2b3046201356c924ed68/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/cf5facff89cf112f015ff6ae9d3fe2a4/lifecycle-viewmodel-2.1.0-rc01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/cf5facff89cf112f015ff6ae9d3fe2a4/lifecycle-viewmodel-2.1.0-rc01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/ab8002f783ae748b3c114eab646047f6/savedstate-1.0.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0-rc01] /home/arjun/.gradle/caches/transforms-2/files-2.1/ab8002f783ae748b3c114eab646047f6/savedstate-1.0.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/b093a1596784e92824634831b57b5c0b/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/b093a1596784e92824634831b57b5c0b/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/06bde8e1d844024c567dd7c2dd3d2922/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/06bde8e1d844024c567dd7c2dd3d2922/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/38cd74dfc5924451db0b6de2def32b5c/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/38cd74dfc5924451db0b6de2def32b5c/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/433a818557ed1c5d95c05a61edaeddb5/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/433a818557ed1c5d95c05a61edaeddb5/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-database-collection:17.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/a75e15ad0f47d453a4367c4cfd1fae66/firebase-database-collection-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-database-collection:17.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/a75e15ad0f47d453a4367c4cfd1fae66/firebase-database-collection-17.0.0/AndroidManifest.xml:5:5-44
 INJECTED from /home/arjun/android_git/app/src/main/AndroidManifest.xml
 INJECTED from /home/arjun/android_git/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
@@ -176,3 +232,89 @@ INJECTED from /home/arjun/android_git/app/src/main/AndroidManifest.xml
 		INJECTED from /home/arjun/android_git/app/src/main/AndroidManifest.xml
 		ADDED from /home/arjun/android_git/app/src/main/AndroidManifest.xml
 		INJECTED from /home/arjun/android_git/app/src/main/AndroidManifest.xml
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-database-ktx:19.2.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/e7682c24a0cfa29882861ba34748a7ec/firebase-database-ktx-19.2.1/AndroidManifest.xml:12:9-18:19
+MERGED from [com.google.firebase:firebase-storage-ktx:19.1.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/5bc13125a3aa1aa1caf6e966aeb70b90/firebase-storage-ktx-19.1.1/AndroidManifest.xml:12:9-18:19
+MERGED from [com.google.firebase:firebase-storage-ktx:19.1.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/5bc13125a3aa1aa1caf6e966aeb70b90/firebase-storage-ktx-19.1.1/AndroidManifest.xml:12:9-18:19
+MERGED from [com.google.firebase:firebase-common-ktx:19.3.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/30adef54c1e292c1ca75877ac279b97c/firebase-common-ktx-19.3.0/AndroidManifest.xml:12:9-18:19
+MERGED from [com.google.firebase:firebase-common-ktx:19.3.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/30adef54c1e292c1ca75877ac279b97c/firebase-common-ktx-19.3.0/AndroidManifest.xml:12:9-18:19
+MERGED from [com.google.firebase:firebase-database:19.2.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/b9b733469253c7267e84e4b763bf58a3/firebase-database-19.2.1/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-database:19.2.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/b9b733469253c7267e84e4b763bf58a3/firebase-database-19.2.1/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-storage:19.1.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/217b649ea2702e6b446e0698ee4645df/firebase-storage-19.1.1/AndroidManifest.xml:30:9-36:19
+MERGED from [com.google.firebase:firebase-storage:19.1.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/217b649ea2702e6b446e0698ee4645df/firebase-storage-19.1.1/AndroidManifest.xml:30:9-36:19
+MERGED from [com.google.firebase:firebase-common:19.3.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/2bb5466289453c567251b3132b4ba1e4/jetified-firebase-common-19.3.0/AndroidManifest.xml:32:9-36:35
+MERGED from [com.google.firebase:firebase-common:19.3.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/2bb5466289453c567251b3132b4ba1e4/jetified-firebase-common-19.3.0/AndroidManifest.xml:32:9-36:35
+	android:exported
+		ADDED from [com.google.firebase:firebase-database-ktx:19.2.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/e7682c24a0cfa29882861ba34748a7ec/firebase-database-ktx-19.2.1/AndroidManifest.xml:14:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:19.3.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/2bb5466289453c567251b3132b4ba1e4/jetified-firebase-common-19.3.0/AndroidManifest.xml:36:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:19.3.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/2bb5466289453c567251b3132b4ba1e4/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-database-ktx:19.2.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/e7682c24a0cfa29882861ba34748a7ec/firebase-database-ktx-19.2.1/AndroidManifest.xml:13:13-84
+meta-data#com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar
+ADDED from [com.google.firebase:firebase-database-ktx:19.2.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/e7682c24a0cfa29882861ba34748a7ec/firebase-database-ktx-19.2.1/AndroidManifest.xml:15:13-17:85
+	android:value
+		ADDED from [com.google.firebase:firebase-database-ktx:19.2.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/e7682c24a0cfa29882861ba34748a7ec/firebase-database-ktx-19.2.1/AndroidManifest.xml:17:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-database-ktx:19.2.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/e7682c24a0cfa29882861ba34748a7ec/firebase-database-ktx-19.2.1/AndroidManifest.xml:16:17-124
+meta-data#com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageKtxRegistrar
+ADDED from [com.google.firebase:firebase-storage-ktx:19.1.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/5bc13125a3aa1aa1caf6e966aeb70b90/firebase-storage-ktx-19.1.1/AndroidManifest.xml:15:13-17:85
+	android:value
+		ADDED from [com.google.firebase:firebase-storage-ktx:19.1.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/5bc13125a3aa1aa1caf6e966aeb70b90/firebase-storage-ktx-19.1.1/AndroidManifest.xml:17:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-storage-ktx:19.1.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/5bc13125a3aa1aa1caf6e966aeb70b90/firebase-storage-ktx-19.1.1/AndroidManifest.xml:16:17-122
+meta-data#com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar
+ADDED from [com.google.firebase:firebase-common-ktx:19.3.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/30adef54c1e292c1ca75877ac279b97c/firebase-common-ktx-19.3.0/AndroidManifest.xml:15:13-17:85
+	android:value
+		ADDED from [com.google.firebase:firebase-common-ktx:19.3.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/30adef54c1e292c1ca75877ac279b97c/firebase-common-ktx-19.3.0/AndroidManifest.xml:17:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-common-ktx:19.3.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/30adef54c1e292c1ca75877ac279b97c/firebase-common-ktx-19.3.0/AndroidManifest.xml:16:17-113
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.firebase:firebase-database:19.2.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/b9b733469253c7267e84e4b763bf58a3/firebase-database-19.2.1/AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-storage:19.1.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/217b649ea2702e6b446e0698ee4645df/firebase-storage-19.1.1/AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-storage:19.1.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/217b649ea2702e6b446e0698ee4645df/firebase-storage-19.1.1/AndroidManifest.xml:26:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-database:19.2.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/b9b733469253c7267e84e4b763bf58a3/firebase-database-19.2.1/AndroidManifest.xml:25:22-76
+uses-permission#android.permission.INTERNET
+ADDED from [com.google.firebase:firebase-database:19.2.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/b9b733469253c7267e84e4b763bf58a3/firebase-database-19.2.1/AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-storage:19.1.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/217b649ea2702e6b446e0698ee4645df/firebase-storage-19.1.1/AndroidManifest.xml:27:5-67
+MERGED from [com.google.firebase:firebase-storage:19.1.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/217b649ea2702e6b446e0698ee4645df/firebase-storage-19.1.1/AndroidManifest.xml:27:5-67
+	android:name
+		ADDED from [com.google.firebase:firebase-database:19.2.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/b9b733469253c7267e84e4b763bf58a3/firebase-database-19.2.1/AndroidManifest.xml:26:22-64
+meta-data#com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar
+ADDED from [com.google.firebase:firebase-database:19.2.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/b9b733469253c7267e84e4b763bf58a3/firebase-database-19.2.1/AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-database:19.2.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/b9b733469253c7267e84e4b763bf58a3/firebase-database-19.2.1/AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-database:19.2.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/b9b733469253c7267e84e4b763bf58a3/firebase-database-19.2.1/AndroidManifest.xml:33:17-109
+meta-data#com.google.firebase.components:com.google.firebase.storage.StorageRegistrar
+ADDED from [com.google.firebase:firebase-storage:19.1.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/217b649ea2702e6b446e0698ee4645df/firebase-storage-19.1.1/AndroidManifest.xml:33:13-35:85
+	android:value
+		ADDED from [com.google.firebase:firebase-storage:19.1.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/217b649ea2702e6b446e0698ee4645df/firebase-storage-19.1.1/AndroidManifest.xml:35:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-storage:19.1.1] /home/arjun/.gradle/caches/transforms-2/files-2.1/217b649ea2702e6b446e0698ee4645df/firebase-storage-19.1.1/AndroidManifest.xml:34:17-107
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:19.3.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/2bb5466289453c567251b3132b4ba1e4/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:19.3.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/2bb5466289453c567251b3132b4ba1e4/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:19.3.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/2bb5466289453c567251b3132b4ba1e4/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:19.3.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/2bb5466289453c567251b3132b4ba1e4/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:19.3.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/2bb5466289453c567251b3132b4ba1e4/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/f74c49aa4adde6729b5af83287061190/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/f74c49aa4adde6729b5af83287061190/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/f74c49aa4adde6729b5af83287061190/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/f74c49aa4adde6729b5af83287061190/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/e80f8761bdb72298658f2999178e3c58/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/e80f8761bdb72298658f2999178e3c58/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /home/arjun/.gradle/caches/transforms-2/files-2.1/e80f8761bdb72298658f2999178e3c58/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58

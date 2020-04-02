@@ -19,7 +19,9 @@ import com.example.phase1proj.adapters.CategoryLogoViewAdapter
 import com.example.phase1proj.adapters.ParentRecyclerViewAdapter
 import com.example.phase1proj.models.Category
 import com.example.phase1proj.models.CategoryLogo
+import com.example.phase1proj.models.FoodItem
 import com.example.phase1proj.models.Vegetable
+import com.google.firebase.database.*
 
 
 class home : Fragment() {
@@ -28,6 +30,10 @@ class home : Fragment() {
     private lateinit var logorecycler: RecyclerView
     private lateinit var linearLayout: LinearLayout
     private lateinit var searchview: SearchView
+    private val dbitems = FirebaseDatabase.getInstance().getReference("fooditems")
+
+    private lateinit var vegetables_3: List<Vegetable>
+
 
     lateinit var toolbar: ActionBar
     private lateinit var parents: List<Category>
@@ -35,22 +41,27 @@ class home : Fragment() {
 
 
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
+            inflater: LayoutInflater,
+            container: ViewGroup?,
+            savedInstanceState: Bundle?
     ): View? {
         var view = inflater.inflate(R.layout.fragment_home, container, false)
+        vegetables_3 = mutableListOf()
+        fetchVegetbles(dbitems)
+
+
+
 
 
         logorecycler = view.findViewById(R.id.recyclerCategory)
 
         logorecycler.apply {
             layoutManager = GridLayoutManager(
-                context, 1,
-                GridLayoutManager.HORIZONTAL, false
+                    context, 1,
+                    GridLayoutManager.HORIZONTAL, false
             )
             adapter = CategoryLogoViewAdapter(
-                getLogos(2), this@home
+                    getLogos(2), this@home
             )
 
         }
@@ -58,13 +69,13 @@ class home : Fragment() {
         recyclerView = view.findViewById(R.id.recyclerParent)
         recyclerView.apply {
             layoutManager = LinearLayoutManager(
-                context,
-                RecyclerView.VERTICAL,
-                false
+                    context,
+                    RecyclerView.VERTICAL,
+                    false
             )
 
             adapter = ParentRecyclerViewAdapter(
-                getParents(count)
+                    getParents(count)
             )
 
 
@@ -76,7 +87,7 @@ class home : Fragment() {
 
         var noResultsImage = view.findViewById(R.id.noResult) as ImageView
         searchview.setOnQueryTextListener(object :
-            SearchView.OnQueryTextListener {
+                SearchView.OnQueryTextListener {
 
             override fun onQueryTextSubmit(query: String?): Boolean {
                 Toast.makeText(context, "Looking for $query", Toast.LENGTH_LONG).show()
@@ -86,28 +97,28 @@ class home : Fragment() {
                 if (categories.isNotEmpty()) {
                     recyclerView.apply {
                         layoutManager = LinearLayoutManager(
-                            context,
-                            RecyclerView.VERTICAL,
-                            false
+                                context,
+                                RecyclerView.VERTICAL,
+                                false
                         )
                         adapter =
-                            ParentRecyclerViewAdapter(
-                                categories
-                            )
+                                ParentRecyclerViewAdapter(
+                                        categories
+                                )
                         invalidate()
 
                     }
                     logorecycler.visibility = View.VISIBLE
                     logorecycler.apply {
                         layoutManager = GridLayoutManager(
-                            context, 1,
-                            GridLayoutManager.HORIZONTAL, false
+                                context, 1,
+                                GridLayoutManager.HORIZONTAL, false
                         )
                         adapter =
-                            CategoryLogoViewAdapter(
-                                getLogos(2),
-                                this@home
-                            )
+                                CategoryLogoViewAdapter(
+                                        getLogos(2),
+                                        this@home
+                                )
 
                     }
                     recyclerView.visibility = View.VISIBLE
@@ -127,14 +138,14 @@ class home : Fragment() {
                     searchview.clearFocus()
                     recyclerView.apply {
                         layoutManager = LinearLayoutManager(
-                            context,
-                            RecyclerView.VERTICAL,
-                            false
+                                context,
+                                RecyclerView.VERTICAL,
+                                false
                         )
                         adapter =
-                            ParentRecyclerViewAdapter(
-                                getParents(4, newText)
-                            )
+                                ParentRecyclerViewAdapter(
+                                        getParents(4, newText)
+                                )
                         invalidate()
                         recyclerView.visibility = View.VISIBLE
                         logorecycler.visibility = View.VISIBLE
@@ -149,6 +160,7 @@ class home : Fragment() {
                 return false
             }
         })
+        //fetchVegetbles(dbitems)
         return view
 
 //        toolbar = supportActionBar!!
@@ -160,17 +172,17 @@ class home : Fragment() {
         val categories = mutableListOf<CategoryLogo>()
         repeat(count / 2) {
             val logo = CategoryLogo(
-                "Raw",
-                R.drawable.veggie1,
-                ""
+                    "Raw",
+                    R.drawable.veggie1,
+                    ""
             )
             categories.add(logo)
         }
         repeat(count / 2) {
             val logo = CategoryLogo(
-                "Meat",
-                R.drawable.veggie2,
-                ""
+                    "Meat",
+                    R.drawable.veggie2,
+                    ""
             )
             categories.add(logo)
         }
@@ -182,16 +194,18 @@ class home : Fragment() {
         var parents = mutableListOf<Category>()
         repeat(count / 2) {
             val parent = Category(
-                "Veggies",
-                getChildren(20)
+                    "Veggies",
+                    getChildren(20)
             )
             parents.add(parent)
         }
         repeat(count / 2) {
             val parent =
-                Category("Arjun", getChildren(20))
+                    Category("Arjun", getChildren(20))
             parents.add(parent)
         }
+
+        parents.add(Category("Database", vegetables_3))
         parents = SearchItems(searchText, parents)
         this.parents = parents
         return parents
@@ -205,14 +219,14 @@ class home : Fragment() {
         var parents_whole = mutableListOf<Category>()
         repeat(count / 2) {
             val child_whole = Category(
-                "Veggies",
-                getChildren(20)
+                    "Veggies",
+                    getChildren(20)
             )
             parents_whole.add(child_whole)
         }
         repeat(count / 2) {
             val child_whole =
-                Category("Arjun", getChildren(20))
+                    Category("Arjun", getChildren(20))
             parents_whole.add(child_whole)
         }
         return parents_whole
@@ -222,13 +236,13 @@ class home : Fragment() {
     fun setParentsWithAdapter(parents: List<Category>) {
         recyclerView.apply {
             layoutManager = LinearLayoutManager(
-                context,
-                RecyclerView.VERTICAL,
-                false
+                    context,
+                    RecyclerView.VERTICAL,
+                    false
             )
 
             adapter =
-                ParentRecyclerViewAdapter(parents)
+                    ParentRecyclerViewAdapter(parents)
 
 
 //            layoutParams= ConstraintLayout.LayoutParams(ConstraintLayout.LayoutParams.MATCH_PARENT,40)
@@ -237,9 +251,9 @@ class home : Fragment() {
     }
 
     fun SearchItems(
-        searchText: String?,
-        parents: MutableList<Category>,
-        categoryList: List<String>? = null
+            searchText: String?,
+            parents: MutableList<Category>,
+            categoryList: List<String>? = null
     ): MutableList<Category> {
         var parents1 = parents.copy()
         if (searchText != "") {
@@ -275,24 +289,25 @@ class home : Fragment() {
         val children = mutableListOf<Vegetable>()
         repeat(count / 2) {
             children.add(
-                Vegetable(
-                    "Lobster Cooked in store",
-                    "Meat",
-                    R.drawable.veggie1,
-                    "New Veggie", 20, 45.20, "300g"
-                )
+                    Vegetable(
+                            "Lobster Cooked in store",
+                            "Meat",
+                            R.drawable.veggie1,
+                            "New Veggie", 20, 45.20, "300g"
+                    )
             )
         }
         repeat(count / 2) {
             children.add(
-                Vegetable(
-                    "Seasoned pork rack ribs end",
-                    "Raw",
-                    R.drawable.veggie2,
-                    "New Veggie", 10, 21.20, "400g"
-                )
+                    Vegetable(
+                            "Seasoned pork rack ribs end",
+                            "Raw",
+                            R.drawable.veggie2,
+                            "New Veggie", 10, 21.20, "400g"
+                    )
             )
         }
+
         return children
     }
 
@@ -303,15 +318,46 @@ class home : Fragment() {
         }
         return arr
     }
-//    fun onClickStore(v: View?) {
-//
-//        val tv = findViewById(R.id.textView) as TextView
-//
-//
-//        //alter text of textview widget
-//        tv.text = "This text view is clicked"
-//        //assign the textview forecolor
-//        tv.setTextColor(Color.BLUE)
-//    }
+
+    fun fetchVegetbles(dbitems: DatabaseReference) {
+        dbitems.addListenerForSingleValueEvent(object : ValueEventListener {
+            override fun onCancelled(error: DatabaseError) {}
+
+            override fun onDataChange(snapshot: DataSnapshot) {
+                if (snapshot.exists()) {
+                    val vegetables_1 = mutableListOf<Vegetable>()
+                    val paa = mutableListOf<Category>()
+                    for (authorSnapshot in snapshot.children) {
+
+                        val author = authorSnapshot.getValue(FoodItem::class.java)
+                        if (author != null) {
+                            vegetables_1.add(Vegetable(name = author.name!!, category = author.category!!, thumbnail = 999, description = author.description, stock = 10, price = author.price?.toDouble(), weight = "229g", url = author.imgurl))
+                        }
+                        println(author)
+//                        author?.let { vegetables_1.add(it) }
+                    }
+                    paa.add(Category("ihbwc", vegetables_1))
+                    recyclerView.apply {
+                        layoutManager = LinearLayoutManager(
+                                context,
+                                RecyclerView.VERTICAL,
+                                false
+                        )
+
+                        adapter = ParentRecyclerViewAdapter(
+                                paa
+                        )
+
+
+//            layoutParams= ConstraintLayout.LayoutParams(ConstraintLayout.LayoutParams.MATCH_PARENT,40)
+
+                    }
+                    vegetables_3 = vegetables_1
+
+                }
+            }
+        })
+    }
+
 
 }

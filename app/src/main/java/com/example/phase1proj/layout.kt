@@ -3,10 +3,13 @@ package com.example.phase1proj
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.example.phase1proj.models.Vegetable
 import com.example.phase1proj.views.fragment_account
 import com.example.phase1proj.views.home
 import com.example.phase1proj.views.store
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.FirebaseApp
+import com.google.firebase.database.*
 
 
 class layout : AppCompatActivity() {
@@ -15,19 +18,20 @@ class layout : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout)
 
+        FirebaseApp.initializeApp(this);
 
         setHomeFragment()
         val fragment = getHomeFragment()
         val fragmentTransaction =
-            supportFragmentManager.beginTransaction()
+                supportFragmentManager.beginTransaction()
         fragmentTransaction.replace(R.id.container, fragment, "Home")
         fragmentTransaction.commit()
         val bottomNav =
-            findViewById<BottomNavigationView>(R.id.bottom_navigation)
+                findViewById<BottomNavigationView>(R.id.bottom_navigation)
         bottomNav.setOnNavigationItemSelectedListener(navListener)
         supportFragmentManager.beginTransaction().replace(
-            R.id.container,
-            home()
+                R.id.container,
+                home()
         ).commit()
     }
 
@@ -41,22 +45,23 @@ class layout : AppCompatActivity() {
 
 
     private val navListener =
-        BottomNavigationView.OnNavigationItemSelectedListener { item ->
-            var selectedFragment: Fragment? = null
-            when (item.itemId) {
-                R.id.navigation_home -> selectedFragment = getHomeFragment()
+            BottomNavigationView.OnNavigationItemSelectedListener { item ->
+                var selectedFragment: Fragment? = null
+                when (item.itemId) {
+                    R.id.navigation_home -> selectedFragment = getHomeFragment()
 //                R.id.navigation_cart -> selectedFragment = cart()
-                R.id.navigation_stores -> selectedFragment =
-                    store()
-                R.id.navigation_account -> selectedFragment =
-                    fragment_account()
+                    R.id.navigation_stores -> selectedFragment =
+                            store()
+                    R.id.navigation_account -> selectedFragment =
+                            fragment_account()
+                }
+                supportFragmentManager.beginTransaction().replace(
+                        R.id.container,
+                        selectedFragment!!
+                ).addToBackStack(null).commit()
+                true
             }
-            supportFragmentManager.beginTransaction().replace(
-                R.id.container,
-                selectedFragment!!
-            ).addToBackStack(null).commit()
-            true
-        }
 
 
 }
+

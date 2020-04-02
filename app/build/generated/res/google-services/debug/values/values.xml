@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">1067068534185-df5gp8v2cc6pltpe8su09bd9urc6nqhk.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://foodcare-c10c6.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">1067068534185</string>
+    <string name="google_api_key" translatable="false">AIzaSyA52Ibl16MKdH6vXhlnC12oxrl1nvs6dG0</string>
+    <string name="google_app_id" translatable="false">1:1067068534185:android:a533a068d0fa230729e8b8</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyA52Ibl16MKdH6vXhlnC12oxrl1nvs6dG0</string>
+    <string name="google_storage_bucket" translatable="false">foodcare-c10c6.appspot.com</string>
+    <string name="project_id" translatable="false">foodcare-c10c6</string>
+</resources>
