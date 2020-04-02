@@ -40,6 +40,8 @@ class SellFragment : Fragment() {
     private lateinit var imgview: ImageView
     private lateinit var mStorageRef: StorageReference
 
+    val fooditem = FoodItem()
+
     @SuppressLint("ResourceType")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -119,18 +121,14 @@ class SellFragment : Fragment() {
             Log.d("Sell",category)
             val fooditem = FoodItem()
             fooditem.username = user
+
             fooditem.name = name
             fooditem.description = desc
             fooditem.price = price
             fooditem.units = units
             fooditem.address = address
             fooditem.category=category
-            fooditem.imgurl = uploadImageToFirebaseStorage()
-            viewmModel.addFoodItem(fooditem)
-
-            val fragmentTransaction = fragmentManager?.beginTransaction()
-            fragmentTransaction?.replace(R.id.nav_container,BuyFragment())
-            fragmentTransaction?.commit()
+            uploadImageToFirebaseStorage()
         }
 
         return view
@@ -165,10 +163,10 @@ class SellFragment : Fragment() {
         })
     }
 
-    private fun uploadImageToFirebaseStorage(): String {
+    private fun uploadImageToFirebaseStorage() {
 //        //Log.d("Upload Image","Function Start")
 //        // Toast.makeText(requireContext(),itemImgUri.toString(),Toast.LENGTH_SHORT).show()
-        if (photo == null) return ""
+        if (photo == null) return
 //
         var bytes: ByteArrayOutputStream = ByteArrayOutputStream()
         photo!!.compress(Bitmap.CompressFormat.JPEG, 100, bytes)
@@ -179,14 +177,20 @@ class SellFragment : Fragment() {
 
         val filename = UUID.randomUUID().toString()
         val ref = FirebaseStorage.getInstance().reference.child("/images/$filename")
+
         ref.putFile(Uri.parse(path))
             .addOnSuccessListener {
-                Log.i("Upload Image", "Sucessfully uploaded the image : ${it.metadata?.path}")
+                Log.i("Upload Image", "Sucessfully uploaded the image : ${it}")
+
                 ref.downloadUrl.addOnSuccessListener {
-                    Log.d("SellFragment","File Location: $it")
+                    fooditem.imgurl = it.toString()
+                    viewmModel.addFoodItem(fooditem)
+
+                    val fragmentTransaction = fragmentManager?.beginTransaction()
+                    fragmentTransaction?.replace(R.id.nav_container,BuyFragment())
+                    fragmentTransaction?.commit()
                 }
             }
-        return filename
     }
 }
 
