@@ -8,6 +8,9 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthUserCollisionException
+import com.google.firebase.auth.UserProfileChangeRequest
+import com.google.firebase.database.FirebaseDatabase
+
 
 class SignupActivity : AppCompatActivity() {
 
@@ -39,6 +42,11 @@ class SignupActivity : AppCompatActivity() {
                             val editor = sharedPref.edit()
                             editor.putString("name",name.text.toString())
                             editor.apply()
+
+                            val profileUpdates = UserProfileChangeRequest.Builder()
+                                    .setDisplayName(name.text.toString()).build()
+
+                            auth.currentUser?.updateProfile(profileUpdates)
 
                             finish()
                         } else {

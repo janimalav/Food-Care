@@ -8,10 +8,14 @@ data class FoodItem(
     var name:String? = null,
     var description:String? = null,
     var price:String? = null,
-    var weight:String? = null,
+    var units:String? = null,
     var address:String? = null,
-    var category: String?=null,
-    var imgurl: String?=null
+    var category: String? = null,
+    var imgurl: String? = null,
+    var userName: String? = null,
+    var longitude: Double? = null,
+    var latitude: Double? = null
 ) {
-    constructor() : this(null,null,null,null,null,null,null,null)
+    constructor() : this(null,null,null,null,null,null,
+        null,null, null, null)
 }

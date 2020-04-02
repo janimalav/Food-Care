@@ -18,22 +18,18 @@ class MainActivity : AppCompatActivity() {
         get() = BottomNavigationView.OnNavigationItemSelectedListener { item ->
             when(item.itemId){
                 R.id.bottomNavigationBuyId ->{
-                    println("Buy Pressed")
                     replaceFragment(BuyFragment())
                     return@OnNavigationItemSelectedListener true
                 }
                 R.id.bottomNavigationSellId->{
-                    println("Sell Pressed")
                     replaceFragment(SellFragment())
                     return@OnNavigationItemSelectedListener true
                 }
                 R.id.bottomNavigationMapId->{
-                    println("Map Pressed")
                     replaceFragment(MapFragment())
                     return@OnNavigationItemSelectedListener true
                 }
                 R.id.bottomNavigationProfileId->{
-                    println("Profile Pressed")
                     replaceFragment(ProfileFragment())
                     return@OnNavigationItemSelectedListener true
                 }

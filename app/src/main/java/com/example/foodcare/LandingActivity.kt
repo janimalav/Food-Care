@@ -1,5 +1,6 @@
 package com.example.foodcare
 
+import android.Manifest
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -11,14 +12,30 @@ import com.google.firebase.FirebaseNetworkException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
 import com.google.firebase.auth.FirebaseAuthInvalidUserException
+import com.karumi.dexter.Dexter
+import com.karumi.dexter.MultiplePermissionsReport
+import com.karumi.dexter.PermissionToken
+import com.karumi.dexter.listener.PermissionRequest
+import com.karumi.dexter.listener.multi.MultiplePermissionsListener
 
-class LandingActivity : AppCompatActivity() {
+class LandingActivity : AppCompatActivity(), MultiplePermissionsListener {
 
     private lateinit var auth: FirebaseAuth
     private val validation = Validation()
 
+    val permissions = listOf(
+        Manifest.permission.CAMERA,
+        Manifest.permission.WRITE_EXTERNAL_STORAGE,
+        Manifest.permission.ACCESS_COARSE_LOCATION,
+        Manifest.permission.ACCESS_FINE_LOCATION
+    )
+
     public override fun onStart() {
         super.onStart()
+
+        Dexter.withActivity(this).withPermissions(permissions).withListener(this)
+            .check()
+
         // Check if user is signed in (non-null) and update UI accordingly.
         val currentUser = auth.currentUser
         if(currentUser != null){
@@ -39,6 +56,9 @@ class LandingActivity : AppCompatActivity() {
 
         val loginButton = findViewById<Button>(R.id.landing_login)
         loginButton.setOnClickListener {
+
+            Dexter.withActivity(this).withPermissions(permissions).withListener(this)
+                .check()
 
             if(validation.checkEmail(email) && validation.checkPassword(password)){
                 auth.signInWithEmailAndPassword(email.text.toString(), password.text.toString())
@@ -79,5 +99,12 @@ class LandingActivity : AppCompatActivity() {
             val nextActivity = Intent(applicationContext, MainActivity::class.java)
             startActivity(nextActivity)
         }
+    }
+
+    override fun onPermissionRationaleShouldBeShown(permissions: MutableList<PermissionRequest>, token: PermissionToken) {
+        token.continuePermissionRequest()
+    }
+
+    override fun onPermissionsChecked(report: MultiplePermissionsReport) {
     }
 }

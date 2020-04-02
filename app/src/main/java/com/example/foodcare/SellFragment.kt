@@ -2,8 +2,12 @@ package com.example.myapp
 
 import android.annotation.SuppressLint
 import android.app.Activity
+import android.content.Context
 import android.content.Intent
 import android.graphics.Bitmap
+import android.location.Location
+import android.location.LocationListener
+import android.location.LocationManager
 import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
@@ -12,6 +16,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.drawToBitmap
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
@@ -21,6 +26,7 @@ import com.example.foodcare.FoodItemViewModel
 import com.example.foodcare.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.textfield.TextInputLayout
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import com.google.firebase.storage.UploadTask
@@ -33,40 +39,63 @@ import androidx.lifecycle.ViewModelProvider as ViewModelProvider1
 
 class SellFragment : Fragment() {
 
+    private lateinit var auth: FirebaseAuth
+    private lateinit var mStorageRef: StorageReference
+
+    private var locationManager : LocationManager? = null
+    private var longitude: Double = 0.0
+    private var latitude: Double = 0.0
+
     private lateinit var viewmModel: FoodItemViewModel
     private val CAMERA_REQUEST = 1
     private lateinit var imgview: ImageView
-    private lateinit var mStorageRef: StorageReference
 
     val fooditem = FoodItem()
 
+    override fun onStart() {
+        super.onStart()
+
+        val currentUser = auth.currentUser
+
+        if(currentUser != null){
+            view?.findViewById<ConstraintLayout>(R.id.fragmentSell_view1)?.visibility = View.VISIBLE
+        }else{
+            view?.findViewById<ConstraintLayout>(R.id.fragmentSell_view2)?.visibility = View.VISIBLE
+
+            view?.findViewById<Button>(R.id.button2)?.setOnClickListener {
+                activity?.finish()
+            }
+        }
+    }
+
     @SuppressLint("ResourceType")
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+    override fun onCreateView( inflater: LayoutInflater, container: ViewGroup?, savedInstanceState:
+    Bundle?): View? {
+
+        auth = FirebaseAuth.getInstance()
+        mStorageRef = FirebaseStorage.getInstance().reference
+
+        locationManager = context?.getSystemService(Context.LOCATION_SERVICE) as LocationManager
+        try {
+            locationManager?.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0L,
+                0f, locationListener)
+        }catch (e: Exception){
+            Log.d("Sell Fragment", "Exception in location manager initialize")
+        }
+
         viewmModel = ViewModelProvider1(this).get(FoodItemViewModel::class.java)
         val view: View = inflater.inflate(R.layout.fragment_sell, container, false)
 
-        //val btn = view.findViewById<FloatingActionButton>(R.id.btn_capture)
         imgview = view.findViewById(R.id.item_img)
-        mStorageRef = FirebaseStorage.getInstance().getReference()
-
         imgview.setOnClickListener{
             val intent: Intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
             startActivityForResult(intent, CAMERA_REQUEST)
         }
 
-//        btn.setOnClickListener {
-//            val intent: Intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-//            startActivityForResult(intent, CAMERA_REQUEST)
-//
-//        }
 
-        var CATEGORIES = arrayOf("Meat & Poultry", "Fish & Seafood", "Dairy & Cheese", "Fruits & Veggies","Bakery","Grocery","Frozen","Drinks","Organic","Other")
-        //val adapter = ArrayAdapter(requireContext(),R.layout.dropdown_item,COUNTRIES)
-        //val adapter = ArrayAdapter
-        var drop_item = view.findViewById<AutoCompleteTextView>(R.id.filled_exposed_dropdown)
+        val CATEGORIES = arrayOf("Meat & Poultry", "Fish & Seafood", "Dairy & Cheese",
+            "Fruits & Veggies","Bakery","Grocery","Frozen","Drinks","Organic","Other")
+        val drop_item = view.findViewById<AutoCompleteTextView>(R.id.filled_exposed_dropdown)
         drop_item.setAdapter(
             ArrayAdapter(
                 requireContext(),
@@ -76,10 +105,7 @@ class SellFragment : Fragment() {
         )
 
         val post = view.findViewById<Button>(R.id.post)
-
         post.setOnClickListener {
-            Log.d("Sell Pressed","Button pressed")
-            Toast.makeText(requireContext(), "Button pressed", Toast.LENGTH_SHORT).show()
             val name = item_name.text.toString().trim()
             if (name.isEmpty()) {
                 item_name.error = getString(R.string.error_field_required)
@@ -93,8 +119,14 @@ class SellFragment : Fragment() {
             }
 
             val price = item_price.text.toString().trim()
-            if (desc.isEmpty()) {
+            if (price.isEmpty()) {
                 item_price.error = getString(R.string.error_field_required)
+                return@setOnClickListener
+            }
+
+            val units = item_weight.text.toString().trim()
+            if (units.isEmpty()) {
+                item_weight.error = getString(R.string.error_field_required)
                 return@setOnClickListener
             }
 
@@ -110,25 +142,24 @@ class SellFragment : Fragment() {
             fooditem.description = desc
             fooditem.price = price
             fooditem.address = address
-            fooditem.category=category
+            fooditem.category = category
+            fooditem.units = units
+            fooditem.longitude = longitude
+            fooditem.latitude = latitude
+            // get username with the following line
+            fooditem.userName = auth.currentUser?.displayName
             uploadImageToFirebaseStorage()
         }
+
         return view
     }
 
-    var itemImgUri: Uri? = null
     var photo: Bitmap? = null
-
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (resultCode == Activity.RESULT_OK) if (requestCode == CAMERA_REQUEST && data != null) {
             photo = data.extras?.get("data") as Bitmap
             imgview.setImageBitmap(photo)
-
-//                var img1= MediaStore.Images.Media.insertImage(context?.contentResolver,photo,"Image",null)
-//                itemImgUri = Uri.parse(img1)
-//                Log.d("Fragment",Uri.parse(img1).toString())
-//                //Toast.makeText(requireContext(),data.getStringExtra("data").toString(),Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -146,13 +177,14 @@ class SellFragment : Fragment() {
     }
 
     private fun uploadImageToFirebaseStorage() {
-//        //Log.d("Upload Image","Function Start")
-//        // Toast.makeText(requireContext(),itemImgUri.toString(),Toast.LENGTH_SHORT).show()
         if (photo == null) return
-//
-        var bytes: ByteArrayOutputStream = ByteArrayOutputStream()
+
+        view?.findViewById<ConstraintLayout>(R.id.fragmentSell_view1)?.visibility = View.GONE
+        view?.findViewById<ConstraintLayout>(R.id.fragmentSell_view3)?.visibility = View.VISIBLE
+
+        val bytes: ByteArrayOutputStream = ByteArrayOutputStream()
         photo!!.compress(Bitmap.CompressFormat.JPEG, 100, bytes)
-        var path: String = MediaStore.Images.Media.insertImage(
+        val path: String = MediaStore.Images.Media.insertImage(
             requireContext().contentResolver, photo,
             "Title", null
         )
@@ -162,17 +194,31 @@ class SellFragment : Fragment() {
 
         ref.putFile(Uri.parse(path))
             .addOnSuccessListener {
-                Log.i("Upload Image", "Sucessfully uploaded the image : ${it}")
+                Log.i("Upload Image", "Successfully uploaded the image : $it")
 
                 ref.downloadUrl.addOnSuccessListener {
                     fooditem.imgurl = it.toString()
                     viewmModel.addFoodItem(fooditem)
 
-                    val fragmentTransaction = fragmentManager?.beginTransaction()
-                    fragmentTransaction?.replace(R.id.nav_container,BuyFragment())
-                    fragmentTransaction?.commit()
+                    view?.findViewById<ConstraintLayout>(R.id.fragmentSell_view3)?.visibility = View.GONE
+                    view?.findViewById<ConstraintLayout>(R.id.fragmentSell_view4)?.visibility = View.VISIBLE
+
+                    view?.findViewById<Button>(R.id.button3)?.setOnClickListener {
+                        val fragmentTransaction = fragmentManager?.beginTransaction()
+                        fragmentTransaction?.replace(R.id.nav_container,SellFragment())
+                        fragmentTransaction?.commit()
+                    }
                 }
             }
     }
-}
 
+    private val locationListener: LocationListener = object : LocationListener {
+        override fun onLocationChanged(location: Location) {
+            longitude = location.longitude
+            latitude = location.latitude
+        }
+        override fun onStatusChanged(provider: String, status: Int, extras: Bundle) {}
+        override fun onProviderEnabled(provider: String) {}
+        override fun onProviderDisabled(provider: String) {}
+    }
+}
