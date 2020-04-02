@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "1067068534185-sib52bjijhb1cbq2uhvt1eturr68aq6k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.foodcare",
+            "certificate_hash": "444800dea08aa835356fd8113b777c4a93b96716"
+          }
+        },
+        {
           "client_id": "1067068534185-rm0ap03n4c8q38v0bk5auq34ea9dc7q5.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

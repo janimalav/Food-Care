@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Food Care</string>
+    <string name="bottom_nav_buy">Buy</string>
+    <string name="bottom_nav_sell">Sell</string>
+    <string name="bottom_nav_map">Map</string>
+    <string name="bottom_nav_profile">Profile</string>
+    <string name="sell_form_product_name">Enter Product Name</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sell_form_product_desc">Enter Product Description</string>
+    <string name="sell_form_product_price">Enter Price</string>
+    <string name="sell_form_product_weight">Enter No. of Units</string>
+    <string name="sell_form_product_add">Enter Pick Up Address</string>
+    <string name="category">Category</string>
+    <string name="error_field_required">This is required field</string>
+    <string name="added">item added successfully</string>
+    <string name="errormsg">Error</string>
+    <string name="sell_form_title">Enter Product Details</string>
+    <string name="sell_btn_text">Sell</string>
+    <string name="item_img">Item Image</string>
+    <string name="select_category">Select Category</string>
 </resources>
