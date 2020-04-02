@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "1067068534185",
+    "firebase_url": "https://foodcare-c10c6.firebaseio.com",
+    "project_id": "foodcare-c10c6",
+    "storage_bucket": "foodcare-c10c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1067068534185:android:7cd1a6a67ddb051529e8b8",
+        "android_client_info": {
+          "package_name": "com.example.foodcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1067068534185-sib52bjijhb1cbq2uhvt1eturr68aq6k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.foodcare",
+            "certificate_hash": "444800dea08aa835356fd8113b777c4a93b96716"
+          }
+        },
+        {
+          "client_id": "1067068534185-rm0ap03n4c8q38v0bk5auq34ea9dc7q5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.foodcare",
+            "certificate_hash": "56eabdf07bbe17c13ba5788c360a46812efa7c31"
+          }
+        },
+        {
+          "client_id": "1067068534185-df5gp8v2cc6pltpe8su09bd9urc6nqhk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA52Ibl16MKdH6vXhlnC12oxrl1nvs6dG0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1067068534185-df5gp8v2cc6pltpe8su09bd9urc6nqhk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
