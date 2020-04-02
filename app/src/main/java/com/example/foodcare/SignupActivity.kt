@@ -1,5 +1,6 @@
 package com.example.foodcare
 
+import android.content.Context
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
@@ -17,6 +18,8 @@ class SignupActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
 
+        val sharedPref = getSharedPreferences("user_name",Context.MODE_PRIVATE)
+
         auth = FirebaseAuth.getInstance()
 
         val name = findViewById<TextInputEditText>(R.id.signup_name)
@@ -33,6 +36,10 @@ class SignupActivity : AppCompatActivity() {
                     .addOnCompleteListener(this) { task ->
 
                         if (task.isSuccessful) {
+                            val editor = sharedPref.edit()
+                            editor.putString("name",name.text.toString())
+                            editor.apply()
+
                             finish()
                         } else {
                             if (task.exception is FirebaseAuthUserCollisionException) {

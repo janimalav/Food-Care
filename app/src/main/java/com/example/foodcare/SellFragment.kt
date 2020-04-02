@@ -113,6 +113,10 @@ class SellFragment : Fragment() {
             fooditem.category=category
             fooditem.imgurl = uploadImageToFirebaseStorage()
             viewmModel.addFoodItem(fooditem)
+
+            val fragmentTransaction = fragmentManager?.beginTransaction()
+            fragmentTransaction?.replace(R.id.nav_container,BuyFragment())
+            fragmentTransaction?.commit()
         }
 
         return view
@@ -165,8 +169,6 @@ class SellFragment : Fragment() {
         ref.putFile(Uri.parse(path))
             .addOnSuccessListener {
                 Log.i("Upload Image", "Sucessfully uploaded the image : ${it.metadata?.path}")
-                Toast.makeText(requireContext(), Uri.parse(path).toString(), Toast.LENGTH_SHORT)
-                    .show()
             }
 
         return filename
