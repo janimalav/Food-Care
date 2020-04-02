@@ -38,6 +38,8 @@ class SellFragment : Fragment() {
     private lateinit var imgview: ImageView
     private lateinit var mStorageRef: StorageReference
 
+    val fooditem = FoodItem()
+
     @SuppressLint("ResourceType")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -103,22 +105,14 @@ class SellFragment : Fragment() {
             }
 
             val category= filled_exposed_dropdown.text.toString().trim()
-            Toast.makeText(requireContext(),category,Toast.LENGTH_LONG).show()
-            Log.d("Sell",category)
-            val fooditem = FoodItem()
+
             fooditem.name = name
             fooditem.description = desc
             fooditem.price = price
             fooditem.address = address
             fooditem.category=category
-            fooditem.imgurl = uploadImageToFirebaseStorage()
-            viewmModel.addFoodItem(fooditem)
-
-            val fragmentTransaction = fragmentManager?.beginTransaction()
-            fragmentTransaction?.replace(R.id.nav_container,BuyFragment())
-            fragmentTransaction?.commit()
+            uploadImageToFirebaseStorage()
         }
-
         return view
     }
 
@@ -151,10 +145,10 @@ class SellFragment : Fragment() {
         })
     }
 
-    private fun uploadImageToFirebaseStorage(): String {
+    private fun uploadImageToFirebaseStorage() {
 //        //Log.d("Upload Image","Function Start")
 //        // Toast.makeText(requireContext(),itemImgUri.toString(),Toast.LENGTH_SHORT).show()
-        if (photo == null) return ""
+        if (photo == null) return
 //
         var bytes: ByteArrayOutputStream = ByteArrayOutputStream()
         photo!!.compress(Bitmap.CompressFormat.JPEG, 100, bytes)
@@ -168,10 +162,17 @@ class SellFragment : Fragment() {
 
         ref.putFile(Uri.parse(path))
             .addOnSuccessListener {
-                Log.i("Upload Image", "Sucessfully uploaded the image : ${it.metadata?.path}")
-            }
+                Log.i("Upload Image", "Sucessfully uploaded the image : ${it}")
 
-        return filename
+                ref.downloadUrl.addOnSuccessListener {
+                    fooditem.imgurl = it.toString()
+                    viewmModel.addFoodItem(fooditem)
+
+                    val fragmentTransaction = fragmentManager?.beginTransaction()
+                    fragmentTransaction?.replace(R.id.nav_container,BuyFragment())
+                    fragmentTransaction?.commit()
+                }
+            }
     }
 }
 
