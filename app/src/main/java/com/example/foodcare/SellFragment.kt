@@ -2,7 +2,9 @@ package com.example.myapp
 
 import android.annotation.SuppressLint
 import android.app.Activity
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.graphics.Bitmap
 import android.net.Uri
 import android.os.Bundle
@@ -61,6 +63,9 @@ class SellFragment : Fragment() {
 //
 //        }
 
+        var preferences : SharedPreferences? = activity?.getSharedPreferences("user_name", Context.MODE_PRIVATE)
+        var user_name = preferences?.getString("name","Guest User")
+
         var CATEGORIES = arrayOf("Meat & Poultry", "Fish & Seafood", "Dairy & Cheese", "Fruits & Veggies","Bakery","Grocery","Frozen","Drinks","Organic","Other")
         //val adapter = ArrayAdapter(requireContext(),R.layout.dropdown_item,COUNTRIES)
         //val adapter = ArrayAdapter
@@ -76,8 +81,9 @@ class SellFragment : Fragment() {
         val post = view.findViewById<Button>(R.id.post)
 
         post.setOnClickListener {
-            Log.d("Sell Pressed","Button pressed")
-            Toast.makeText(requireContext(), "Button pressed", Toast.LENGTH_SHORT).show()
+            //Log.d("Sell Pressed","Button pressed")
+            //Toast.makeText(requireContext(), "Button pressed", Toast.LENGTH_SHORT).show()
+            val user = user_name.toString()
             val name = item_name.text.toString().trim()
             if (name.isEmpty()) {
                 item_name.error = getString(R.string.error_field_required)
@@ -91,24 +97,32 @@ class SellFragment : Fragment() {
             }
 
             val price = item_price.text.toString().trim()
-            if (desc.isEmpty()) {
+            if (price.isEmpty()) {
                 item_price.error = getString(R.string.error_field_required)
                 return@setOnClickListener
             }
 
+            val units = item_weight.text.toString().trim()
+            if (units.isEmpty()) {
+                item_weight.error = getString(R.string.error_field_required)
+                return@setOnClickListener
+            }
+
             val address = item_address.text.toString().trim()
-            if (desc.isEmpty()) {
+            if (address.isEmpty()) {
                 item_address.error = getString(R.string.error_field_required)
                 return@setOnClickListener
             }
 
             val category= filled_exposed_dropdown.text.toString().trim()
-            Toast.makeText(requireContext(),category,Toast.LENGTH_LONG).show()
+            //Toast.makeText(requireContext(),category,Toast.LENGTH_LONG).show()
             Log.d("Sell",category)
             val fooditem = FoodItem()
+            fooditem.username = user
             fooditem.name = name
             fooditem.description = desc
             fooditem.price = price
+            fooditem.units = units
             fooditem.address = address
             fooditem.category=category
             fooditem.imgurl = uploadImageToFirebaseStorage()
@@ -165,12 +179,13 @@ class SellFragment : Fragment() {
 
         val filename = UUID.randomUUID().toString()
         val ref = FirebaseStorage.getInstance().reference.child("/images/$filename")
-
         ref.putFile(Uri.parse(path))
             .addOnSuccessListener {
                 Log.i("Upload Image", "Sucessfully uploaded the image : ${it.metadata?.path}")
+                ref.downloadUrl.addOnSuccessListener {
+                    Log.d("SellFragment","File Location: $it")
+                }
             }
-
         return filename
     }
 }

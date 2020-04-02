@@ -39,7 +39,6 @@ class SignupActivity : AppCompatActivity() {
                             val editor = sharedPref.edit()
                             editor.putString("name",name.text.toString())
                             editor.apply()
-
                             finish()
                         } else {
                             if (task.exception is FirebaseAuthUserCollisionException) {
