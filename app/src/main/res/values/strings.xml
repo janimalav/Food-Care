@@ -1,5 +1,18 @@
 <resources>
     <string name="app_name">Food Care</string>
+
+    <string name="title_activity_maps">Food Care</string>
+    <string name="normal_map">Normal Map</string>
+    <string name="hybrid_map">Hybrid Map</string>
+    <string name="satellite_map">Satellite Map</string>
+    <string name="terrain_map">Terrain Map</string>
+    <string name="lat_long_snippet">Lat: %1$.5f, Long: %2$.5f</string>
+    <string name="dropped_pin">Dropped Pin</string>
+    <string name="poi">poi</string>
+    <string name="zoom">15f</string>
+    <string name="google_maps_key">AIzaSyAHC7hGxZMSuWZ5WGvk5XVnXT60yeSzlnw</string>
+
+
     <string name="bottom_nav_buy">Buy</string>
     <string name="bottom_nav_sell">Sell</string>
     <string name="bottom_nav_map">Map</string>
@@ -29,4 +42,30 @@
     <string name="poi">poi</string>
     <string name="zoom">15f</string>
     <string name="google_maps_key">AIzaSyAHC7hGxZMSuWZ5WGvk5XVnXT60yeSzlnw</string>
+
+    <string name="edit_profile">Edit Profile</string>
+
+    <string name="contact_us">Contact Us</string>
+
+    <string name="sign_out">Sign Out</string>
+
+    <string name="help">Help</string>
+
+    <string name="todo">TODO</string>
+    <string name="reset">UPDATE</string>
+
+    <string name="help_content">
+
+<b>Food Care</b>
+\nFoodCare is an app that connects food merchants to consumers to quickly sell surplus fresh food that would otherwise end up in the trash.\n\nFood merchants end up tossing good food in landfills for many reasons.Either it is nearing its expiry date, it isn’t “pretty” enough for the shelves, they have extra products they aren’t able to sell in time, or a variety of other reasons.\n\nAt the same time, food prices are constantly on the rise and smart consumers are looking for ways to reduce their grocery bill, while still enjoying delicious, nutritious food. FoodCare brings those two groups together on an easy-to-use, auction style platform to help reduce global food waste, save money for consumers and business, and save the planet.\n\n
+<b>Why use a FoodCare? </b>
+\n Save food, save money and save the planet.\n\n
+<b>How does it work?</b>
+\n\n
+<u>FOOD MERCHANTS</u>
+\n Scan and upload any food items that need to be sold quickly. You set the pricing and the pick up times.\n\n
+<u>CONSUMERS</u>
+\n Browse grocery stores and restaurants in your area to find great deals on groceries and prepared foods. Make your purchases directly within the app, then pick up your items at the store location.
+</string>
 </resources>
+

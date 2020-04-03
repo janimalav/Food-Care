@@ -19,6 +19,18 @@ import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 
+
+// TODO: Rename parameter arguments, choose names that match
+// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+
+/**
+ * A simple [Fragment] subclass.
+ * Activities that contain this fragment must implement the
+ * [MapFragment.OnFragmentInteractionListener] interface
+ * to handle interaction events.
+ * Use the [MapFragment.newInstance] factory method to
+ * create an instance of this fragment.
+ */
 class MapFragment : Fragment(),OnMapReadyCallback {
     private lateinit var map: GoogleMap
     private val REQUEST_LOCATION_PERMISSION = 1
@@ -42,6 +54,7 @@ class MapFragment : Fragment(),OnMapReadyCallback {
         val longitude =-63.590225
         val zoomLevel = 15f
         val overlaySize = 100f
+
         val homeLatLng = LatLng(latitude, longitude)
         map.animateCamera(CameraUpdateFactory.newLatLngZoom(homeLatLng, zoomLevel))
         map.addMarker(MarkerOptions().position(homeLatLng))

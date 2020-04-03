@@ -1,16 +1,15 @@
 package com.example.foodcare
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.myapp.BuyFragment
 import com.example.myapp.MapFragment
-import com.example.myapp.ProfileFragment
 import com.example.myapp.SellFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -31,6 +30,14 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.bottomNavigationProfileId->{
                     replaceFragment(ProfileFragment())
+                    println("Profile Pressed")
+                    val bundle = Bundle()
+                    bundle.putInt("NAVID", R.id.nav_container)
+// set Fragmentclass Arguments
+                    // set Fragmentclass Arguments
+                    val profile = Profile()
+                    profile.setArguments(bundle)
+                    replaceFragment(profile)
                     return@OnNavigationItemSelectedListener true
                 }
             }

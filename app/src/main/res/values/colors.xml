@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="bottomnav">#26B11D</color>
+    <color name="appColor">#26b11d</color>
+    <color name="white">#ffffff</color>
 </resources>

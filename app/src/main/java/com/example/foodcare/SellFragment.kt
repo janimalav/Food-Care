@@ -47,7 +47,7 @@ class SellFragment : Fragment() {
     private var latitude: Double = 0.0
 
     private lateinit var viewmModel: FoodItemViewModel
-    private val CAMERA_REQUEST = 1
+    private var CAMERA_REQUEST = 1888
     private lateinit var imgview: ImageView
 
     val fooditem = FoodItem()
