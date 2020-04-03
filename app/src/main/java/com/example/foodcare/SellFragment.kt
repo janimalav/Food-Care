@@ -19,12 +19,14 @@ import android.widget.*
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
+import com.bumptech.glide.Glide
 import com.example.foodcare.FoodItem
 import com.example.foodcare.FoodItemViewModel
 import com.example.foodcare.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
+import kotlinx.android.synthetic.main.activity_landing.*
 import kotlinx.android.synthetic.main.fragment_sell.*
 import java.io.ByteArrayOutputStream
 import java.util.*
@@ -54,6 +56,8 @@ class SellFragment : Fragment() {
             view?.findViewById<ConstraintLayout>(R.id.fragmentSell_view1)?.visibility = View.VISIBLE
         }else{
             view?.findViewById<ConstraintLayout>(R.id.fragmentSell_view2)?.visibility = View.VISIBLE
+
+            Glide.with(requireContext()).load(R.drawable.logo_gif).into(landing_back_sell)
 
             view?.findViewById<Button>(R.id.button2)?.setOnClickListener {
                 activity?.finish()
@@ -165,12 +169,14 @@ class SellFragment : Fragment() {
             } else {
                 getString(R.string.errormsg, it.message)
             }
-            Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()
         })
     }
 
     private fun uploadImageToFirebaseStorage() {
-        if (photo == null) return
+        if (photo == null){
+            Toast.makeText(context,"Please upload the picture of food item.", Toast.LENGTH_SHORT).show()
+            return
+        }
 
         view?.findViewById<ConstraintLayout>(R.id.fragmentSell_view1)?.visibility = View.GONE
         view?.findViewById<ConstraintLayout>(R.id.fragmentSell_view3)?.visibility = View.VISIBLE

@@ -3,6 +3,7 @@ package com.example.foodcare.views
 import android.annotation.SuppressLint
 import android.content.DialogInterface
 import android.graphics.Color
+import android.graphics.Paint
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -14,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.foodcare.R
 import com.example.foodcare.models.Vegetable
 import com.squareup.picasso.Picasso
+import java.math.BigDecimal
 
 class ItemActivity : AppCompatActivity() {
 
@@ -27,6 +29,7 @@ class ItemActivity : AppCompatActivity() {
     private lateinit var imageTitle: TextView
     private lateinit var rate: TextView
     private lateinit var weight: TextView
+    private lateinit var cancelled_price: TextView
 
 
     private lateinit var hurry: TextView
@@ -41,6 +44,7 @@ class ItemActivity : AppCompatActivity() {
         imageTitle = findViewById(R.id.MainText)
         rate = findViewById(R.id.itemPrice)
         weight = findViewById(R.id.size_weight_value)
+        cancelled_price = findViewById(R.id.beforeDiscountPrice)
 
         var itemDetails = intent.getSerializableExtra("ItemDetails") as? Vegetable
         minus = findViewById(R.id.minus)
@@ -131,11 +135,14 @@ class ItemActivity : AppCompatActivity() {
 
         if (itemDetails != null) {
             Picasso.get().load(itemDetails.url).into(image)
-
+            var valuee = itemDetails.price!!
             imageTitle.text = itemDetails.name
             rate.text = "$" + itemDetails.price.toString()
             hurry.text = "Hurry! " + itemDetails.stock.toString() + " item left"
             weight.text = itemDetails.weight.toString()
+
+            cancelled_price.text = "$" + (valuee * 1.3).round(2).toString()
+            cancelled_price.setPaintFlags(Paint.STRIKE_THRU_TEXT_FLAG);
 
 
         }
@@ -169,5 +176,7 @@ class ItemActivity : AppCompatActivity() {
 
 
     }
+    private fun Double.round(decimals: Int = 2): BigDecimal =
+        "%.${decimals}f".format(this).toBigDecimal()
 
 }

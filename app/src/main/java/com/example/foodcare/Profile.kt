@@ -9,7 +9,10 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
+import com.bumptech.glide.Glide
 import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.fragment_profile.*
+import kotlinx.android.synthetic.main.fragment_sell.*
 
 class Profile : Fragment() {
 
@@ -23,6 +26,7 @@ class Profile : Fragment() {
         }else{
             view?.findViewById<ConstraintLayout>(R.id.fragmentProfile_view2)?.visibility = View.VISIBLE
 
+            Glide.with(requireContext()).load(R.drawable.logo_gif).into(landing_back_profile)
             view?.findViewById<Button>(R.id.button4)?.setOnClickListener {
                 activity?.finish()
             }

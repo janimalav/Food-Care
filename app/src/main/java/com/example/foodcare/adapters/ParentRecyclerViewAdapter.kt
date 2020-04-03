@@ -5,14 +5,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.foodcare.R
 import com.example.foodcare.models.Category
 import com.example.foodcare.views.CategoryListActivity
-import com.example.foodcare.R
 import kotlinx.android.synthetic.main.parent_view_list.view.*
 
 class ParentRecyclerViewAdapter(
@@ -34,13 +33,9 @@ class ParentRecyclerViewAdapter(
 
         holder.textLayout.setOnClickListener {
             openActivity(holder, parent)
-            Toast.makeText(holder.textLayout.context, holder.textView.text, Toast.LENGTH_LONG)
-                    .show()
         }
         holder.textView.setOnClickListener {
             openActivity(holder, parent)
-            Toast.makeText(holder.textView.context, holder.textView.text, Toast.LENGTH_LONG)
-                    .show()
         }
         holder.textView.text = parentList[position].name
 

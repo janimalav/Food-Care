@@ -87,12 +87,6 @@ class CategoryLogoViewAdapter(private val logoList: List<CategoryLogo>, private 
             if (holder.logoImage.tag == logoList[position].thumbnail!!) {
                 holder.logoImage.tag =
                     R.drawable.border_category
-                Toast.makeText(
-                        holder.logoImage.context,
-                        "You clicked on ImageView.",
-                        Toast.LENGTH_SHORT
-                ).show()
-
 
                 (selectCategories as MutableList<String>).add(holder.logoName.text.toString())
                 parents = home.SearchItems(
@@ -109,11 +103,7 @@ class CategoryLogoViewAdapter(private val logoList: List<CategoryLogo>, private 
             } else {
                 println("its here")
                 set_globalparents = home.wholeParentItems().copy()
-                Toast.makeText(
-                        holder.logoImage.context,
-                        "You unclicked on ImageView.",
-                        Toast.LENGTH_SHORT
-                ).show()
+
                 (selectCategories as MutableList<String>).remove(holder.logoName.text.toString())
                 parents = home.SearchItems(
                         "", parents = set_globalparents as MutableList<Category>,

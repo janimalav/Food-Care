@@ -29,7 +29,6 @@ class profile_page : AppCompatActivity() {
         findViewById<ImageView>(R.id.imageView5).setOnClickListener {
             finish()
         }
-
         val edtName: EditText = findViewById(R.id.et_name)
         val edtEmail: EditText = findViewById(R.id.et_email)
         val resend: Button = findViewById(R.id.resend)
