@@ -28,9 +28,9 @@ class ItemActivity : AppCompatActivity() {
     private lateinit var image: ImageView
     private lateinit var imageTitle: TextView
     private lateinit var rate: TextView
-    private lateinit var weight: TextView
     private lateinit var cancelled_price: TextView
-
+    private lateinit var desc: TextView
+    private lateinit var category: TextView
 
     private lateinit var hurry: TextView
     private var hurry_value: Int = 0
@@ -43,8 +43,9 @@ class ItemActivity : AppCompatActivity() {
         image = findViewById(R.id.ItemImage)
         imageTitle = findViewById(R.id.MainText)
         rate = findViewById(R.id.itemPrice)
-        weight = findViewById(R.id.size_weight_value)
         cancelled_price = findViewById(R.id.beforeDiscountPrice)
+        desc = findViewById(R.id.item_decription_value)
+        category = findViewById(R.id.frozenText)
 
         var itemDetails = intent.getSerializableExtra("ItemDetails") as? Vegetable
         minus = findViewById(R.id.minus)
@@ -63,19 +64,17 @@ class ItemActivity : AppCompatActivity() {
                 }
                 if (addToCart.text.toString().contains("added", true)) {
                     setAddToCart("Update", "#ffffff", "#26b11d")
-
-
                 }
-
-
             }
         })
+
         backButton.setOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View?) {
                 this@ItemActivity.finish()
             }
 
         })
+
         plus.setOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View?) {
                 var get_value = getQuantity()
@@ -91,6 +90,7 @@ class ItemActivity : AppCompatActivity() {
                 }
             }
         })
+
         addToCart.setOnClickListener(object : View.OnClickListener {
             @SuppressLint("ResourceAsColor")
             override fun onClick(v: View?) {
@@ -139,12 +139,11 @@ class ItemActivity : AppCompatActivity() {
             imageTitle.text = itemDetails.name
             rate.text = "$" + itemDetails.price.toString()
             hurry.text = "Hurry! " + itemDetails.stock.toString() + " item left"
-            weight.text = itemDetails.weight.toString()
+            desc.text = itemDetails.description.toString()
+            category.text = itemDetails.category.toString()
 
             cancelled_price.text = "$" + (valuee * 1.3).round(2).toString()
             cancelled_price.setPaintFlags(Paint.STRIKE_THRU_TEXT_FLAG);
-
-
         }
 
     }

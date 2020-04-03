@@ -63,7 +63,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="500g"
+            android:text=""
             android:textAlignment="textEnd"
             android:textColor="@color/colorPrimary"
             android:textStyle="bold"

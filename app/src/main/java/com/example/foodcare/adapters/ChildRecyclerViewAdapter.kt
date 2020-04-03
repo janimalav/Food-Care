@@ -57,7 +57,7 @@ class ChildRecyclerViewAdapter(
 //            holder.vegetableThumbnail.setImageResource(R.drawable.veggie1)
         }
         holder.rateVegetable.text = "$ " + vegetableList[position].price.toString()
-        holder.weightVegetable.text = vegetableList[position].weight
+        //holder.weightVegetable.text = vegetableList[position].weight
 
         holder.textLayout.setOnClickListener {
             openActivity(holder, vegetableList[position])

@@ -145,7 +145,7 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="@dimen/marginStart"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:src="@drawable/frozen"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/quantity" />
@@ -155,7 +155,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/marginStart"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:text="Frozen Product"
         android:textColor="@color/black"
         android:textSize="15dp"
@@ -164,47 +164,16 @@
         app:layout_constraintTop_toBottomOf="@id/quantity" />
 
     <TextView
-        android:id="@+id/generalFrozenDescription"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/marginStart"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="@dimen/marginStart"
-        android:text="@string/itemdetails"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/frozenImage" />
-
-    <TextView
-        android:id="@+id/size_weight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/marginStart"
-        android:layout_marginTop="10dp"
-        android:text="Size/Weight"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/generalFrozenDescription" />
-
-    <TextView
-        android:id="@+id/size_weight_value"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/marginStart"
-        android:text="450g"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/size_weight" />
-
-    <TextView
         android:id="@+id/item_decription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/marginStart"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:text="Description"
         android:textColor="@color/black"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/size_weight_value" />
+        app:layout_constraintTop_toBottomOf="@id/frozenImage" />
 
     <TextView
         android:id="@+id/item_decription_value"
@@ -212,19 +181,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/marginStart"
         android:text="Fresh Whole Rainbow Trout"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/item_decription" />
-
-    <TextView
-        android:id="@+id/environmental_impact"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/marginStart"
-        android:layout_marginTop="10dp"
-        android:text="Environmental Impact"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/item_decription_value" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
