@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.bumptech.glide.Glide
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.FirebaseNetworkException
 import com.google.firebase.auth.FirebaseAuth
@@ -17,6 +18,7 @@ import com.karumi.dexter.MultiplePermissionsReport
 import com.karumi.dexter.PermissionToken
 import com.karumi.dexter.listener.PermissionRequest
 import com.karumi.dexter.listener.multi.MultiplePermissionsListener
+import kotlinx.android.synthetic.main.activity_landing.*
 
 class LandingActivity : AppCompatActivity(), MultiplePermissionsListener {
 
@@ -31,7 +33,9 @@ class LandingActivity : AppCompatActivity(), MultiplePermissionsListener {
     )
 
     public override fun onStart() {
+
         super.onStart()
+        Glide.with(baseContext).load(R.drawable.logo_gif).into(landing_back)
 
         Dexter.withActivity(this).withPermissions(permissions).withListener(this)
             .check()
