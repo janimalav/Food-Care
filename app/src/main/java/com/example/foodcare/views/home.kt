@@ -1,4 +1,4 @@
-package com.example.foodcare
+package com.example.foodcare.views
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -13,6 +13,13 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.foodcare.FoodItem
+import com.example.foodcare.R
+import com.example.foodcare.adapters.CategoryLogoViewAdapter
+import com.example.foodcare.adapters.ParentRecyclerViewAdapter
+import com.example.foodcare.models.Category
+import com.example.foodcare.models.CategoryLogo
+import com.example.foodcare.models.Vegetable
 import com.google.firebase.database.*
 
 class home : Fragment() {
@@ -181,7 +188,7 @@ class home : Fragment() {
         for (name in category_name) {
             val logo = CategoryLogo(
                     name,
-                    R.drawable.veggie1,
+                R.drawable.veggie1,
                     ""
             )
             categories.add(logo)
@@ -255,9 +262,9 @@ class home : Fragment() {
     }
 
     fun SearchItems(
-            searchText: String?,
-            parents: MutableList<Category>,
-            categoryList: List<String>? = null
+        searchText: String?,
+        parents: MutableList<Category>,
+        categoryList: List<String>? = null
     ): MutableList<Category> {
         var new_parents: MutableList<Category> = mutableListOf()
         for (i in parents) {

@@ -1,4 +1,4 @@
-package com.example.foodcare
+package com.example.foodcare.adapters
 
 import android.content.Intent
 import android.view.LayoutInflater
@@ -10,6 +10,9 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.foodcare.models.Category
+import com.example.foodcare.views.CategoryListActivity
+import com.example.foodcare.R
 import kotlinx.android.synthetic.main.parent_view_list.view.*
 
 class ParentRecyclerViewAdapter(

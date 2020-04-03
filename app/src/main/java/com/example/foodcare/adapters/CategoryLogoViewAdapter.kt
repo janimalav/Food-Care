@@ -1,4 +1,4 @@
-package com.example.foodcare
+package com.example.foodcare.adapters
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -14,6 +14,11 @@ import android.widget.Toast
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import com.example.foodcare.*
+import com.example.foodcare.models.Category
+import com.example.foodcare.models.CategoryLogo
+import com.example.foodcare.views.ItemActivity
+import com.example.foodcare.views.home
 import kotlinx.android.synthetic.main.child_card_view_list.view.*
 
 class CategoryLogoViewAdapter(private val logoList: List<CategoryLogo>, private val home: home) :
@@ -81,7 +86,7 @@ class CategoryLogoViewAdapter(private val logoList: List<CategoryLogo>, private 
 
             if (holder.logoImage.tag == logoList[position].thumbnail!!) {
                 holder.logoImage.tag =
-                        R.drawable.border_category
+                    R.drawable.border_category
                 Toast.makeText(
                         holder.logoImage.context,
                         "You clicked on ImageView.",

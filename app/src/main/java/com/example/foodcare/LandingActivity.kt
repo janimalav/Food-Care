@@ -43,7 +43,7 @@ class LandingActivity : AppCompatActivity(), MultiplePermissionsListener {
         // Check if user is signed in (non-null) and update UI accordingly.
         val currentUser = auth.currentUser
         if(currentUser != null){
-            val nextActivity = Intent(applicationContext, MainActivity::class.java)
+            val nextActivity = Intent(applicationContext, layout::class.java)
             startActivity(nextActivity)
         }
     }
@@ -68,7 +68,7 @@ class LandingActivity : AppCompatActivity(), MultiplePermissionsListener {
                     .addOnCompleteListener(this) { task ->
 
                         if (task.isSuccessful) {
-                            val nextActivity = Intent(applicationContext, MainActivity::class.java)
+                            val nextActivity = Intent(applicationContext, layout::class.java)
                             startActivity(nextActivity)
                         } else {
                             if (task.exception is FirebaseNetworkException) {
@@ -99,7 +99,7 @@ class LandingActivity : AppCompatActivity(), MultiplePermissionsListener {
 
         val explore = findViewById<Button>(R.id.landing_explore)
         explore.setOnClickListener {
-            val nextActivity = Intent(applicationContext, MainActivity::class.java)
+            val nextActivity = Intent(applicationContext, layout::class.java)
             startActivity(nextActivity)
         }
     }

@@ -1,4 +1,4 @@
-package com.example.foodcare
+package com.example.foodcare.views
 
 import android.os.Bundle
 import android.view.View
@@ -7,6 +7,10 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.foodcare.R
+import com.example.foodcare.adapters.SpecificCategoryListAdapter
+import com.example.foodcare.models.Category
+import com.example.foodcare.models.Vegetable
 import kotlinx.android.synthetic.main.categorylist.*
 
 class CategoryListActivity : AppCompatActivity() {
@@ -55,7 +59,7 @@ class CategoryListActivity : AppCompatActivity() {
                     Vegetable(
                             "Lobster Cooked in store",
                             "Raw",
-                            R.drawable.veggie1,
+                        R.drawable.veggie1,
                             "New Veggie",
                             20,
                             45.20,
@@ -68,7 +72,7 @@ class CategoryListActivity : AppCompatActivity() {
                     Vegetable(
                             "Seasoned pork rack ribs end",
                             "Raw",
-                            R.drawable.veggie2,
+                        R.drawable.veggie2,
                             "New Veggie",
                             10,
                             21.20,

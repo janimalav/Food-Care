@@ -1,4 +1,4 @@
-package com.example.foodcare
+package com.example.foodcare.adapters
 
 import android.content.Intent
 import android.view.LayoutInflater
@@ -9,9 +9,12 @@ import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import com.example.foodcare.views.ItemActivity
+import com.example.foodcare.R
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.child_card_view_list.view.*
 import com.example.foodcare.R.layout.child_card_view_list
+import com.example.foodcare.models.Vegetable
 
 class SpecificCategoryListAdapter(private val vegetableList: List<Vegetable>
 ) : RecyclerView.Adapter<SpecificCategoryListAdapter.MyViewHolder1>() {

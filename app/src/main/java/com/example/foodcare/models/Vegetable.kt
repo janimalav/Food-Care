@@ -1,4 +1,4 @@
-package com.example.foodcare
+package com.example.foodcare.models
 
 import java.io.Serializable
 

@@ -1,4 +1,4 @@
-package com.example.foodcare
+package com.example.foodcare.adapters
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -10,6 +10,9 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
+import com.example.foodcare.views.ItemActivity
+import com.example.foodcare.R
+import com.example.foodcare.models.Vegetable
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
@@ -85,7 +88,7 @@ class ChildRecyclerViewAdapter(
         }
     }
 
-    private fun openActivity(holder: ChildRecyclerViewAdapter.MyViewHolder, item: Vegetable) {
+    private fun openActivity(holder: MyViewHolder, item: Vegetable) {
 
         val intent = Intent(holder.textLayout.context, ItemActivity::class.java)
         intent.putExtra("ItemDetails", item)

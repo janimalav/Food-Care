@@ -32,10 +32,10 @@
             android:theme="@style/AppTheme.NoActionBar"/>
 
         <activity android:name=".SignupActivity"/>
-        <activity android:name=".MainActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".layout" android:windowSoftInputMode="adjustPan"/>
         <activity android:name=".profile_page"/>
-        <activity android:name=".ItemActivity"/>
-        <activity android:name=".CategoryListActivity" />
+        <activity android:name=".views.ItemActivity"/>
+        <activity android:name=".views.CategoryListActivity" />
 
     </application>
 

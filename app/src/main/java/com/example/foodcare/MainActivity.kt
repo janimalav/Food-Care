@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.bumptech.glide.annotation.GlideModule
 import com.bumptech.glide.module.AppGlideModule
+import com.example.foodcare.views.home
 import com.example.myapp.MapFragment
 import com.example.myapp.SellFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView

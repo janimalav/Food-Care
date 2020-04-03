@@ -1,4 +1,4 @@
-package com.example.foodcare
+package com.example.foodcare.views
 
 import android.annotation.SuppressLint
 import android.content.DialogInterface
@@ -11,6 +11,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.example.foodcare.R
+import com.example.foodcare.models.Vegetable
 import com.squareup.picasso.Picasso
 
 class ItemActivity : AppCompatActivity() {

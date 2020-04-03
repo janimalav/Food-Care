@@ -1,4 +1,4 @@
-package com.example.foodcare
+package com.example.foodcare.models
 
 class CategoryLogo() {
     var name: String? = null
