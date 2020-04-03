@@ -5,6 +5,7 @@ import android.content.SharedPreferences
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.FirebaseApp
@@ -24,6 +25,10 @@ class profile_page : AppCompatActivity() {
         setContentView(R.layout.activity_profile_page)
 
         val user = FirebaseAuth.getInstance().currentUser
+
+        findViewById<ImageView>(R.id.imageView5).setOnClickListener {
+            finish()
+        }
 
         val edtName: EditText = findViewById(R.id.et_name)
         val edtEmail: EditText = findViewById(R.id.et_email)

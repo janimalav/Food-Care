@@ -23,7 +23,8 @@
         android:layout_height="230dp"
         android:src="@drawable/veggie1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"/>
 
     <TextView
         android:id="@+id/MainText"
@@ -106,9 +107,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/marginStart"
         android:layout_marginTop="4dp"
-
         android:text="-"
         android:textSize="20dp"
+        android:paddingHorizontal="5dp"
         app:layout_constraintStart_toStartOf="@id/quantity"
         app:layout_constraintTop_toTopOf="@id/quantity" />
 
@@ -121,6 +122,7 @@
         android:background="#dcdcdc"
         android:text="+"
         android:textSize="20dp"
+        android:paddingHorizontal="5dp"
         app:layout_constraintEnd_toEndOf="@id/quantity"
         app:layout_constraintTop_toTopOf="@id/quantity" />
 

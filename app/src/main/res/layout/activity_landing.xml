@@ -61,7 +61,8 @@
         android:paddingBottom="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/email_layout">
+        app:layout_constraintTop_toBottomOf="@id/email_layout"
+        app:endIconMode="password_toggle">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/landing_password"
@@ -86,23 +87,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/password_layout" />
 
-    <Button
+    <TextView
         android:id="@+id/landing_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:text="Register"
-        app:layout_constraintEnd_toStartOf="@id/landing_explore"
+        android:layout_marginTop="20dp"
+        android:text="Not a User? Register Here!"
+        android:textSize="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/landing_login" />
 
-    <Button
+    <TextView
         android:id="@+id/landing_explore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Explore"
+        android:layout_marginTop="30dp"
+        android:text="Explore as a Guest"
+        android:textSize="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/landing_register"
-        app:layout_constraintBottom_toBottomOf="@id/landing_register" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/landing_register" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

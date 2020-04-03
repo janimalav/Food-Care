@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
 import com.google.firebase.auth.FirebaseAuth
@@ -34,6 +35,8 @@ class Profile : Fragment() {
         auth = FirebaseAuth.getInstance()
 
         val v = inflater.inflate(R.layout.fragment_profile, container, false)
+
+        v.findViewById<TextView>(R.id.textview6).setText("Hello " + auth.currentUser?.displayName + "!")
 
         v.findViewById<ConstraintLayout>(R.id.cl_edit_profile).setOnClickListener{
             val intent = Intent(requireContext(),profile_page::class.java)

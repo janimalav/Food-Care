@@ -91,13 +91,13 @@ class LandingActivity : AppCompatActivity(), MultiplePermissionsListener {
             }
         }
 
-        val signup = findViewById<Button>(R.id.landing_register)
+        val signup = findViewById<TextView>(R.id.landing_register)
         signup.setOnClickListener {
             val nextActivity = Intent(applicationContext, SignupActivity::class.java)
             startActivity(nextActivity)
         }
 
-        val explore = findViewById<Button>(R.id.landing_explore)
+        val explore = findViewById<TextView>(R.id.landing_explore)
         explore.setOnClickListener {
             val nextActivity = Intent(applicationContext, layout::class.java)
             startActivity(nextActivity)

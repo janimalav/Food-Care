@@ -3,14 +3,17 @@ package com.example.foodcare
 import android.content.Context
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.bumptech.glide.Glide
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthUserCollisionException
 import com.google.firebase.auth.UserProfileChangeRequest
 import com.google.firebase.database.FirebaseDatabase
-
+import kotlinx.android.synthetic.main.activity_landing.*
+import kotlinx.android.synthetic.main.activity_signup.*
 
 class SignupActivity : AppCompatActivity() {
 
@@ -21,9 +24,13 @@ class SignupActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
 
-        val sharedPref = getSharedPreferences("user_name",Context.MODE_PRIVATE)
+        Glide.with(baseContext).load(R.drawable.logo_gif).into(sigup_img)
 
         auth = FirebaseAuth.getInstance()
+
+        findViewById<ImageView>(R.id.imageView4).setOnClickListener {
+            finish()
+        }
 
         val name = findViewById<TextInputEditText>(R.id.signup_name)
         val email = findViewById<TextInputEditText>(R.id.signup_email)
