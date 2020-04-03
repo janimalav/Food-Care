@@ -20,8 +20,8 @@
     <string name="sell_form_product_name">Enter Product Name</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="sell_form_product_desc">Enter Product Description</string>
-    <string name="sell_form_product_price">Enter Price</string>
-    <string name="sell_form_product_weight">Enter No. of Units</string>
+    <string name="sell_form_product_price">Price</string>
+    <string name="sell_form_product_weight">Units</string>
     <string name="sell_form_product_add">Enter Pick Up Address</string>
     <string name="category">Category</string>
     <string name="error_field_required">This is required field</string>

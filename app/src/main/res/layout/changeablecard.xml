@@ -8,6 +8,5 @@
     android:layout_height="62dp"
     app:cardCornerRadius="125dp"
     android:layout_gravity="center"
-
     />
 

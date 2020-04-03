@@ -43,9 +43,8 @@ class LandingActivity : AppCompatActivity(), MultiplePermissionsListener {
         // Check if user is signed in (non-null) and update UI accordingly.
         val currentUser = auth.currentUser
         if(currentUser != null){
-            Toast.makeText(baseContext, "Already login.", Toast.LENGTH_SHORT).show()
-        }else{
-            Toast.makeText(baseContext, "Not logged in.", Toast.LENGTH_SHORT).show()
+            val nextActivity = Intent(applicationContext, MainActivity::class.java)
+            startActivity(nextActivity)
         }
     }
 
@@ -92,13 +91,13 @@ class LandingActivity : AppCompatActivity(), MultiplePermissionsListener {
             }
         }
 
-        val signup = findViewById<TextView>(R.id.landing_register)
+        val signup = findViewById<Button>(R.id.landing_register)
         signup.setOnClickListener {
             val nextActivity = Intent(applicationContext, SignupActivity::class.java)
             startActivity(nextActivity)
         }
 
-        val explore = findViewById<TextView>(R.id.landing_explore)
+        val explore = findViewById<Button>(R.id.landing_explore)
         explore.setOnClickListener {
             val nextActivity = Intent(applicationContext, MainActivity::class.java)
             startActivity(nextActivity)

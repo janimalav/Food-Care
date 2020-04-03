@@ -28,7 +28,6 @@ class CategoryLogoViewAdapter(private val logoList: List<CategoryLogo>, private 
         view = layoutInflater.inflate(R.layout.category_recycler, parent, false)
         parents = home.getParentsItems()
 
-
         return MyLogoViewHolder(
                 view
         )

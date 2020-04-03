@@ -21,18 +21,18 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name=".SplashScreen" android:theme="@style/AppTheme.NoActionBar"/>
-
-        <activity android:name=".LandingActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".SignupActivity" android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".LandingActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".SignupActivity"/>
+        <activity android:name=".MainActivity" android:windowSoftInputMode="adjustPan"/>
         <activity android:name=".profile_page"/>
         <activity android:name=".ItemActivity"/>
         <activity android:name=".CategoryListActivity" />

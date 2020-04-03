@@ -9,15 +9,17 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="10dp">
+        android:paddingBottom="30dp">
 
         <ImageButton
+            android:id="@+id/contactus_closebutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/help_close"
-            android:id="@+id/contactus_closebutton"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="6dp"/>
 
 
         <ImageView
@@ -35,23 +37,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="32dp"
-            android:text="(902)-880-78987"
+            android:layout_marginTop="6dp"
+            android:text="(999)-999-9999"
             android:textColor="@color/appColor"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/phn"
-            app:layout_constraintTop_toBottomOf="@+id/logo" />
+            app:layout_constraintTop_toBottomOf="@+id/txt_phone" />
 
         <TextView
             android:id="@+id/txt_phone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="30dp"
             android:text="Phone Number"
             android:textColor="#d6d6c2"
+            android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/phn"
-            app:layout_constraintTop_toBottomOf="@+id/txt_number" />
+            app:layout_constraintTop_toBottomOf="@+id/logo" />
 
         <ImageView
             android:id="@+id/email"
@@ -80,23 +83,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="3dp"
             android:text="support@foodcare.com"
             android:textColor="@color/appColor"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/email"
-            app:layout_constraintTop_toBottomOf="@+id/txt_phone" />
+            app:layout_constraintTop_toBottomOf="@+id/txt_emailAdd" />
 
         <TextView
             android:id="@+id/txt_emailAdd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="30dp"
             android:text="Email"
             android:textColor="#d6d6c2"
+            android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/email"
-            app:layout_constraintTop_toBottomOf="@+id/txt_email" />
+            app:layout_constraintTop_toBottomOf="@+id/txt_number" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

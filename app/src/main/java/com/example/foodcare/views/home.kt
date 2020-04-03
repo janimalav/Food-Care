@@ -33,11 +33,8 @@ class home : Fragment() {
     private var count: Int = 4
 
 
-    override fun onCreateView(
-            inflater: LayoutInflater,
-            container: ViewGroup?,
-            savedInstanceState: Bundle?
-    ): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
+                              savedInstanceState: Bundle?): View? {
 
         var view = inflater.inflate(R.layout.fragment_home, container, false)
         vegetables_3 = mutableListOf()

@@ -8,11 +8,7 @@ class CategoryLogo() {
     var url: String? = null
         private set
 
-    constructor(
-        name: String?,
-                thumbnail: Int,
-                url: String?
-                ) : this() {
+    constructor(name: String?, thumbnail: Int, url: String?) : this() {
         this.name=name
         this.thumbnail=thumbnail
         this.url=url
