@@ -1,15 +1,13 @@
 package com.example.foodcare
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.bumptech.glide.annotation.GlideModule
 import com.bumptech.glide.module.AppGlideModule
 import com.example.myapp.BuyFragment
 import com.example.myapp.MapFragment
-import com.example.myapp.ProfileFragment
 import com.example.myapp.SellFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
@@ -23,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         get() = BottomNavigationView.OnNavigationItemSelectedListener { item ->
             when(item.itemId){
                 R.id.bottomNavigationBuyId ->{
-                    replaceFragment(BuyFragment())
+                    replaceFragment(home())
                     return@OnNavigationItemSelectedListener true
                 }
                 R.id.bottomNavigationSellId->{
@@ -35,7 +33,7 @@ class MainActivity : AppCompatActivity() {
                     return@OnNavigationItemSelectedListener true
                 }
                 R.id.bottomNavigationProfileId->{
-                    replaceFragment(ProfileFragment())
+                    replaceFragment(Profile())
                     return@OnNavigationItemSelectedListener true
                 }
             }
@@ -46,7 +44,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         bottomNavigationBar.setOnNavigationItemSelectedListener(onNavLis)
-        replaceFragment(BuyFragment())
+        replaceFragment(home())
     }
 
     private fun replaceFragment(fragment:Fragment){

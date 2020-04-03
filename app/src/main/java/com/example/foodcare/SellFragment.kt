@@ -17,21 +17,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.core.view.drawToBitmap
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModel
 import com.example.foodcare.FoodItem
 import com.example.foodcare.FoodItemViewModel
 import com.example.foodcare.R
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
-import com.google.firebase.storage.UploadTask
-import kotlinx.android.synthetic.*
-import kotlinx.android.synthetic.main.activity_capture_image.*
 import kotlinx.android.synthetic.main.fragment_sell.*
 import java.io.ByteArrayOutputStream
 import java.util.*
@@ -47,7 +40,7 @@ class SellFragment : Fragment() {
     private var latitude: Double = 0.0
 
     private lateinit var viewmModel: FoodItemViewModel
-    private val CAMERA_REQUEST = 1
+    private var CAMERA_REQUEST = 1888
     private lateinit var imgview: ImageView
 
     val fooditem = FoodItem()
