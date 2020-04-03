@@ -14,16 +14,16 @@ import android.widget.Toast
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import com.example.phase1proj.views.ItemActivity
 import com.example.phase1proj.R
-import com.example.phase1proj.views.home
 import com.example.phase1proj.models.Category
 import com.example.phase1proj.models.CategoryLogo
+import com.example.phase1proj.views.ItemActivity
+import com.example.phase1proj.views.home
 import kotlinx.android.synthetic.main.child_card_view_list.view.*
 
 
 class CategoryLogoViewAdapter(private val logoList: List<CategoryLogo>, private val home: home) :
-    RecyclerView.Adapter<CategoryLogoViewAdapter.MyLogoViewHolder>() {
+        RecyclerView.Adapter<CategoryLogoViewAdapter.MyLogoViewHolder>() {
     private lateinit var parents: List<Category>
     private lateinit var globalparents: List<Category>
     private lateinit var selectCategories: List<String>
@@ -36,14 +36,29 @@ class CategoryLogoViewAdapter(private val logoList: List<CategoryLogo>, private 
 
 
         return MyLogoViewHolder(
-            view
+                view
         )
     }
 
     @SuppressLint("ResourceType")
     override fun onBindViewHolder(holder: MyLogoViewHolder, position: Int) {
         holder.logoName.text = logoList[position].name
-        holder.logoImage.setImageResource(logoList[position].thumbnail!!)
+
+        var imageSource = when (logoList[position].name) {
+            "Meat & Poultry" -> R.drawable.meat_1
+            "Fish & Seafood" -> R.drawable.fish_sea_food_m
+            "Dairy & Cheese" -> R.drawable.dairy_cheese_m
+            "Fruits & Veggies" -> R.drawable.fruits_veggies_1
+            "Bakery" -> R.drawable.bakery_m
+            "Grocery" -> R.drawable.grocery
+            "Frozen" -> R.drawable.frozen_1
+            "Drinks" -> R.drawable.drinks_m
+            "Organic" -> R.drawable.organic
+            "Other" -> R.drawable.veggie1
+
+            else -> R.drawable.veggie2
+        }
+        holder.logoImage.setImageResource(imageSource)
         holder.logoImage.tag = logoList[position].thumbnail!!
 
         var parser = holder.logoImage.resources.getXml(R.layout.changeablecard)
@@ -73,18 +88,18 @@ class CategoryLogoViewAdapter(private val logoList: List<CategoryLogo>, private 
 
             if (holder.logoImage.tag == logoList[position].thumbnail!!) {
                 holder.logoImage.tag =
-                    R.drawable.border_category
+                        R.drawable.border_category
                 Toast.makeText(
-                    holder.logoImage.context,
-                    "You clicked on ImageView.",
-                    Toast.LENGTH_SHORT
+                        holder.logoImage.context,
+                        "You clicked on ImageView.",
+                        Toast.LENGTH_SHORT
                 ).show()
 
 
                 (selectCategories as MutableList<String>).add(holder.logoName.text.toString())
                 parents = home.SearchItems(
-                    "", parents = set_globalparents as MutableList<Category>,
-                    categoryList = selectCategories
+                        "", parents = set_globalparents as MutableList<Category>,
+                        categoryList = selectCategories
                 )
                 home.setParentsWithAdapter(parents)
 //                holder.innerCard.layoutParams.height=holder.innerCard.layoutParams.height-5
@@ -97,14 +112,14 @@ class CategoryLogoViewAdapter(private val logoList: List<CategoryLogo>, private 
                 println("its here")
                 set_globalparents = home.wholeParentItems().copy()
                 Toast.makeText(
-                    holder.logoImage.context,
-                    "You unclicked on ImageView.",
-                    Toast.LENGTH_SHORT
+                        holder.logoImage.context,
+                        "You unclicked on ImageView.",
+                        Toast.LENGTH_SHORT
                 ).show()
                 (selectCategories as MutableList<String>).remove(holder.logoName.text.toString())
                 parents = home.SearchItems(
-                    "", parents = set_globalparents as MutableList<Category>,
-                    categoryList = selectCategories
+                        "", parents = set_globalparents as MutableList<Category>,
+                        categoryList = selectCategories
                 )
                 home.setParentsWithAdapter(parents)
                 holder.logoImage.tag = logoList[position].thumbnail!!
@@ -131,9 +146,9 @@ class CategoryLogoViewAdapter(private val logoList: List<CategoryLogo>, private 
 
         init {
             logoName =
-                itemsView.findViewById<View>(R.id.categoryLogoName) as TextView
+                    itemsView.findViewById<View>(R.id.categoryLogoName) as TextView
             logoImage =
-                itemsView.findViewById<View>(R.id.categoryLogo) as ImageView
+                    itemsView.findViewById<View>(R.id.categoryLogo) as ImageView
             innerCard = itemsView.findViewById(R.id.innerCardView)
         }
     }

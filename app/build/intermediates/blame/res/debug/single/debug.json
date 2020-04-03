@@ -260,6 +260,14 @@
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/f000dbc13dae948c70750715323d16f3/appcompat-1.1.0-rc01/res/drawable-v23/abc_control_background_material.xml"
     },
     {
+        "merged": "/home/arjun/android_git/app/build/intermediates/res/merged/debug/drawable_drinks_m.jpg.flat",
+        "source": "/home/arjun/android_git/app/src/main/res/drawable/drinks_m.jpg"
+    },
+    {
+        "merged": "/home/arjun/android_git/app/build/intermediates/res/merged/debug/drawable_dairy_cheese_m.jpg.flat",
+        "source": "/home/arjun/android_git/app/src/main/res/drawable/dairy_cheese_m.jpg"
+    },
+    {
         "merged": "/home/arjun/android_git/app/build/intermediates/res/merged/debug/layout_test_design_checkbox.xml.flat",
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/41d79cdf363b9a204eee37926bd85aba/material-1.1.0-alpha10/res/layout/test_design_checkbox.xml"
     },
@@ -584,6 +592,10 @@
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/f000dbc13dae948c70750715323d16f3/appcompat-1.1.0-rc01/res/color-v23/abc_tint_default.xml"
     },
     {
+        "merged": "/home/arjun/android_git/app/build/intermediates/res/merged/debug/drawable_frozen_1.jpg.flat",
+        "source": "/home/arjun/android_git/app/src/main/res/drawable/frozen_1.jpg"
+    },
+    {
         "merged": "/home/arjun/android_git/app/build/intermediates/res/merged/debug/drawable-v21_mtrl_popupmenu_background.xml.flat",
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/41d79cdf363b9a204eee37926bd85aba/material-1.1.0-alpha10/res/drawable-v21/mtrl_popupmenu_background.xml"
     },
@@ -820,12 +832,16 @@
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/f74c49aa4adde6729b5af83287061190/play-services-base-17.0.0/res/color/common_google_signin_btn_text_dark.xml"
     },
     {
-        "merged": "/home/arjun/android_git/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
-        "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/21f1096c407400fe05ee60731aa7a29a/core-1.1.0-rc03/res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png"
+        "merged": "/home/arjun/android_git/app/build/intermediates/res/merged/debug/drawable_grocery.jpg.flat",
+        "source": "/home/arjun/android_git/app/src/main/res/drawable/grocery.jpg"
     },
     {
         "merged": "/home/arjun/android_git/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
         "source": "/home/arjun/android_git/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/arjun/android_git/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/21f1096c407400fe05ee60731aa7a29a/core-1.1.0-rc03/res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png"
     },
     {
         "merged": "/home/arjun/android_git/app/build/intermediates/res/merged/debug/color_material_on_surface_disabled.xml.flat",
@@ -934,6 +950,10 @@
     {
         "merged": "/home/arjun/android_git/app/build/intermediates/res/merged/debug/drawable_abc_ic_search_api_material.xml.flat",
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/f000dbc13dae948c70750715323d16f3/appcompat-1.1.0-rc01/res/drawable/abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "/home/arjun/android_git/app/build/intermediates/res/merged/debug/drawable_organic.jpg.flat",
+        "source": "/home/arjun/android_git/app/src/main/res/drawable/organic.jpg"
     },
     {
         "merged": "/home/arjun/android_git/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
@@ -1068,6 +1088,10 @@
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/f000dbc13dae948c70750715323d16f3/appcompat-1.1.0-rc01/res/interpolator/btn_checkbox_checked_mtrl_animation_interpolator_1.xml"
     },
     {
+        "merged": "/home/arjun/android_git/app/build/intermediates/res/merged/debug/drawable_fish_sea_food_m.jpg.flat",
+        "source": "/home/arjun/android_git/app/src/main/res/drawable/fish_sea_food_m.jpg"
+    },
+    {
         "merged": "/home/arjun/android_git/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/f000dbc13dae948c70750715323d16f3/appcompat-1.1.0-rc01/res/drawable-xxxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
     },
@@ -1134,6 +1158,10 @@
     {
         "merged": "/home/arjun/android_git/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_design_ic_visibility_off.png.flat",
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/41d79cdf363b9a204eee37926bd85aba/material-1.1.0-alpha10/res/drawable-xxhdpi-v4/design_ic_visibility_off.png"
+    },
+    {
+        "merged": "/home/arjun/android_git/app/build/intermediates/res/merged/debug/drawable_bakery_m.jpg.flat",
+        "source": "/home/arjun/android_git/app/src/main/res/drawable/bakery_m.jpg"
     },
     {
         "merged": "/home/arjun/android_git/app/build/intermediates/res/merged/debug/animator_mtrl_extended_fab_show_motion_spec.xml.flat",
@@ -1300,6 +1328,10 @@
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/f000dbc13dae948c70750715323d16f3/appcompat-1.1.0-rc01/res/drawable-xhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
+        "merged": "/home/arjun/android_git/app/build/intermediates/res/merged/debug/drawable_meat_1.jpg.flat",
+        "source": "/home/arjun/android_git/app/src/main/res/drawable/meat_1.jpg"
+    },
+    {
         "merged": "/home/arjun/android_git/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_design_ic_visibility_off.png.flat",
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/41d79cdf363b9a204eee37926bd85aba/material-1.1.0-alpha10/res/drawable-xxxhdpi-v4/design_ic_visibility_off.png"
     },
@@ -1452,6 +1484,10 @@
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/f000dbc13dae948c70750715323d16f3/appcompat-1.1.0-rc01/res/drawable/abc_list_selector_holo_light.xml"
     },
     {
+        "merged": "/home/arjun/android_git/app/build/intermediates/res/merged/debug/drawable_fruits_veggies_1.jpg.flat",
+        "source": "/home/arjun/android_git/app/src/main/res/drawable/fruits_veggies_1.jpg"
+    },
+    {
         "merged": "/home/arjun/android_git/app/build/intermediates/res/merged/debug/layout_custom_dialog.xml.flat",
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/21f1096c407400fe05ee60731aa7a29a/core-1.1.0-rc03/res/layout/custom_dialog.xml"
     },
@@ -1488,16 +1524,16 @@
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/f000dbc13dae948c70750715323d16f3/appcompat-1.1.0-rc01/res/drawable/btn_checkbox_checked_to_unchecked_mtrl_animation.xml"
     },
     {
-        "merged": "/home/arjun/android_git/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_design_ic_visibility.png.flat",
-        "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/41d79cdf363b9a204eee37926bd85aba/material-1.1.0-alpha10/res/drawable-xhdpi-v4/design_ic_visibility.png"
+        "merged": "/home/arjun/android_git/app/build/intermediates/res/merged/debug/color_material_on_primary_emphasis_medium.xml.flat",
+        "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/41d79cdf363b9a204eee37926bd85aba/material-1.1.0-alpha10/res/color/material_on_primary_emphasis_medium.xml"
     },
     {
         "merged": "/home/arjun/android_git/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/f000dbc13dae948c70750715323d16f3/appcompat-1.1.0-rc01/res/drawable-xxhdpi-v4/abc_ic_star_half_black_16dp.png"
     },
     {
-        "merged": "/home/arjun/android_git/app/build/intermediates/res/merged/debug/color_material_on_primary_emphasis_medium.xml.flat",
-        "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/41d79cdf363b9a204eee37926bd85aba/material-1.1.0-alpha10/res/color/material_on_primary_emphasis_medium.xml"
+        "merged": "/home/arjun/android_git/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_design_ic_visibility.png.flat",
+        "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/41d79cdf363b9a204eee37926bd85aba/material-1.1.0-alpha10/res/drawable-xhdpi-v4/design_ic_visibility.png"
     },
     {
         "merged": "/home/arjun/android_git/app/build/intermediates/res/merged/debug/drawable_ic_menu_arrow_down_black_24dp.xml.flat",
@@ -2356,12 +2392,12 @@
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/f000dbc13dae948c70750715323d16f3/appcompat-1.1.0-rc01/res/drawable-hdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
-        "merged": "/home/arjun/android_git/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
-        "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/f000dbc13dae948c70750715323d16f3/appcompat-1.1.0-rc01/res/drawable-xhdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/home/arjun/android_git/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/f000dbc13dae948c70750715323d16f3/appcompat-1.1.0-rc01/res/drawable-mdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "/home/arjun/android_git/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
+        "source": "/home/arjun/.gradle/caches/transforms-2/files-2.1/f000dbc13dae948c70750715323d16f3/appcompat-1.1.0-rc01/res/drawable-xhdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
         "merged": "/home/arjun/android_git/app/build/intermediates/res/merged/debug/color_mtrl_btn_stroke_color_selector.xml.flat",

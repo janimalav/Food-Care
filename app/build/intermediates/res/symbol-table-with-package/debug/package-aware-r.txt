@@ -1351,6 +1351,7 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable backbuuton
 drawable background
+drawable bakery_m
 drawable border_category
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -1381,16 +1382,22 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable dairy_cheese_m
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable drinks_m
 drawable empty_result
+drawable fish_sea_food_m
 drawable frozen
+drawable frozen_1
+drawable fruits_veggies_1
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable grocery
 drawable home
 drawable ic_account_circle_black_24dp
 drawable ic_calendar_black_24dp
@@ -1410,6 +1417,7 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_notifications
 drawable ic_sms
 drawable ic_store_black_24dp
+drawable meat_1
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -1432,6 +1440,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable organic
 drawable search_background
 drawable test_custom_background
 drawable tooltip_frame_dark

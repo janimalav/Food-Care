@@ -51,7 +51,7 @@ class home : Fragment() {
 
         var view = inflater.inflate(R.layout.fragment_home, container, false)
         vegetables_3 = mutableListOf()
-        fetchVegetbles(dbitems) 
+        fetchVegetbles(dbitems)
         wholeFetchVegetbles(dbitems)
 
         //
@@ -93,10 +93,18 @@ class home : Fragment() {
 
             override fun onQueryTextSubmit(query: String?): Boolean {
                 Toast.makeText(context, "Looking for $query", Toast.LENGTH_LONG).show()
-
+                var new_parents: MutableList<Category> = mutableListOf()
+                for (i in parents) {
+                    var new_childrens: MutableList<Vegetable> = mutableListOf()
+                    var category_name = i.name
+                    for (j in i.children) {
+                        new_childrens.add(Vegetable(j.name, j.category, j.thumbnail, j.description, j.stock, j.price, j.weight, j.url))
+                    }
+                    new_parents.add(Category(category_name, new_childrens))
+                }
                 searchview.clearFocus()
 //                var categories = getParents(4, query)
-                var categories = SearchItems(query,parents.toMutableList())
+                var categories = SearchItems(query, new_parents)
                 if (categories.isNotEmpty()) {
                     recyclerView.apply {
                         layoutManager = LinearLayoutManager(
@@ -138,7 +146,15 @@ class home : Fragment() {
 
             override fun onQueryTextChange(newText: String?): Boolean {
                 if (newText.equals("")) {
-
+                    var new_parents: MutableList<Category> = mutableListOf()
+                    for (i in parents) {
+                        var new_childrens: MutableList<Vegetable> = mutableListOf()
+                        var category_name = i.name
+                        for (j in i.children) {
+                            new_childrens.add(Vegetable(j.name, j.category, j.thumbnail, j.description, j.stock, j.price, j.weight, j.url))
+                        }
+                        new_parents.add(Category(category_name, new_childrens))
+                    }
                     searchview.clearFocus()
                     recyclerView.apply {
                         layoutManager = LinearLayoutManager(
@@ -148,7 +164,7 @@ class home : Fragment() {
                         )
                         adapter =
                                 ParentRecyclerViewAdapter(
-                                        SearchItems(newText,parents = parents.toMutableList())
+                                        SearchItems(newText, parents = new_parents)
                                 )
                         invalidate()
                         recyclerView.visibility = View.VISIBLE
@@ -256,7 +272,16 @@ class home : Fragment() {
             parents: MutableList<Category>,
             categoryList: List<String>? = null
     ): MutableList<Category> {
-        var parents1 = parents.copy()
+        var new_parents: MutableList<Category> = mutableListOf()
+        for (i in parents) {
+            var new_childrens: MutableList<Vegetable> = mutableListOf()
+            var category_name = i.name
+            for (j in i.children) {
+                new_childrens.add(Vegetable(j.name, j.category, j.thumbnail, j.description, j.stock, j.price, j.weight, j.url))
+            }
+            new_parents.add(Category(category_name, new_childrens))
+        }
+        var parents1 = new_parents
         if (searchText != "") {
             for (i in parents1) {
 
@@ -321,7 +346,7 @@ class home : Fragment() {
     }
 
     fun fetchVegetbles(dbitems: DatabaseReference) {
-        usermap= hashMapOf()
+        usermap = hashMapOf()
         dbitems.addValueEventListener(object : ValueEventListener {
             override fun onCancelled(error: DatabaseError) {}
 
@@ -338,11 +363,11 @@ class home : Fragment() {
                             }
                             if (usermap[author.userName!!] == null) {
 
-                                var new_vegetable = mutableListOf<Vegetable>(Vegetable(name = author.name!!, category = author.category!!, thumbnail = 999, description = author.description,stock =  author.units?.toInt(), price = author.price?.toDouble(), weight = "229g", url = author.imgurl))
+                                var new_vegetable = mutableListOf<Vegetable>(Vegetable(name = author.name!!, category = author.category!!, thumbnail = 999, description = author.description, stock = author.units?.toInt(), price = author.price?.toDouble(), weight = "229g", url = author.imgurl))
                                 usermap.put(author.userName!!, new_vegetable)
                             } else {
                                 var old_vegetable: MutableList<Vegetable> = usermap.getValue(author.userName!!)
-                                old_vegetable.add((Vegetable(name = author.name!!, category = author.category!!, thumbnail = 999, description = author.description,stock =  author.units?.toInt(), price = author.price?.toDouble(), weight = "229g", url = author.imgurl)))
+                                old_vegetable.add((Vegetable(name = author.name!!, category = author.category!!, thumbnail = 999, description = author.description, stock = author.units?.toInt(), price = author.price?.toDouble(), weight = "229g", url = author.imgurl)))
                             }
 //                            vegetables_1.add(Vegetable(name = author.name!!, category = author.category!!, thumbnail = 999, description = author.description, stock = 10, price = author.price?.toDouble(), weight = "229g", url = author.imgurl))
                         }
@@ -377,8 +402,9 @@ class home : Fragment() {
         })
 
     }
+
     fun wholeFetchVegetbles(dbitems: DatabaseReference) {
-        wholeusermap= hashMapOf()
+        wholeusermap = hashMapOf()
         dbitems.addValueEventListener(object : ValueEventListener {
             override fun onCancelled(error: DatabaseError) {}
 
