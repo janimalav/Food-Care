@@ -56,5 +56,9 @@
 <u>CONSUMERS</u>
 \n Browse grocery stores and restaurants in your area to find great deals on groceries and prepared foods. Make your purchases directly within the app, then pick up your items at the store location.
     </string>
+
+    <string name="_8_32"> <strike>$8.32</strike></string>
+    <string name="itemdetails">This product was frozen prior to its best before date.\nProduct good for consumption for at least 90 days if kept frozen </string>
+
 </resources>
 

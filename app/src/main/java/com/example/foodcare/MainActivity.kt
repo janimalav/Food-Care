@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         get() = BottomNavigationView.OnNavigationItemSelectedListener { item ->
             when(item.itemId){
                 R.id.bottomNavigationBuyId ->{
-                    replaceFragment(BuyFragment())
+                    replaceFragment(home())
                     return@OnNavigationItemSelectedListener true
                 }
                 R.id.bottomNavigationSellId->{
@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         bottomNavigationBar.setOnNavigationItemSelectedListener(onNavLis)
-        replaceFragment(BuyFragment())
+        replaceFragment(home())
     }
 
     private fun replaceFragment(fragment:Fragment){
