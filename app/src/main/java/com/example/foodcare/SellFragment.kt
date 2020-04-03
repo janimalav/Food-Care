@@ -31,7 +31,6 @@ import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import com.google.firebase.storage.UploadTask
 import kotlinx.android.synthetic.*
-import kotlinx.android.synthetic.main.activity_capture_image.*
 import kotlinx.android.synthetic.main.fragment_sell.*
 import java.io.ByteArrayOutputStream
 import java.util.*

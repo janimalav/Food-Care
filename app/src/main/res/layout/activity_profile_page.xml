@@ -4,8 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".profile_page">
-
+    tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_name"
@@ -26,7 +25,7 @@
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
-                android:text="Name"
+                android:hint="Name"
                 android:textColor="@android:color/black"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -46,18 +45,8 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/person" />
 
-            <!-- <ImageView
-                 android:id="@+id/iv_edit_profile_back"
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content"
-                 android:layout_marginEnd="24dp"
-                 android:background="#26b11d"
-                 app:layout_constraintBottom_toBottomOf="@+id/et_name"
-                 app:layout_constraintEnd_toEndOf="parent"
-                 app:layout_constraintTop_toTopOf="@+id/et_name"
-                 app:srcCompat="@drawable/edit" />-->
-
         </androidx.constraintlayout.widget.ConstraintLayout>
+
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -73,17 +62,6 @@
             android:id="@+id/cl_email"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
-            <!--<ImageView
-                android:id="@+id/iv_email_edit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="24dp"
-                android:background="#26b11d"
-                app:layout_constraintBottom_toBottomOf="@+id/et_email"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/et_email"
-                app:srcCompat="@drawable/edit" />-->
 
             <ImageView
                 android:id="@+id/iv_email"
@@ -102,7 +80,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
                 android:inputType="textEmailAddress"
-                android:text="Email"
+                android:hint="Email"
                 android:textColor="@android:color/black"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="@+id/iv_email"
@@ -113,122 +91,9 @@
             </EditText>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="409dp"
-        android:layout_height="90dp"
-        android:id="@+id/cv_password"
-        android:layout_marginTop="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cv_email"
-        >
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/cl_password"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-
-            <!-- <ImageView
-                 android:id="@+id/iv_password_edit"
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content"
-                 android:layout_marginEnd="24dp"
-                 android:background="#26b11d"
-                 app:layout_constraintBottom_toBottomOf="@+id/et_password"
-                 app:layout_constraintEnd_toEndOf="parent"
-                 app:layout_constraintTop_toTopOf="@+id/et_password"
-                 app:srcCompat="@drawable/edit" />-->
-
-            <ImageView
-                android:id="@+id/iv_password"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:contentDescription="@string/todo"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/password" />
-
-            <EditText
-                android:id="@+id/et_password"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="40dp"
-                android:inputType="textPassword"
-                android:text="password"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/iv_password"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.441" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="409dp"
-        android:layout_height="90dp"
-        android:id="@+id/cv_signout"
-        android:layout_marginTop="15dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cv_password" >
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/cl_address"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <!--<ImageView
-                android:id="@+id/iv_address_edit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="24dp"
-                android:background="#26b11d"
-                app:layout_constraintBottom_toBottomOf="@+id/et_address"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/et_address"
-                app:srcCompat="@drawable/edit" />
--->
-            <ImageView
-                android:id="@+id/iv_address"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:contentDescription="@string/todo"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/address" />
-
-            <EditText
-                android:id="@+id/et_address"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="40dp"
-                android:inputType="textMultiLine"
-                android:text="Address"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/iv_address"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.511" />
-
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/relative_layout">
-
-
-        </RelativeLayout>
 
     </androidx.cardview.widget.CardView>
+
 
     <Button
         android:id="@+id/reset"
@@ -244,7 +109,35 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cv_signout" />
+        app:layout_constraintTop_toBottomOf="@+id/cv_email" />
 
+    <Button
+        android:id="@+id/resend"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/appColor"
+        android:backgroundTint="@color/appColor"
+        android:text="Send Reset Password Link"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reset" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/resend"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_red_light"
+        android:text="You need to Re-login after updating information" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

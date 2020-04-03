@@ -2,13 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.foodcare">
 
-    <!-- Adding Camera, Write External Storage Permission -->
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-feature android:name="android.hardware.camera2.full" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera2.full" />
 
     <application
         android:allowBackup="true"
@@ -22,28 +21,21 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name=".SignupActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".SplashScreen" android:theme="@style/AppTheme.NoActionBar"/>
+
         <activity android:name=".LandingActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".SplashScreen"
             android:theme="@style/AppTheme.NoActionBar">
-
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
-
-        <activity android:name=".profile_page"></activity>
-        <activity android:name=".CaptureImage"></activity>
-        <activity android:name=".MainActivity">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CaptureImage" />
+
+        <activity android:name=".SignupActivity" android:theme="@style/AppTheme.NoActionBar"/>
+
         <activity android:name=".MainActivity"/>
+
+        <activity android:name=".profile_page"/>
     </application>
 
 </manifest>

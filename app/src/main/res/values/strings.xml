@@ -32,17 +32,6 @@
     <string name="item_img">Item Image</string>
     <string name="select_category">Select Category</string>
 
-    <string name="title_activity_maps">Food Care</string>
-    <string name="normal_map">Normal Map</string>
-    <string name="hybrid_map">Hybrid Map</string>
-    <string name="satellite_map">Satellite Map</string>
-    <string name="terrain_map">Terrain Map</string>
-    <string name="lat_long_snippet">Lat: %1$.5f, Long: %2$.5f</string>
-    <string name="dropped_pin">Dropped Pin</string>
-    <string name="poi">poi</string>
-    <string name="zoom">15f</string>
-    <string name="google_maps_key">AIzaSyAHC7hGxZMSuWZ5WGvk5XVnXT60yeSzlnw</string>
-
     <string name="edit_profile">Edit Profile</string>
 
     <string name="contact_us">Contact Us</string>
@@ -66,6 +55,6 @@
 \n Scan and upload any food items that need to be sold quickly. You set the pricing and the pick up times.\n\n
 <u>CONSUMERS</u>
 \n Browse grocery stores and restaurants in your area to find great deals on groceries and prepared foods. Make your purchases directly within the app, then pick up your items at the store location.
-</string>
+    </string>
 </resources>
 

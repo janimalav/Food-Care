@@ -39,9 +39,6 @@ class SignupActivity : AppCompatActivity() {
                     .addOnCompleteListener(this) { task ->
 
                         if (task.isSuccessful) {
-                            val editor = sharedPref.edit()
-                            editor.putString("name",name.text.toString())
-                            editor.apply()
 
                             val profileUpdates = UserProfileChangeRequest.Builder()
                                     .setDisplayName(name.text.toString()).build()

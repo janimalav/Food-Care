@@ -1,108 +1,68 @@
 package com.example.foodcare
 
+import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.FirebaseApp
-import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.UserProfileChangeRequest
 import com.google.firebase.ktx.Firebase
+//import com.google.firebase.firestore.ktx.firestore
+//import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_profile_page.*
 
 class profile_page : AppCompatActivity() {
-    private var PRIVATE_MODE = 0
-    private val SHARED_PREF = "Asmita"
+
+    private val validation = Validation()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile_page)
 
-        FirebaseApp.initializeApp(
-            this
-        )
+        val user = FirebaseAuth.getInstance().currentUser
 
-        //isenablefalse()
+        val edtName: EditText = findViewById(R.id.et_name)
+        val edtEmail: EditText = findViewById(R.id.et_email)
+        val resend: Button = findViewById(R.id.resend)
 
-        FirebaseApp.initializeApp(this);
-        val db = Firebase.firestore
-        val shared: SharedPreferences = getSharedPreferences(SHARED_PREF, PRIVATE_MODE)
-        val user: String? = shared.getString("username", "user")
+        edtName.setText(user?.displayName)
+        edtEmail.setText(user?.email)
 
+        findViewById<Button>(R.id.reset).setOnClickListener {
+            if(validation.checkName(edtName) && validation.checkEmail(edtEmail)){
 
-        reset.setOnClickListener {
-            val result = hashMapOf(
-                "Name" to et_name.text.toString(),
-                "Email" to et_email.text.toString(),
-                "Password" to et_password.text.toString(),
-                "Address" to et_address.text.toString()
-            )
+                val profileUpdates = UserProfileChangeRequest.Builder()
+                    .setDisplayName(edtName.text.toString()).build()
+                user?.updateProfile(profileUpdates)
 
-            val docRef = (db.collection("profile")).document("Malav").set(result)
-                .addOnSuccessListener { void ->
-                    Toast.makeText(
-                        applicationContext,
-                        "Upadated Sucessfully",
-                        Toast.LENGTH_LONG
-                    ).show()
-                }
-                .addOnFailureListener { exception ->
-                    Toast.makeText(
-                        applicationContext,
-                        "Failed",
-                        Toast.LENGTH_LONG
-                    ).show()
-                }
+                user?.updateEmail(edtEmail.text.toString())
+
+                Toast.makeText(baseContext,"Profile Updated", Toast.LENGTH_SHORT).show()
+
+                FirebaseAuth.getInstance().signOut()
+
+                val nextActivity = Intent(applicationContext, LandingActivity::class.java)
+                startActivity(nextActivity)
+                finish()
+            }
         }
 
-        //Toast.makeText(applicationContext, "$user", Toast.LENGTH_LONG).show()
-        if (!user.equals("guest")) {
-            val docRef = db.collection("profile").document("Malav").get()
-                .addOnSuccessListener { DocumentSnapshot ->
-                    et_name.setText(DocumentSnapshot.get("Name").toString())
-                    et_email.setText(DocumentSnapshot.get("Email").toString())
-                    et_password.setText(DocumentSnapshot.get("Password").toString())
-                    et_address.setText(DocumentSnapshot.get("Address").toString())
-                    }
+        resend.setOnClickListener {
+            val email = user?.email
 
-                .addOnFailureListener { exception ->
-                    Toast.makeText(applicationContext, "get failed with ", Toast.LENGTH_LONG).show()
-                    // Log.d(TAG, "get failed with ", exception)
-                }
-            isenabletrue()
-        } else {
-            et_name.setText("user")
-            et_email.setText("no email")
-            et_password.setText("no pass")
-            et_address.setText("no home")
+            if(email != null) {
+                FirebaseAuth.getInstance().sendPasswordResetEmail(email)
 
-            isenablefalse()
+                FirebaseAuth.getInstance().signOut()
+
+                val nextActivity = Intent(applicationContext, LandingActivity::class.java)
+                startActivity(nextActivity)
+                finish()
+            }
         }
-
-
-    }
-
-    private fun isenablefalse() {
-        et_name.isEnabled = false
-        et_email.isEnabled = false
-        et_password.isEnabled = false
-        et_address.isEnabled = false
-        reset.isEnabled = false
-    }
-
-    private fun isenabletrue() {
-        /* iv_edit_profile_back.setOnClickListener {
-             et_name.isEnabled = true
-         }
-         iv_email_edit.setOnClickListener {
-             et_email.isEnabled = true
-         }
-         iv_password_edit.setOnClickListener {
-             et_password.isEnabled = true
-         }
-         iv_address_edit.setOnClickListener {
-             et_address.isEnabled = true
-         }*/
-        reset.isEnabled = true
     }
 }
-
-

@@ -10,7 +10,6 @@ import com.example.myapp.SellFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 
-
 class MainActivity : AppCompatActivity() {
 
     private val onNavLis: BottomNavigationView.OnNavigationItemSelectedListener
@@ -29,15 +28,7 @@ class MainActivity : AppCompatActivity() {
                     return@OnNavigationItemSelectedListener true
                 }
                 R.id.bottomNavigationProfileId->{
-                    replaceFragment(ProfileFragment())
-                    println("Profile Pressed")
-                    val bundle = Bundle()
-                    bundle.putInt("NAVID", R.id.nav_container)
-// set Fragmentclass Arguments
-                    // set Fragmentclass Arguments
-                    val profile = Profile()
-                    profile.setArguments(bundle)
-                    replaceFragment(profile)
+                    replaceFragment(Profile())
                     return@OnNavigationItemSelectedListener true
                 }
             }
