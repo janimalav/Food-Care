@@ -22,8 +22,10 @@ class Profile : Fragment() {
         super.onStart()
 
         if(auth.currentUser != null){
+            view?.findViewById<ConstraintLayout>(R.id.fragmentProfile_view2)?.visibility = View.GONE
             view?.findViewById<ConstraintLayout>(R.id.fragmentProfile_view1)?.visibility = View.VISIBLE
         }else{
+            view?.findViewById<ConstraintLayout>(R.id.fragmentProfile_view1)?.visibility = View.GONE
             view?.findViewById<ConstraintLayout>(R.id.fragmentProfile_view2)?.visibility = View.VISIBLE
 
             Glide.with(requireContext()).load(R.drawable.logo_gif).into(landing_back_profile)

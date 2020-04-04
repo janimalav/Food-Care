@@ -30,7 +30,7 @@ class SpecificCategoryListAdapter(private val vegetableList: List<Vegetable>
         Picasso.get().load(vegetableList[position].url).into(holder.vegetableThumbnail)
 //        holder.vegetableThumbnail.setImageResource(vegetableList[position].thumbnail!!)
         holder.rateVegetable.text = "$ " + vegetableList[position].price.toString()
-        holder.weightVegetable.text = vegetableList[position].weight
+        //       holder.weightVegetable.text = vegetableList[position].weight
 
         holder.cardLayout.setOnClickListener {
             openActivity(holder, vegetableList[position])
