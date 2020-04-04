@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<!--    <item-->
+<!--        android:id="@+id/navigation_home"-->
+<!--        android:icon="@drawable/home"-->
+<!--        android:title="Home"/>-->
+
+<!--    <item-->
+<!--        android:id="@+id/navigation_cart"-->
+<!--        android:icon="@drawable/ic_cart"-->
+
+<!--        android:title="Cart"/>-->
+
+<!--    <item-->
+<!--        android:id="@+id/navigation_stores"-->
+<!--        android:icon="@drawable/ic_store_black_24dp"-->
+
+<!--        android:title="Stores"/>-->
+<!--    <item-->
+<!--        android:id="@+id/navigation_account"-->
+<!--        android:icon="@drawable/ic_account_circle_black_24dp"-->
+
+<!--        android:title="Account"/>-->
+
+    <item
+        android:id="@+id/bottomNavigationBuyId"
+        android:title="@string/bottom_nav_buy"
+        android:icon="@drawable/ic_home_black_24dp"/>
+
+    <item
+        android:id="@+id/bottomNavigationSellId"
+        android:title="@string/bottom_nav_sell"
+        android:icon="@drawable/ic_camera_alt_black_24dp"/>
+
+    <item
+        android:id="@+id/bottomNavigationMapId"
+        android:title="@string/bottom_nav_map"
+        android:icon="@drawable/ic_map_black_24dp"/>
+
+    <item
+        android:id="@+id/bottomNavigationProfileId"
+        android:title="@string/bottom_nav_profile"
+        android:icon="@drawable/ic_person_black_24dp"/>
+
+</menu>

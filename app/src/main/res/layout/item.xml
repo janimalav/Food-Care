@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.ItemActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="@dimen/marginStart"
+        android:src="@drawable/backbuuton"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/ItemImage"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:src="@drawable/veggie1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/MainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginStart"
+        android:layout_marginTop="10dp"
+        android:text="Fresh Whole Rainbow Trout"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ItemImage">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/itemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginStart"
+        android:text="$5.82"
+        android:textColor="@color/colorPrimary"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/MainText" />
+
+    <TextView
+        android:id="@+id/discountRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginStart"
+        android:layout_marginTop="@dimen/marginStart"
+        android:background="@color/orange"
+        android:text="-30%"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/itemPrice"
+        app:layout_constraintTop_toBottomOf="@id/MainText" />
+
+    <TextView
+        android:id="@+id/beforeDiscountPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginStart"
+        android:layout_marginTop="@dimen/marginStart"
+        android:text="@string/_8_32"
+        app:layout_constraintStart_toEndOf="@id/discountRate"
+        app:layout_constraintTop_toBottomOf="@id/MainText" />
+
+    <TextView
+        android:id="@+id/hurry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginStart"
+        android:layout_marginTop="@dimen/marginStart"
+        android:text="Hurry! 1 item left"
+        android:textColor="@color/orange"
+        app:layout_constraintStart_toEndOf="@id/beforeDiscountPrice"
+        app:layout_constraintTop_toBottomOf="@id/MainText" />
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="@dimen/marginStart"
+        android:layout_marginTop="@dimen/marginStart"
+        android:background="@drawable/button_corners"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/itemPrice" />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginStart"
+        android:layout_marginTop="4dp"
+        android:text="-"
+        android:textSize="20dp"
+        android:paddingHorizontal="5dp"
+        app:layout_constraintStart_toStartOf="@id/quantity"
+        app:layout_constraintTop_toTopOf="@id/quantity" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="@dimen/marginStart"
+        android:background="#dcdcdc"
+        android:text="+"
+        android:textSize="20dp"
+        android:paddingHorizontal="5dp"
+        app:layout_constraintEnd_toEndOf="@id/quantity"
+        app:layout_constraintTop_toTopOf="@id/quantity" />
+
+    <Button
+        android:id="@+id/add_to_cart"
+        android:layout_width="210dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/add_button_corners"
+        android:text="Buy Now"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/quantity"
+
+        app:layout_constraintTop_toBottomOf="@id/itemPrice" />
+
+    <ImageView
+        android:id="@+id/frozenImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="@dimen/marginStart"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/frozen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/quantity" />
+
+    <TextView
+        android:id="@+id/frozenText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginStart"
+        android:layout_marginTop="30dp"
+        android:text="Frozen Product"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/frozenImage"
+        app:layout_constraintTop_toBottomOf="@id/quantity" />
+
+    <TextView
+        android:id="@+id/textview7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginStart"
+        android:layout_marginTop="20dp"
+        android:text="This product was frozen prior to its best before date. \nProduct good for consumption for at least 90 days if \n kept frozen."
+        android:textSize="14sp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frozenText"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/item_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginStart"
+        android:layout_marginTop="20dp"
+        android:text="Size/Weight"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview7" />
+
+    <TextView
+        android:id="@+id/item_weight_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginStart"
+        android:text="229g"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_weight" />
+
+    <TextView
+        android:id="@+id/item_decription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginStart"
+        android:layout_marginTop="20dp"
+        android:text="Description"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_weight_value" />
+
+    <TextView
+        android:id="@+id/item_decription_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginStart"
+        android:paddingBottom="50dp"
+        android:text="Fresh Whole Rainbow Trout"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_decription" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

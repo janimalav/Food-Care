@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary">#26B11D</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="bottomnav">#26B11D</color>
+    <color name="appColor">#26b11d</color>
+    <color name="white">#ffffff</color>
+
+    <color name="black">#000000</color>
+    <color name="orange">#ffa500</color>
+    <dimen name="marginStart">10dp</dimen>
 </resources>
