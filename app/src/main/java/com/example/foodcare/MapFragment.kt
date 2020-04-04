@@ -34,6 +34,8 @@ class MapFragment : Fragment(),OnMapReadyCallback {
     override fun onMapReady(googleMap: GoogleMap) {
         map = googleMap
 
+        //this is sample data
+
         val latitude = 44.637456
         val longitude =-63.590225
         val zoomLevel = 12f
@@ -43,17 +45,26 @@ class MapFragment : Fragment(),OnMapReadyCallback {
         map.animateCamera(CameraUpdateFactory.newLatLngZoom(homeLatLng, zoomLevel))
         map.addMarker(MarkerOptions().position(homeLatLng))
 
-        homeLatLng = LatLng(44.613499,-63.613843)
-        map.addMarker(MarkerOptions().position(homeLatLng))
+        // here is all the location data from the user inserted in database
+        // all the location will be stored to database when user puts the product to sell
+        var database = FirebaseDatabase.getInstance()
+        var ref = database.getReference("fooditems")
 
-        homeLatLng = LatLng(44.614099,-63.613834)
-        map.addMarker(MarkerOptions().position(homeLatLng))
+        ref.addListenerForSingleValueEvent(object : ValueEventListener{
 
-        homeLatLng = LatLng(44.637499,-63.618943)
-        map.addMarker(MarkerOptions().position(homeLatLng))
 
-        homeLatLng = LatLng(44.586499,-63.613843)
-        map.addMarker(MarkerOptions().position(homeLatLng))
+            override fun onCancelled(p0: DatabaseError) {}
 
+            override fun onDataChange(p0: DataSnapshot) {
+                val children = p0!!.children
+                children.forEach {
+                    val latitude = it.child("latitude").getValue().toString()
+                    val longitude = it.child("longitude").getValue().toString()
+
+                    homeLatLng = LatLng(latitude.toDouble(),longitude.toDouble())
+                    map.addMarker(MarkerOptions().position(homeLatLng).title(it.child("userName").getValue().toString()))
+                }
+            }
+        })
     }
 }
