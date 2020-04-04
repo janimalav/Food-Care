@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.foodcare.R
 import com.google.android.gms.maps.CameraUpdateFactory
@@ -12,6 +13,11 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
+import com.google.firebase.FirebaseError
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 
 class MapFragment : Fragment(),OnMapReadyCallback {
     private lateinit var map: GoogleMap
@@ -30,11 +36,23 @@ class MapFragment : Fragment(),OnMapReadyCallback {
 
         val latitude = 44.637456
         val longitude =-63.590225
-        val zoomLevel = 15f
+        val zoomLevel = 12f
         val overlaySize = 100f
 
-        val homeLatLng = LatLng(latitude, longitude)
+        var homeLatLng = LatLng(latitude, longitude)
         map.animateCamera(CameraUpdateFactory.newLatLngZoom(homeLatLng, zoomLevel))
+        map.addMarker(MarkerOptions().position(homeLatLng))
+
+        homeLatLng = LatLng(44.613499,-63.613843)
+        map.addMarker(MarkerOptions().position(homeLatLng))
+
+        homeLatLng = LatLng(44.614099,-63.613834)
+        map.addMarker(MarkerOptions().position(homeLatLng))
+
+        homeLatLng = LatLng(44.637499,-63.618943)
+        map.addMarker(MarkerOptions().position(homeLatLng))
+
+        homeLatLng = LatLng(44.586499,-63.613843)
         map.addMarker(MarkerOptions().position(homeLatLng))
 
     }
